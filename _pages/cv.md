@@ -53,7 +53,7 @@ Skills
 Language Skills
 ======
 * TOEFL
-  * Overall: 101     5th August 2023  
+  * Overall: **101**                                        Date:     5th August 2023  
 * GRE
   * To be Taken before Deadline
 
