@@ -58,51 +58,33 @@ Tools & Softwares
   <thead>
     <tr>
       <th>Programming Language</th>
-      <th>Proficiency</th>
+      <th align="center">Proficiency</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>MATLAB</td>
-      <td style="width: 90%; background-color: #FFFF00">90%</td>
-      <td class="bar">
-        <div style="width: 10%; background-color: #FF0000"></div>
-      </td>
+      <td style="width: 90%; background-color: #3eba25">90%</td>
     </tr>
     <tr>
       <td>Python</td>
-      <td style="width: 90%; background-color: #FFFF00">90%</td>
-      <td class="bar">
-        <div style="width: 16%; background-color: #00F000"></div>
-      </td>
+      <td style="width: 90%; background-color: #3eba25">90%</td>
     </tr>
     <tr>
       <td>Javascript</td>
-      <td style="width: 93%; background-color: #FFFF00">93%</td>
-      <td class="bar">
-        <div style="width: 93%; background-color: #0000FF"></div>
-      </td>
+      <td style="width: 40%; background-color: #ffba00">40%</td>
     </tr>
     <tr>
       <td>PHP</td>
-      <td style="width: 83%; background-color: #FFFF00">83%</td>
-      <td class="bar">
-        <div style="width: 83%; background-color: #FFFF00"></div>
-      </td>
+      <td style="width: 60%; background-color: #d1f100">60%</td>
     </tr>
     <tr>
       <td>Assembly</td>
-      <td style="width: 61%; background-color: #00FF00">61%</td>
-      <td class="bar">
-        <div style="width: 61%; background-color: #00FF00"></div>
-      </td>
+      <td style="width: 60%; background-color: #d1f100">60%</td>
     </tr>
     <tr>
       <td>C</td>
-      <td style="width: 86%; background-color: #FF00FF">86%</td>
-      <td class="bar">
-        <div style="width: 86%; background-color: #FF00FF"></div>
-      </td>
+      <td style="width: 60%; background-color: #FF00FF">60%</td>
     </tr>
   </tbody>
 </table>
