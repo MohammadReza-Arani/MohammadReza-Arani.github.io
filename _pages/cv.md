@@ -12,8 +12,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in Tehran, University of Tehran, 2017
-* M.S. in Tehran, University of Tehran, 2021-Present
+* B.S. in Tehran, University of Tehran, 2017-2021   , GPA: 17.36/20 (3.70/4)
+* M.S. in Tehran, University of Tehran, 2021-Present, GPA: 17.37/20 (3.76/4)
 
 
 Work experience
