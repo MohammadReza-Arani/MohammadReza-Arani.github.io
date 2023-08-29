@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "MohammadReza Arani Bidhendi"
-  avatar           : "profile.png"
+  avatar           : "Profile.png"
   bio              : "Born in 22nd, July, 1999. Studying Electrical Engineering as I always dreamed of. Eager to learn new things."
   location         : "Tehran, Tehran, Iran"
   employer         :
@@ -106,7 +106,7 @@ author:
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  StackOverflow    :  " https://stackoverflow.com/users/9048111/s-a-m-ir"  # https://stackoverflow.com/users/ http://stackoverflow.com/users/123456/username
+  StackOverflow    :  "https://stackoverflow.com/users/9048111/s-a-m-ir"  # https://stackoverflow.com/users/ http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : #"replacethistwitterhandle"
