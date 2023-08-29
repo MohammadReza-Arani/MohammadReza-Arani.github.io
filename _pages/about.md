@@ -64,42 +64,42 @@ Tools & Softwares
   <tbody>
     <tr>
       <td>MATLAB</td>
-      <td>10%</td>
+      <td style="width: 90%; background-color: #FFFF00">90%</td>
       <td class="bar">
         <div style="width: 10%; background-color: #FF0000"></div>
       </td>
     </tr>
     <tr>
       <td>Python</td>
-      <td>16%</td>
+      <td style="width: 90%; background-color: #FFFF00">90%</td>
       <td class="bar">
         <div style="width: 16%; background-color: #00F000"></div>
       </td>
     </tr>
     <tr>
       <td>Javascript</td>
-      <td>93%</td>
+      <td style="width: 93%; background-color: #FFFF00">93%</td>
       <td class="bar">
         <div style="width: 93%; background-color: #0000FF"></div>
       </td>
     </tr>
     <tr>
       <td>PHP</td>
-      <td>83%</td>
+      <td style="width: 83%; background-color: #FFFF00">83%</td>
       <td class="bar">
         <div style="width: 83%; background-color: #FFFF00"></div>
       </td>
     </tr>
     <tr>
       <td>Assembly</td>
-      <td>61%</td>
+      <td style="width: 61%; background-color: #00FF00">61%</td>
       <td class="bar">
         <div style="width: 61%; background-color: #00FF00"></div>
       </td>
     </tr>
     <tr>
       <td>C</td>
-      <td>86%</td>
+      <td style="width: 86%; background-color: #FF00FF">86%</td>
       <td class="bar">
         <div style="width: 86%; background-color: #FF00FF"></div>
       </td>
@@ -126,13 +126,12 @@ Contact Me
 ------
 
 <section class="contact-me">
-  <h2>Contact Me</h2>
   <div class="row">
     <div class="col-md-6">
       <p>
         Please fill out the form below to contact me. I will get back to you as soon as possible.
       </p>
-      <form action="mailto:mohammadreza.arani.bidhendi@gail.com" method="post">
+      <form action="mailto:mohammadreza.arani.bidhendi@gmail.com" method="post">
         <input type="hidden" name="from" value="your@email.address">
         <input type="text" name="name" placeholder="Your Name">
         <input type="email" name="email" placeholder="Your Email">
@@ -146,7 +145,7 @@ Contact Me
         You can also contact me by:
       </p>
       <ul>
-        <li><a href="mailto:mohammadreza.arani.bidhendi@gail.com">Email</a></li>
+        <li><a href="mailto:mohammadreza.arani.bidhendi@gmail.com">Email</a></li>
         <li><a href="+989011690305">Phone</a></li>
         <li><a href="https://www.linkedin.com/in/mohammadreza-arani-b67122172/">LinkedIn</a></li>
       </ul>
