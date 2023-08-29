@@ -1,15 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Smart microgrid educational laboratory: An integrated electric and communications infrastructure platform"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'This paper includes steps taken at Machine Lab to Implement a Monitoring System and Connection of Solar Panels to City's power Network'
+date: 2022-10-29
+venue: 'Scientia Iranica'
+paperurl: 'https://scientiairanica.sharif.edu/article_22050_dc11eeb3e084737c7a12cab06c43fd08.pdf'
+citation: 'M. Arani, (2022). &quot; Smart microgrid educational laboratory: An integrated electric and communications infrastructure platform.&quot; <i>Scientia Iranica</i>.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+[Download paper here](https://scientiairanica.sharif.edu/article_22050_dc11eeb3e084737c7a12cab06c43fd08.pdf)
+
