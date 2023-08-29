@@ -57,34 +57,34 @@ Tools & Softwares
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th>Programming Language</th>
-      <th align="center">Proficiency</th>
+      <th style="text-align: center;">Programming Language</th>
+      <th style="text-align: center;">Proficiency</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>MATLAB</td>
-      <td style="width: 90%; background-color: #3eba25">90%</td>
+      <td style="width: 90%;text-align: center; background-color: #3eba25">90%</td>
     </tr>
     <tr>
       <td>Python</td>
-      <td style="width: 90%; background-color: #3eba25">90%</td>
+      <td style="width: 90%;text-align: center; background-color: #3eba25">90%</td>
     </tr>
     <tr>
       <td>Javascript</td>
-      <td style="width: 40%; background-color: #ffba00">40%</td>
+      <td style="width: 40%;text-align: center; background-color: #ffba00">40%</td>
     </tr>
     <tr>
       <td>PHP</td>
-      <td style="width: 60%; background-color: #d1f100">60%</td>
+      <td style="width: 60%;text-align: center; background-color: #d1f100">60%</td>
     </tr>
     <tr>
       <td>Assembly</td>
-      <td style="width: 60%; background-color: #d1f100">60%</td>
+      <td style="width: 60%;text-align: center; background-color: #d1f100">60%</td>
     </tr>
     <tr>
       <td>C</td>
-      <td style="width: 60%; background-color: #FF00FF">60%</td>
+      <td style="width: 60%;text-align: center; background-color: #d1f100">60%</td>
     </tr>
   </tbody>
 </table>
