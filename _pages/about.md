@@ -132,7 +132,8 @@ Contact Me
       <p>
         Please fill out the form below to contact me. I will get back to you as soon as possible.
       </p>
-      <form action="#">
+      <form action="mailto:mohammadreza.arani.bidhendi@gail.com" method="post">
+        <input type="hidden" name="from" value="your@email.address">
         <input type="text" name="name" placeholder="Your Name">
         <input type="email" name="email" placeholder="Your Email">
         <input type="text" name="subject" placeholder="Subject">
@@ -145,10 +146,9 @@ Contact Me
         You can also contact me by:
       </p>
       <ul>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Phone</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Twitter</a></li>
+        <li><a href="mailto:mohammadreza.arani.bidhendi@gail.com">Email</a></li>
+        <li><a href="+989011690305">Phone</a></li>
+        <li><a href="https://www.linkedin.com/in/mohammadreza-arani-b67122172/">LinkedIn</a></li>
       </ul>
     </div>
   </div>
@@ -156,8 +156,6 @@ Contact Me
 
 
 
-Example: editing a markdown file for a talk
-[//]: <> ( ![Editing a markdown file for a talk](/images/editing-talk.png) ) 
 
 
 
