@@ -65,7 +65,6 @@ Service and leadership
 * Currently signed in to 43 different slack teams -->
 
   
-<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,9 +92,11 @@ Service and leadership
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="MohammadReza Arani" />
 </head>
 <body class="w3-content" style="max-width:1600px">
-  
-<p><a href="https://github.com/MohammadReza-Arani/MohammadReza-Arani.github.io/blob/main/files/Mohammadreza_Arani_Bidhendi_CV.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large w3-text-blue">Download My CV</a> </p>
 
+ <div align="center"> 
+<p><a href="https://github.com/MohammadReza-Arani/MohammadReza-Arani.github.io/blob/main/files/Mohammadreza_Arani_Bidhendi_CV.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large w3-text-blue">Download My CV</a> </p>
+ </div>
+  
 </body>  
 </html>
 
