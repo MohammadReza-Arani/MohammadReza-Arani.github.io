@@ -90,10 +90,6 @@ Tools & Softwares
 </table>
 
 
-
-
-
-
 Notable Courses
 ------
 
@@ -128,7 +124,7 @@ Contact Me
       </p>
       <ul>
         <li><a href="mailto:mohammadreza.arani.bidhendi@gmail.com">Email</a></li>
-        <li><a href="+989011690305">Phone</a></li>
+        <li><a href="tel:+989011690305">Phone</a></li>
         <li><a href="https://www.linkedin.com/in/mohammadreza-arani-b67122172/">LinkedIn</a></li>
       </ul>
     </div>
