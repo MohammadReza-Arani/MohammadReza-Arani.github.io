@@ -86,9 +86,9 @@ author:
   location         : "Tehran, Tehran, Iran"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=hgi3rPAAAAAJ"
   email            :
-  researchgate     :  https://www.researchgate.net/profile/Mohammadreza-Arani # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Mohammadreza-Arani" # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -102,11 +102,11 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : https://www.linkedin.com/in/mohammadreza-arani-b67122172/ 
+  LinkedIn         : "https://www.linkedin.com/in/mohammadreza-arani-b67122172" 
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  stackoverflow    : https://stackoverflow.com/users/9048111/s-a-m-ir # http://stackoverflow.com/users/123456/username
+  StackOverflow    : "https://stackoverflow.com/users/9048111/s-a-m-ir" # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : #"replacethistwitterhandle"
