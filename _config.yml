@@ -85,7 +85,7 @@ author:
   bio              : "Born in 22nd, July, 1999. Studying Electrical Engineering as I always dreamed of. Eager to learn new things."
   location         : "Tehran, Tehran, Iran"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=hgi3rPAAAAAJ"
   email            :
   researchgate     :  "https://www.researchgate.net/profile/Mohammadreza-Arani" # example: "https://www.researchgate.net/profile/yourprofile"
@@ -102,11 +102,11 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  LinkedIn         : "mohammadreza-arani-b67122172" #https://www.linkedin.com/in/
+  LinkedIn         :  "mohammadreza-arani-b67122172"  #https://www.linkedin.com/in/
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
-  StackOverflow    : "9048111/s-a-m-ir" # https://stackoverflow.com/users/ http://stackoverflow.com/users/123456/username
+  StackOverflow    :  "9048111/s-a-m-ir"  # https://stackoverflow.com/users/ http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
   twitter          : #"replacethistwitterhandle"
