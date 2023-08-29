@@ -35,13 +35,29 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Design & Simulation in **HFSS**, **CST**, **ADS**, **PsPice** and **COMSOL**.
+* Experienced with **Function Generator**, **Oscilloscope**, **Network Analyzer**, and **Spectrum Analyzer** devices. 
+* Adept with multiple Programming languages including **Python**, C, **MATLAB**, JS, PHP, **Solidity**, and Assembly. 
+* Experienced with multiple Operating Systems (OS):
+  * Windows 7, 8.1, 10
+  * Linux Debian like CentOS, Ubuntu, and Kali
+  * Linux Arch like Manjaro and Black-Arch
+* Configured & Implemented Virtual Environments like **VMware Workstation** & **Docker**.
+* Configured Web-servers including **NGINX** and **Apache**.
+* Experienced with Network Protocols and devices like **Cisco Routers** and worked with Network troubleshooting softwares like **Tshark**, **Wireshark**, and **CICFlowMeter**.
+* Familiar with Symmetric and Asymmetric Encryption based on **RSA** and **ECC**.
+* Certified in Web-application testing using [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/v42/).
+* Fitting well in Teams, Taking responsibility for my work, and Sharing knowledge. 
 
+
+Language Skills
+======
+* TOEFL
+  * Overall: 101     5th August 2023  
+* GRE
+  * To be Taken before Deadline
+
+  
 Publications
 ======
   <ul>{% for post in site.publications %}
