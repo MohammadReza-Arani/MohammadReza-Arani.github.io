@@ -54,7 +54,7 @@ Research Interests
 Tools & Softwares
 ======
 
-<table>
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>Programming Language</th>
@@ -65,35 +65,48 @@ Tools & Softwares
     <tr>
       <td>MATLAB</td>
       <td>10%</td>
-      <td class="bar-10"></td>
+      <td class="bar">
+        <div style="width: 10%; background-color: #FF0000"></div>
+      </td>
     </tr>
     <tr>
       <td>Python</td>
       <td>16%</td>
-      <td class="bar-16"></td>
+      <td class="bar">
+        <div style="width: 16%; background-color: #00F000"></div>
+      </td>
     </tr>
     <tr>
       <td>Javascript</td>
       <td>93%</td>
-      <td class="bar-93"></td>
+      <td class="bar">
+        <div style="width: 93%; background-color: #0000FF"></div>
+      </td>
     </tr>
     <tr>
       <td>PHP</td>
       <td>83%</td>
-      <td class="bar-83"></td>
+      <td class="bar">
+        <div style="width: 83%; background-color: #FFFF00"></div>
+      </td>
     </tr>
     <tr>
       <td>Assembly</td>
       <td>61%</td>
-      <td class="bar-61"></td>
+      <td class="bar">
+        <div style="width: 61%; background-color: #00FF00"></div>
+      </td>
     </tr>
     <tr>
       <td>C</td>
       <td>86%</td>
-      <td class="bar-86"></td>
+      <td class="bar">
+        <div style="width: 86%; background-color: #FF00FF"></div>
+      </td>
     </tr>
   </tbody>
 </table>
+
 
 
 
@@ -105,15 +118,46 @@ Notable Courses
 
 TA-Ship Experiences
 ------
-**Markdown generator**
+
 
 
 
 Contact Me
 ------
 
+<section class="contact-me">
+  <h2>Contact Me</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        Please fill out the form below to contact me. I will get back to you as soon as possible.
+      </p>
+      <form action="#">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <p>
+        You can also contact me by:
+      </p>
+      <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+[//]: <> ( ![Editing a markdown file for a talk](/images/editing-talk.png) ) 
+
 
 
