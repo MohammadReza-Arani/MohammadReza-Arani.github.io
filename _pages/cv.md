@@ -74,14 +74,14 @@ Publications
   
 Notable Courses
 ------
-* Convex Optimization                         | * Numerical Methods in Electromagnetics
-* Microwave-1                                 | * Advanced Electromagnetics
-* Antenna-2                                   | * Array Processing
-* Engineering Mathematics                     | * Advanced Engineering Mathematics
-* Math-1                                      | * Linear Algebra  
-* Machine Learning                            | * Neural Networks
-* Blind Source Separation                     | * Linear Control Systems
-----------------------------------------------------------------------------------------------------------
+* Convex Optimization                         |  Numerical Methods in Electromagnetics  |
+* Microwave-1                                 |  Advanced Electromagnetics              |
+* Antenna-2                                   |  Array Processing                       |
+* Engineering Mathematics                     |  Advanced Engineering Mathematics       |
+* Math-1                                      |  Linear Algebra                         |
+* Machine Learning                            |  Neural Networks                        |
+* Blind Source Separation                     |  Linear Control Systems                 |
+
 
 
 
