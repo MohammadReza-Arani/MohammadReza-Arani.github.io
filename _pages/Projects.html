@@ -93,7 +93,28 @@ redirect_from:
   </div>
 </div>
 
-
+                                                                                <!-- End of Gallery Section  --> 
+                                                                              <!-- Begining of Toggle Section  --> 
+  <div class="toggle-heading">
+  <h2>This is a toggle heading</h2>
+  <button>
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <div class="content">
+    This is the content of the toggle heading.
+  </div>
+</div>
+  <script>
+  const toggleHeading = document.querySelector('.toggle-heading');
+  const button = document.querySelector('.toggle-heading button');
+  const content = document.querySelector('.toggle-heading .content');
+  
+  button.addEventListener('click', function() {
+    content.classList.toggle('active');
+  });
+  </script>
+                                                                                         <!-- End of Toggle Section  -->
+                                                                                       <!-- Begining of Projects Section  -->  
 <div id="Traffic_Sensor">
   <div style="text-align: left;">
     <strong> Traffic Movement RF Sensor for Violation Detection </strong>
