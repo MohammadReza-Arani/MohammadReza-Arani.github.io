@@ -8,51 +8,124 @@ redirect_from:
 ---
 {% include base_path %}
 
-
-<html  >
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="github.io">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="Projects Description-Mohammadreza Arani Bidhendi">
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My-Projects</title>
- 
-  
 </head>
 
+
+
 <body>
-
-   <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
- 
   
-  <div>
-    <strong>Project-1</strong>
-    <a href=""></a>
-    <p>Description</p>
-  </div>
-  <div>
-    <strong>Project-2</strong>
-    <a href=""></a>
-    <p>Description</p>
-  </div>
-  <div>
-    <strong>Project-3</strong>
-    <a href=""></a>
-    <p>Description</p>
-  </div>
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
   
+<h2 style="text-align:center">Projects at a Glance</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="/images/UI_Visual_Diagram.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="/images/Classifier_Model.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%" onclick="currentSlide(1)" alt="Traffic Map and Violation Detection Sensor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Slotted SIW Antenna">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%" onclick="currentSlide(3)" alt="Optimization with GD">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/UI_Visual_Diagram.jpg" style="width:100%" onclick="currentSlide(4)" alt="Machine Laboratory">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Classifier_Model.png" style="width:100%" onclick="currentSlide(5)" alt="Brain Interface Action Classifier">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%" onclick="currentSlide(6)" alt="Array Optimization">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
 </body>
-  
 
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   font-family: Arial;
@@ -149,103 +222,46 @@ img {
 .demo:hover {
   opacity: 1;
 }
+  
+                                                                                      /* SideBar Config: */
+  .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
 </style>
-<body>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
-
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="/images/UI_Visual_Diagram.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="/images/Classifier_Model.png" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%" onclick="currentSlide(1)" alt="Traffic Map and Violation Detection Sensor">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Slotted SIW Antenna">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%" onclick="currentSlide(3)" alt="Optimization with GD">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/UI_Visual_Diagram.jpg" style="width:100%" onclick="currentSlide(4)" alt="Machine Laboratory">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Classifier_Model.png" style="width:100%" onclick="currentSlide(5)" alt="Brain Interface Action Classifier">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%" onclick="currentSlide(6)" alt="Array Optimization">
-    </div>
-  </div>
-</div>
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-</body>
+  
 </html>
 
 
