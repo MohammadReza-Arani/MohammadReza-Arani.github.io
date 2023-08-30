@@ -2,10 +2,64 @@
 layout: archive
 title: "Projects"
 permalink: /Projects/
-author_profile: true
+author_profile: false
 redirect_from:
   - /Projects.html
 ---
 {% include base_path %}
 
-My Projects
+
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="github.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="Projects Description-Mohammadreza Arani Bidhendi">
+  
+  
+  <title>My-Projects</title>
+ 
+  
+</head>
+
+<body>
+<div class="project-slider">
+  <div class="project-slide">
+    <img src="project1.jpg" alt="Project 1">
+    <h3>Project 1</h3>
+    <p>This is a description of Project 1.</p>
+    <a href="project1.html">Learn more</a>
+  </div>
+  <div class="project-slide">
+    <img src="project2.jpg" alt="Project 2">
+    <h3>Project 2</h3>
+    <p>This is a description of Project 2.</p>
+    <a href="project2.html">Learn more</a>
+  </div>
+  <div class="project-slide">
+    <img src="project3.jpg" alt="Project 3">
+    <h3>Project 3</h3>
+    <p>This is a description of Project 3.</p>
+    <a href="project3.html">Learn more</a>
+  </div>
+  <div class="project-controls">
+    <button class="project-prev">Previous</button>
+    <button class="project-next">Next</button>
+  </div>
+</div>
+</body>
+  
+<script>
+const projectSlider  = document.querySelector('.project-slider');
+const previousButton = document.querySelector('.project-prev');
+const nextButton     = document.querySelector('.project-next');
+
+previousButton.addEventListener('click', function() {
+  projectSlider.slidePrev();
+});
+
+nextButton.addEventListener('click', function() {
+  projectSlider.slideNext();
+});
+</script>
