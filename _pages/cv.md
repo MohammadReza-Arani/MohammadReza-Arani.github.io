@@ -30,7 +30,7 @@ Research & Work experience
  
 * Summer 2021: Undergraduate Project
   * University of Tehran
-  * Duties included: Study of different Antenna Designs and simulation of Slotted-Waveguide, Patch, and Slotted SIW Antenna in 77GHz for Autonomous vehicles application. 
+  * Duties included: Study of different Antenna Designs and simulation of Slotted-Waveguide, Patch, and Slotted SIW Antenna in **77GHz** for **Autonomous vehicles** application. 
   * Supervisor: [Prof. Kamarei](https://ece.ut.ac.ir/~kamarei)
  
 * From Jan 2022-Present: Graduate Project
@@ -45,7 +45,7 @@ Skills
 * Familiar with **STM32**, **Arduino**, **NRF24L**, and **ESP8266** modules. 
 * Adept with multiple Programming languages including **Python**, C, **MATLAB**, JS, PHP, **Solidity**, and Assembly.
 * Experienced with Quantum Computing concepts and tools such as **Pennylane** and **Qiskit**.
-* Utilized various Numerical Methods and Frameworks to find optimal results consisting of **ML**,**Numerical Integration|Differentiation**, **Root-Finding Methods**, **FDTD**, **Genetic|PSO  Algo.**, and **Convex Optimization**.
+* Utilized various Numerical Methods and Frameworks to find optimal results consisting of **ML**,**Numerical Integration/Differentiation**, **Root-Finding Methods**, **FDTD**, **Genetic/PSO  Algo.**, and **Convex Optimization**.
 * Experienced with multiple Operating Systems (OS):
   * Windows 7, 8.1, 10
   * Linux Debian like CentOS, Ubuntu, and Kali
