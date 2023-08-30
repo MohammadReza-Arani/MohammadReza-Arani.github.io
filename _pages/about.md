@@ -22,6 +22,18 @@ One of the most important tasks of any researcher is to apply available tools an
 I believe that most problems can be solved if we are willing to look at them from a different angle. I find it a great pleasure to use my mathematical skills to solve complex problems, especially those that involve modeling high-dimensional problems with matrix notations and taking advantage of convex optimization to find optimal solutions. I am confident that my skills and interests make me a valuable asset to any team. I believe in <strong>hard deep work</strong> which gives me the power to <strong>learn new things fast</strong>. I am also a <strong>team player</strong> and willing to help others.
 </div>
 
+<a href="/Projects.html">
+  <div class="my-projects-box">
+    <h2 style="color: #54b3d6; font-weight: bold; font-style: italic; text-decoration: underline;">My Projects</h2>
+  </div>
+</a>
+.my-projects-box {
+  background-color: #ffffff;
+}
+
+.my-projects-box:hover {
+  background-color: #f0f8ff;
+}
 
 
 Research Interests
