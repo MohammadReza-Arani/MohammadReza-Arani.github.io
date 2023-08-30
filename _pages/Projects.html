@@ -99,16 +99,20 @@ redirect_from:
                                                                                          <!-- End of Toggle Section  -->
                                                                                        <!-- Begining of Projects Section  -->  
 <div id="Traffic_Sensor">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Traffic Movement RF Sensor for Violation Detection </strong>
   </div>
   <div align="justify;">
     Have you ever considered any other option for tracking, managing, and controlling roads and streets rather than widely used Traffic Cameras?
+    
     In Today's world with ever-increasing life speed and demanding life going on, we need to manage the high volume of traffic in the streets smoothly and swiftly. 
     While considering the data associated with cameras and the processing time of such systems, it is unlikely to be able to handle real-time traffic data and provide a traffic map as a data feed for routing applications available worldwide utilizing their users' traffic data to illustrate traffic volume and suggest optimal routes.
-    If it was 10 years ago we would be happy if we could extract some simple data from Traffic Cameras even after a long period of breathtaking data processing, but by obtaining new options available right now, it is wise to prepare additional methods and devices to address issues around this problem. With new Chips handling data at such a high rate, we can even obtain data from an RF sensor working at <strong>77GHz</strong> with low costs as a result of commercialized chipsets' technology and mass production.
+    If it was 10 years ago we would be happy if we could extract some simple data from Traffic Cameras even after a long period of breathtaking data processing, but by obtaining new options available right now, it is wise to prepare additional methods and devices to address issues around this problem. 
+    
+    With new Chips handling data at such a high rate, we can even obtain data from an RF sensor working at <strong>77GHz</strong> with low costs as a result of commercialized chipsets' technology and mass production.
     We have this rule of thumb that any system's price rises rapidly as the frequency goes higher and equipment gets more expensive while there are some specific frequencies available that make our high-frequency system affordable and cost reasonably.
     To obtain enough information from a moving vehicle, we need specific bandwidth and fairly good resolution both in Range and Frequency so that we can estimate the position and velocity of the vehicle accurately. 
+    
     Adding up all these facts, we can consider RF sensors as the priority to use!
     At the University of Tehran, we designed and simulated Traffic volume and obtained information from vehicles in MATLAB to implement it in real-world scenarios later. This requires putting the required algorithms available in Machine Learning, Neural Networks, available analytical solutions, and other numerical optimizations together to make this system work properly!
     Below, there is a <strong>5GHz</strong> R-D Map and its corresponding XY plane available as the result of such simulations:
@@ -128,16 +132,41 @@ redirect_from:
 
   
 <div id="SSIW_Antenna">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Slotted Substrate Integrated Waveguide Antenna </strong>
   </div>
    <div align="justify;">
+     The very edge of distant Communication in any system at any location is the System's Antenna providing Telecommunication thanks to Hertz's and Marconi's first Antennas!
+     
+     But why do we have so many different types of Antennas in different shapes and technology in the market? 
+     
+     what is the incentive to provide such a variety of Antennas in the market?
+
+     It is the very physical constraints and expense that bring us to design and implement different antennas for different applications. Antennas are specified mostly by some of the limited parameters yet, their materials, technology, and physical state may differ even with equal values in those parameters!
+
+     Consider dipole, Yagi-Uda, Patch Antenna, Reflective Antenna, Horn Antenna, and other widely used types of antenna. When starting this project, we were faced with different options to use for autonomous vehicles' RF sensors, and I decided to choose reasonable ones and compare those simulated to find the best!
+
+     One of the options was to start from a Waveguide, put a slot on it, and design a leaky-wave Antenna. 
+     However, with limited space and available area for the antenna, I decided to continue the project by designing a conformal annular slotted waveguide antenna. 
+     Following design rules and simulation, the result was satisfying and took us to the next level which was to turn this bulky expensive design into a low profile cheap but still useful antenna. 
+     This is where I designed and Slotted substrate-integrated Annular Anntena at <strong>77GHz</strong> and simulated this unit in <strong>HFSS</strong>.
+     Below we can see some design steps and output patterns of such an Antenna:
    </div>  
+
+                                                                                <!-- Begining of Gifs  --> 
+      <div style="display: flex;">
+        <div style="flex: 45%; padding: 5px">
+          <img src="/images/Annular_SIW_Antenna_Design_HFSS.png" alt="77GHz Annular Slotted SIW Antenna Design">
+        </div>
+        <div style="flex: 45%; padding: 5px">
+          <img src="/images/Annular_SIW_Antenna_S11_HFSS.png" alt="S11 Parameter of ASSIW Antenna">
+        </div>
+      </div>
 </div>
 
   
 <div id="Optimization_GD">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Optimization: Quadratic Cost-Function  </strong>
   </div>
    <div align="justify;">
@@ -147,7 +176,7 @@ redirect_from:
 
   
 <div id="Machine_LAB">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Implementation of IOT-based Monitoring System in a Machine Lab. </strong>
   </div>
    <div align="justify;">
@@ -156,7 +185,7 @@ redirect_from:
 
   
 <div id="Classifier_BSS">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Brain-Computer Interface Problem: Action Classification via Machine Learning from EEG </strong>
   </div>
    <div align="justify;">
@@ -165,7 +194,7 @@ redirect_from:
 
   
 <div id="Array_Opt">
-  <div style="text-align: left;">
+  <div style="text-align: center;">
     <strong> Optimization of 1-D Array to reach Desired Pattern </strong>
   </div>
    <div align="justify;">
