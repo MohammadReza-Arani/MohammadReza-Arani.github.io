@@ -283,6 +283,32 @@ redirect_from:
     <strong> Optimization of 1-D Array to reach Desired Pattern </strong>
   </div>
    <div align="justify;">
+     <p style="text-align: justify;">
+       Array Optimization is one of those problems that requires a new direction to look at in order to find innovative ways to reach the optimal solution. 
+      Facing this problem with a new approach based on the Optimization of a 
+       specific cost function enables us to tackle this issue and address the problem in a wide area considering physical and practical constraints.
+     </p>
+     <p style="text-align: justify;">
+       Here, I present a 1-D Array Optimization approach based on the minimization of this cost function:
+     </p>
+     <p style="text-align: justify; align:center">
+       $ J = \|AF(\theta)-g(\theta)\|^{2} $
+     </p>
+     <p style="text-align: justify;">
+       By considering our desired pattern $g(\theta)$ we can optimize array parameters to minimize the MSE (Mean Square Error) between 
+       the desired pattern and the array factor within the feasible set of answers. Also, we can reach the minimum number of elements after 
+       this optimization by applying a Convex Optimization problem to get a sparse answer with the desired SLL (Side Lobe Level).  
+     </p>
+     <p style="text-align: justify;">
+       Below we can see a comparison between optimized and uniform arrays in terms of received power calculated by the Ferris equation in free space:
+     </p>
+    <figcaption style="text-align: center;">Comparison of Different Array Configurations</figcaption>
+    <img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" alt="Comparison of Array COnfigs.">  
+    <figcaption style="text-align: center;">Simulation Results of 1-D Array Optimization</figcaption>
+    <img src="/images/Optimized_vs_Desired_Array_Pattern.jpg" alt="Simulation Results of 1-D Array Optimization">  
+     <p style="text-align: justify;">
+       More details will be published in the near future!
+     </p>
    </div>  
 </div>
   
