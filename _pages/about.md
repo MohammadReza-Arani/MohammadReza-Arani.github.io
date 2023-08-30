@@ -71,16 +71,16 @@ Tools & Softwares
       <td>C</td>
       <td style="width: 60%;text-align: center; background-color: #d1f100">60%</td>
     </tr>
+    <tr>
+      <td>Solidity</td>
+      <td style="width: 40%;text-align: center; background-color: #ffba00">40%</td>
+    </tr>
+    <tr>
+      <td>Verilog</td>
+      <td style="width: 60%;text-align: center; background-color: #d1f100">60%</td>
+    </tr>
   </tbody>
 </table>
-
-
-Notable Courses
-------
-
-
-TA-Ship Experiences
-------
 
 
 Hobbies 
