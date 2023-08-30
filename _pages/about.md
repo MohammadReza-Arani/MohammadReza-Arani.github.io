@@ -38,7 +38,7 @@ I believe that most problems can be solved if we are willing to look at them fro
 </style>
 
   <div class="my-projects-box2">
-    <h2 style="color: #82d220; font-weight: bold; font-style: italic; text-align:center; text-decoration: underline;"><a href="/CV/">My CV</a></h2>
+    <h2 style="color: #82d220; font-weight: bold; font-style: italic; text-align:center; text-decoration: underline;"><a href="/cv/">My CV</a></h2>
   </div>
 
 <style>
