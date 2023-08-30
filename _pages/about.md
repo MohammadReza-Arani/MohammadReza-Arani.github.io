@@ -24,7 +24,7 @@ I believe that most problems can be solved if we are willing to look at them fro
 
 
   <div class="my-projects-box">
-    <h2 style="color: #54b3d6; font-weight: bold; font-style: italic; text-decoration: underline;"><a href="/Projects.html">My Projects</a></h2>
+    <h2 style="color: #54b3d6; font-weight: bold; font-style: italic; text-align:center; text-decoration: underline;"><a href="/Projects.html">My Projects</a></h2>
   </div>
 
 <style>
