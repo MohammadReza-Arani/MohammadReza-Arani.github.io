@@ -101,7 +101,17 @@ TA-Ship Experiences
 * **Electrical Machines and Power Electronics**
   * [Dr. M.Abedini](https://ece.ut.ac.ir/~m.abedini)----------2020
 * **General Physics 2**
-  * [Prof. SHaterzadeh](https://profile.ut.ac.ir/~zahra.shaterzadeh)----------2020 
+  * [Prof. Shaterzadeh](https://profile.ut.ac.ir/~zahra.shaterzadeh)----------2020 
+
+Certificates 
+=====
+* Python Programming | Sololearn
+* MATLAB Programming | Linkedin-Skill Test
+* Javascript         | Sololearn
+* SQL                | Sololearn
+* SANS542            | SANS
+* Theoretical Music  | Tenace Academy
+
 
 
 CV File
