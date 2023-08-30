@@ -106,11 +106,11 @@ TA-Ship Experiences
 Certificates 
 =====
 * Python Programming | Sololearn
-* MATLAB Programming | Linkedin-Skill Test
-* Javascript         | Sololearn
-* SQL                | Sololearn
-* SANS542            | SANS
-* Theoretical Music  | Tenace Academy
+* MATLAB Programming &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Linkedin-Skill Test
+* Javascript         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Sololearn
+* SQL                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Sololearn
+* SANS542           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | SANS
+* Theoretical Music  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Tenace Academy
 
 
 
