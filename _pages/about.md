@@ -47,7 +47,7 @@ I believe that most problems can be solved if we are willing to look at them fro
 }
 
 .my-projects-box2:hover {
-  background-color: #f0f8ff;
+  background-color: #82d220;
 }
 </style>
 
