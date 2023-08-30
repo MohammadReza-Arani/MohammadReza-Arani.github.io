@@ -75,12 +75,12 @@ Publications
 Notable Courses
 ------
 * Convex Optimization                         |  Numerical Methods in Electromagnetics  |
-* Microwave-1                                 |  Advanced Electromagnetics              |
-* Antenna-2                                   |  Array Processing                       |
-* Engineering Mathematics                     |  Advanced Engineering Mathematics       |
-* Math-1                                      |  Linear Algebra                         |
-* Machine Learning                            |  Neural Networks                        |
-* Blind Source Separation                     |  Linear Control Systems                 |
+* Microwave-1                                    |  Advanced Electromagnetics              |
+* Antenna-2                                 |  Array Processing                       |
+* Engineering Mathematics                  |  Advanced Engineering Mathematics       |
+* Math-1                                       |  Linear Algebra                         |
+* Machine Learning                     |  Neural Networks                        |
+* Blind Source Separation             |  Linear Control Systems                 |
 
 
 
@@ -91,9 +91,9 @@ TA-Ship Experiences
 * **Convex Optimization Course**
   * [Dr. Keshavarz](https://arezoukt.github.io/)----------2023   
 * **Antenna 1 Course**
-  *[Prof. Rashed](https://ece.ut.ac.ir/~jrashed)----------2023 
+  * [Prof. Rashed](https://ece.ut.ac.ir/~jrashed)----------2023 
 * **Engineering Mathematics**
-  *[Prof. Tale-Masouleh](https://profile.ut.ac.ir/~m.t.masouleh)----------2019 
+  * [Prof. Tale-Masouleh](https://profile.ut.ac.ir/~m.t.masouleh)----------2019 
 * **Introduction to Computing and Programming**
   * [Prof. Moradih](https://ece.ut.ac.ir/~moradih)----------2019,2020
 * **Electrical Engineering Fundamentals**
