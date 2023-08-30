@@ -28,7 +28,7 @@ redirect_from:
   <a href="https://mohammadreza-arani.github.io/">Home</a>
   <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects">MATLAB Repo.</a>
   <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main">Python Repo.</a>
-  <a href="#UnderGrad">Undergrad. Project</a>
+  <a href="#SSIW_Antenna">Undergrad. Project</a>
 </div>
   
 <h2 style="text-align:center">Projects at a Glance</h2>
@@ -181,9 +181,43 @@ redirect_from:
     <strong> Optimization: Quadratic Cost-Function  </strong>
   </div>
    <div align="justify;">
-   </div>  
-</div>
+     <p style="text-align: justify;">
+       One of the Most impressive Optimization methods that comes in handy when dealing with various types of problems is the Gradient Descent Method Family. 
+       Both the Steepest Descent Method and the Newton Method are illustrated here in a simple problem to show their potential specifically in higher dimensions. 
+     </p>
+     <p style="text-align: justify;">
+       Consider the problem of finding the minimum value of such a function:
+     </p>
+     <p>
+       $ f(x) = x_{1}^{2}+x_{2}^{2}-4x_{1}-6x_{2}+13+x_{1}x_{2}  $  
+     </p>
+     <p style="text-align: justify;">
+       We can use Analytical differentiation to find its minimum as far as the function is Convex meaning the local minimum is the same as the global minimum. 
+       Instead, we use GD to find its solution to test this method and visualize the result for better understanding.
+     </p>
+     <p>
+       Below we can see the problem illustration:
+     </p>
+     <div>
+       <img src="/images/Optimization_Curvature_GD_BSS.png" alt="Problem Cost Function">
+     </div>
+     <p>
+       After Applying GD and Newton we can see their both results here:
+     </p>
+       <div style="display: flex;">
+        <div style="flex: 45%; padding: 5px">
+          <img src="/images/Newton_GD_Contours.png" alt="Newton Method">
+        </div>
+        <div style="flex: 45%; padding: 5px">
+          <img src="/images/Steepest_Descent_Contours.png" alt="Steepest Descent Method">
+        </div>
+      </div>
+   </div>
 
+  
+</div>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   
 <div id="Machine_LAB">
