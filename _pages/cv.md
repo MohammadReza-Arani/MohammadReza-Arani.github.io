@@ -16,35 +16,43 @@ Education
 * M.S. in Tehran, University of Tehran, 2021-Present, GPA: **17.37/20 (3.76/4)**
 
 
-Work experience
+Research & Work experience
 ======
 * Summer 2019: Research Assistant
   * University of Tehran
-  * Duties included: Implementation of Monitoring in Machine Lab using an Xbee end-points+Python UI Augmented program running on a Raspberry-pi connected to an Xbee end-point.
+  * Duties included: Implementation of Monitoring in Machine Lab using an **Xbee** end-points+**Python UI**(PyQt5) Augmented program running on a **Raspberry-pi** connected to an Xbee end-point.
   * Supervisor: [Dr. M. Abedini](https://ece.ut.ac.ir/~m.abedini)
 
 * Summer 2020: Internship
   * University of Tehran
-  * Duties included: Simulation of Different Techniques to reduce Noise Level and Spectrum leakage in **Spectrum Analyzer** including the application of Signal Windowing for smoother signal to use with limited FFT points in MATLAB and Implementation in Xilinx. 
+  * Duties included: Simulation of Different Techniques to reduce Noise Level and **Spectrum leakage** in **Spectrum Analyzer** including the application of Signal Windowing for smoother signal to use with limited FFT points in MATLAB and Implementation in Xilinx. 
   * Supervisor: [Prof. PoorAghdam](https://ece.ut.ac.ir/~kaghdam/network)
  
 * Summer 2021: Undergraduate Project
   * University of Tehran
   * Duties included: Study of different Antenna Designs and simulation of Slotted-Waveguide, Patch, and Slotted SIW Antenna in 77GHz for Autonomous vehicles application. 
   * Supervisor: [Prof. Kamarei](https://ece.ut.ac.ir/~kamarei)
+ 
+* From Jan 2022-Present: Graduate Project
+  * University of Tehran
+  * Duties included: A Novel Framework to **Optimize Antenna Arrays** in 1, 2, and 3 dimension(s) with given physical constraints for both TX and RX. 
+  * Supervisor: [Dr. S.Akhavan](https://ece.ut.ac.ir/~s.akhavan)
   
 Skills
 ======
 * Design & Simulation in **HFSS**, **CST**, **ADS**, **PsPice** and **COMSOL**.
-* Experienced with **Function Generator**, **Oscilloscope**, **Network Analyzer**, and **Spectrum Analyzer** devices. 
-* Adept with multiple Programming languages including **Python**, C, **MATLAB**, JS, PHP, **Solidity**, and Assembly. 
+* Experienced with **Function Generator**, **Oscilloscope**, **Network Analyzer**, and **Spectrum Analyzer** devices.
+* Familiar with **STM32**, **Arduino**, **NRF24L**, and **ESP8266** modules. 
+* Adept with multiple Programming languages including **Python**, C, **MATLAB**, JS, PHP, **Solidity**, and Assembly.
+* Experienced with Quantum Computing concepts and tools such as **Pennylane** and **Qiskit**.
+* Utilized various Numerical Methods and Frameworks to find optimal results consisting of **ML**,**Numerical Integration|Differentiation**, **Root-Finding Methods**, **FDTD**, **Genetic|PSO  Algo.**, and **Convex Optimization**.
 * Experienced with multiple Operating Systems (OS):
   * Windows 7, 8.1, 10
   * Linux Debian like CentOS, Ubuntu, and Kali
   * Linux Arch like Manjaro and Black-Arch
 * Configured & Implemented Virtual Environments like **VMware Workstation** & **Docker**.
-* Configured Web-servers including **NGINX** and **Apache**.
-* Experienced with Network Protocols and devices like **Cisco Routers** and worked with Network troubleshooting softwares like **Tshark**, **Wireshark**, and **CICFlowMeter**.
+* Configured Web-servers including **NGINX** and **Apache** and **MQTT** related Broker (**Mosquitto**) and Client (**Paho-MQTT**).
+* Experienced with Network Protocols and devices like **Cisco Routers/Switches** and worked with Network troubleshooting softwares like **Tshark**, **Wireshark**, and **CICFlowMeter**.
 * Familiar with Symmetric and Asymmetric Encryption based on **RSA** and **ECC**.
 * Certified in Web-application testing using [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/v42/).
 * Fitting well in Teams, Taking responsibility for my work, and Sharing knowledge. 
@@ -53,7 +61,7 @@ Skills
 Language Skills
 ======
 * TOEFL
-  * Overall: **101**                                        Date:     5th August 2023  
+  * Overall: **101**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: &nbsp;&nbsp;&nbsp;&nbsp;    5th August 2023  
 * GRE
   * To be Taken before Deadline
 
