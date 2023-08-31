@@ -143,7 +143,7 @@ Contact Me
       <ul>
         <li><a href="mailto:mohammadreza.arani.bidhendi@gmail.com">Email</a></li>
         <li><a href="tel:+989011690305">Phone</a></li>
-        <li><a href="https://www.linkedin.com/in/mohammadreza-arani-b67122172/">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/mohammadreza-arani-bidhendi/">LinkedIn</a></li>
         <li><a href="https://stackoverflow.com/users/9048111/s-a-m-ir">StackoverFlow</a></li>
         <li><a href="https://www.researchgate.net/profile/Mohammadreza-Arani">ResearchGate</a></li>
       </ul>
