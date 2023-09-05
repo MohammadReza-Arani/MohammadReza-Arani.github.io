@@ -53,7 +53,7 @@ I believe that most problems can be solved if we are willing to look at them fro
 
 Research Interests
 ======
-* Optimization
+* Optimization & Numerical Methods
 * RF Circuits & Systems Design & Implementation
 * Remote Sensing & High-Frequency Imaging
 * Blockchain Development (Decentralized Applications) & Security
