@@ -35,38 +35,43 @@ redirect_from:
 
 <div class="container" style="background-image: url('/images/Back_Ground_Image.jpg');   background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
   <div class="mySlides">
-    <div class="numbertext">1 / 7</div>
+    <div class="numbertext">1 / 8</div>
     <a href="#Traffic_Sensor"><img src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%"></a>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 7</div>
+    <div class="numbertext">2 / 8</div>
     <a href="#SSIW_Antenna"><img src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%"></a>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 7</div>
+    <div class="numbertext">3 / 8</div>
     <a href="#Optimization_GD"><img src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%"></a>
   </div>
     
   <div class="mySlides">
-    <div class="numbertext">4 / 7</div>
+    <div class="numbertext">4 / 8</div>
     <a href="#Machine_LAB"><img src="/images/UI_Visual_Diagram.jpg" style="width:100%"></a>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">5 / 7</div>
+    <div class="numbertext">5 / 8</div>
     <a href="#Classifier_BSS"><img src="/images/Classifier_Model.png" style="width:100%"></a>
   </div>
     
   <div class="mySlides">
-    <div class="numbertext">6 / 7</div>
+    <div class="numbertext">6 / 8</div>
     <a href="#Array_Opt"><img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%"></a>
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">7 / 7</div>
+    <div class="numbertext">7 / 8</div>
     <a href="#FDTD"><img src="/images/FDTD_Image.jpg" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 8</div>
+    <a href="#QML"><img src="/images/Quantum_Circuit_Draw.png" style="width:100%"></a>
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -96,8 +101,11 @@ redirect_from:
       <img class="demo cursor" src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%" onclick="currentSlide(6)" alt="Array Optimization">
     </div>
     <div class="column">
-      <img class="demo cursor" src="/images/FDTD_Image.jpg" style="width:100%" onclick="currentSlide(5)" alt="Finite Difference Time Domain">
-    </div>   
+      <img class="demo cursor" src="/images/FDTD_Image.jpg" style="width:100%" onclick="currentSlide(7)" alt="Finite Difference Time Domain">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/images/Quantum_Circuit_Draw.png" style="width:100%" onclick="currentSlide(8)" alt="QML Optimiztion">
+    </div>
   </div>
 </div>
 
@@ -315,6 +323,63 @@ redirect_from:
   For more details, visit this <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/Numerical_Methods_in_Electrical_Engineering" style=" color: #82d220;">Link</a>.
 </div>  
 
+
+<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
+<div id="QML">
+  <div style="text-align: center;">
+    <strong>Quantum Machine Learning & Optimization </strong>
+  </div>
+   <div align="justify;">
+     <p style="text-align: justify;">
+       In recent years, Quantum Machine Learning methods are implemented inspired by Classical Machine Learning and New Quantum Mechanics view used in 
+       Quantum Computers to solve those problems with quantum nature much faster than classical computers (Sometimes it takes almost forever to solve in classical computers).
+       Even implementation of Classical Neural Networks is possible and common in Quantum Computing nowadays. 
+       The QAOA (Quantum Approximate Optimization Algorithm) is the method used to numerically differentiate Quantum Circuits 
+       to use with classical optimizers (Like Adam) to optimize circuit parameters to get desired output value. 
+       A general view of the quantum computing system can be seen below:
+     </p>
+     <p>
+          <figcaption style="text-align: center;">Quantum Computing</figcaption>
+          <img src="/images/Quantum_Computing.png" alt="Quantum Computing">
+     </p>
+     <p style="text-align: justify;">
+    Hamiltonian minimization is a technique for solving problems by finding the lowest energy state of a system. 
+       In quantum computing, this can be done by initializing a quantum system in a superposition of all possible states, 
+       and then gradually changing the Hamiltonian over time. As the Hamiltonian changes, the system will evolve towards the ground state, 
+       which is the state with the lowest energy.
+
+    AQC (Adiabatic Quantum Computing) is a form of quantum computing that uses Hamiltonian minimization to solve problems. 
+       The adiabatic theorem states that if a quantum system is slowly driven through a change in its Hamiltonian, 
+       then it will remain in its ground state. This means that by slowly changing the Hamiltonian of a quantum system, 
+       we can effectively find the ground state of the system, which can be used to solve problems.
+    For example, we can use AQC to solve the traveling salesman problem. The traveling salesman problem is the problem 
+       of finding the shortest possible route that visits a given set of cities. We can formulate this problem as a Hamiltonian, 
+       and then use AQC to find the ground state of the Hamiltonian. The ground state of the Hamiltonian will correspond to the shortest possible route.
+     </p>
+     <p style="text-align: justify;">
+        Below, we can see a simple Quantum Parameterized Circuit which is optimized to minimize this Cost Function:
+     </p>
+     <p style="text-align: justify;">
+       $  Cost = \| F - 0.4 \|^{2}  $
+     </p>
+     <p style="text-align: justify;">
+       where $F$ is the return value of our circuit and the cost is defined to minimized MSE (Mean Square Error)!
+     </p>
+   </div>
+        <div style="display: flex;">
+        <div style="flex: 45%; padding: 5px">
+          <figcaption style="text-align: center;">QML Circuit</figcaption>
+          <img src="/images/Quantum_Circuit_Draw.png" alt="QML Circuit">
+        </div>
+        <div style="flex: 45%; padding: 5px">
+          <figcaption style="text-align: center;">QML Circuit Optimization Cost VS Iteration</figcaption>
+          <img src="/images/Cost_vs_Iter.png" alt="QML Circuit Optimization Cost VS Iteration">
+        </div>
+      </div>
+  
+  For more details, visit this <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main/Quantum_Machine_Learning" style=" color: #82d220;">Link</a>.
+</div>  
+  
 <hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
 <div id="Array_Opt">
   <div style="text-align: center;">
