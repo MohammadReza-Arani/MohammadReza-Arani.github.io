@@ -209,10 +209,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _teaching #_Projects.html
   - scope:
       path: ""
-      type: teaching
+      type: Projects #teaching
     values:
       layout: single
       author_profile: true
