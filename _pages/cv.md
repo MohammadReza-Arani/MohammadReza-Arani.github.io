@@ -26,7 +26,7 @@ Research & Work experience
 * Summer 2020: Internship
   * University of Tehran
   * Duties included: Simulation of Different Techniques to reduce Noise Level and **Spectrum leakage** in **Spectrum Analyzer** including the application of Signal Windowing for smoother signal to use with limited FFT points in MATLAB and Implementation in Xilinx. 
-  * Supervisor: [Prof. PoorAghdam](https://ece.ut.ac.ir/~kaghdam/network)
+  * Supervisor: [Prof. PoorAghdam]<!-- (https://ece.ut.ac.ir/~kaghdam/network)-->
  
 * Summer 2021: Undergraduate Project
   * University of Tehran
