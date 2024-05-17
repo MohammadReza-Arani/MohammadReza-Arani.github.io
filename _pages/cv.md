@@ -151,7 +151,7 @@ CV File
 <body class="w3-content" style="max-width:1600px">
 
  <div align="center"> 
-<p><a href="https://github.com/MohammadReza-Arani/MohammadReza-Arani.github.io/blob/main/files/Mohammadreza_Arani_Bidhendi_CV.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large w3-text-blue">Download My CV</a> </p>
+<p><a href="https://github.com/MohammadReza-Arani/MohammadReza-Arani.github.io/blob/main/files/Mohammadreza_Arani_Bidhendi_CV_New.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large w3-text-blue">Download My CV</a> </p>
  </div>
   
 </body>  
