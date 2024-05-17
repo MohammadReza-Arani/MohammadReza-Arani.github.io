@@ -30,12 +30,12 @@ Research & Work experience
  
 * Summer 2021: Undergraduate Project
   * University of Tehran
-  * Duties included: Study of different Antenna Designs and simulation of Slotted-Waveguide, Patch, and Slotted SIW Antenna in **77GHz** for **Autonomous vehicles** application. 
+  * Duties included: Study of different RF Sensor Designs and simulation of Slotted-Waveguide, Patch, and Slotted SIW  in **77GHz**. 
   * Supervisor: [Prof. Kamarei](https://ece.ut.ac.ir/~kamarei)
  
 * From Jan 2022-Present: Graduate Project
   * University of Tehran
-  * Duties included: A Novel Framework to **Optimize Antenna Arrays** in 1, 2, and 3 dimension(s) with given physical constraints for both TX and RX. 
+  * Duties included: A Novel Framework to **Optimize Sensor Arrays** in 1, 2, and 3 dimension(s) with given physical constraints for both TX and RX Reaching desired accuracy and satisfying power diversity in 3-D for application in Medical brain stimulation and signal processing.  
   * Supervisor: [Dr. S.Akhavan](https://ece.ut.ac.ir/~s.akhavan)
   
 Skills
@@ -44,17 +44,17 @@ Skills
 * Experienced with **Function Generator**, **Oscilloscope**, **Network Analyzer**, and **Spectrum Analyzer** devices.
 * Familiar with **STM32**, **Arduino**, **NRF24L**, and **ESP8266** modules. 
 * Adept with multiple Programming languages including **Python**, C, **MATLAB**, JS, PHP, **Solidity**, and Assembly.
-* Experienced with Quantum Computing concepts and tools such as **Pennylane** and **Qiskit**.
+<!-- * Experienced with Quantum Computing concepts and tools such as **Pennylane** and **Qiskit**. -->
 * Utilized various Numerical Methods and Frameworks to find optimal results consisting of **ML**,**Numerical Integration/Differentiation**, **Root-Finding Methods**, **FDTD**, **Genetic/PSO  Algo.**, and **Convex Optimization**.
 * Experienced with multiple Operating Systems (OS):
   * Windows 7, 8.1, 10
   * Linux Debian like CentOS, Ubuntu, and Kali
-  * Linux Arch like Manjaro and Black-Arch
+  <!-- * Linux Arch like Manjaro and Black-Arch -->
 * Configured & Implemented Virtual Environments like **VMware Workstation** & **Docker**.
 * Configured Web-servers including **NGINX** and **Apache** and **MQTT** related Broker (**Mosquitto**) and Client (**Paho-MQTT**).
 * Experienced with Network Protocols and devices like **Cisco Routers/Switches** and worked with Network troubleshooting softwares like **Tshark**, **Wireshark**, and **CICFlowMeter**.
 * Familiar with Symmetric and Asymmetric Encryption based on **RSA** and **ECC**.
-* Certified in Web-application testing using [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/v42/).
+<!--* Certified in Web-application testing using [WSTG v4.2](https://owasp.org/www-project-web-security-testing-guide/v42/). -->
 * Fitting well in Teams, Taking responsibility for my work, and Sharing knowledge. 
 
 
@@ -76,7 +76,7 @@ Notable Courses
 ------
 * Convex Optimization   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  Numerical Methods in Electromagnetics  |
 * Microwave-1   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  Advanced Electromagnetics              |
-* Antenna-2                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               |  Array Processing                       |
+<!--* Antenna-2                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               |  Array Processing                       |-->
 * Engineering Mathematics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|  Advanced Engineering Mathematics       |
 * Math-1     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  Linear Algebra                         |
 * Machine Learning                     |  Neural Networks                        |
