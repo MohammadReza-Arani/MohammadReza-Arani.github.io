@@ -124,39 +124,9 @@ IEEE Membership
 
 CV File
 =====
-  
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>CV | Mohammadreza Arani Bidhendi</title>
-<meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="ABOUT" />
-<meta name="author" content="MohammadReza Arani" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content=" Personal website of Mohammadreza ARani" />
-<meta property="og:description" content="Personal website of MohammadReza Arani" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="MohammadReza ARani" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ABOUT" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"MohammadReza Arani"},"description":"Personal website of MohammadReza Arani","headline":"ABOUT","name":"MohammadReza Arani","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
-<!--<link rel="stylesheet" href="/assets/css/style.css">-->
-  <link rel="stylesheet" href="/assets/css/github-markdown.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">	
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="MohammadReza Arani" />
-</head>
-<body class="w3-content" style="max-width:1600px">
 
- <div align="center"> 
-<p><a href="https://raw.githubusercontent.com/MohammadReza-Arani/MohammadReza-Arani.github.io/ec5249975d8ed187f126169af04b6c343425f9cd/files/Mohammadreza_Arani_Bidhendi_CV_New_2.pdf" class="w3-button w3-white w3-border w3-border-indigo w3-round-large w3-text-blue">Download My CV</a> </p>
- </div>
-  
-</body>  
-</html>
-
+<div style="text-align: center; margin: 2rem 0 3rem 0;">
+  <a href="https://raw.githubusercontent.com/MohammadReza-Arani/MohammadReza-Arani.github.io/ec5249975d8ed187f126169af04b6c343425f9cd/files/Mohammadreza_Arani_Bidhendi_CV_New_2.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none !important; padding: 0.75rem 1.6rem; border-radius: 8px; font-weight: 600; font-size: 1rem; background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff !important; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3); transition: all 0.2s ease;">
+    <i class="fa fa-file-pdf"></i> Download Official CV (PDF)
+  </a>
+</div>

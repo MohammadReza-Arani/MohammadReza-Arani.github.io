@@ -6,11 +6,11 @@ main:
 
   - title: "Projects"
     url: /Projects/
-    icon: "fa-code-fork"
+    icon: "fa-project-diagram"
 
   - title: "CV"
     url: /cv/
-    icon: "fa-file-text-o"
+    icon: "fa-file-alt"
 
   - title: "Certificates"
     url: /certificates/

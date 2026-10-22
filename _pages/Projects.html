@@ -8,21 +8,7 @@ redirect_from:
 ---
 {% include base_path %}
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="github.io">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="Projects Description-Mohammadreza Arani Bidhendi">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My-Projects</title>
-</head>
-
-
-
-<body>
+<div class="projects-content-scope">
   
 <div class="sidenav"  style="background-image: url('/images/Back_Ground_Image.jpg');   background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
   <a href="https://mohammadreza-arani.github.io/">Home</a>
@@ -446,40 +432,39 @@ function showSlides(n) {
 }
 </script>
     
-</body>
+</div>
 
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
+.projects-content-scope {
+  font-family: inherit;
 }
 
-* {
+.projects-content-scope * {
   box-sizing: border-box;
 }
 
-img {
+.projects-content-scope img {
   vertical-align: middle;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.projects-content-scope .container {
   position: relative;
 }
 
 /* Hide the images by default */
-.mySlides {
+.projects-content-scope .mySlides {
   display: none;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
+.projects-content-scope .cursor {
   cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.projects-content-scope .prev,
+.projects-content-scope .next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -495,19 +480,19 @@ img {
 }
 
 /* Position the "next button" to the right */
-.next {
+.projects-content-scope .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.projects-content-scope .prev:hover,
+.projects-content-scope .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.projects-content-scope .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -516,37 +501,37 @@ img {
 }
 
 /* Container for image text */
-.caption-container {
+.projects-content-scope .caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
-.row:after {
+.projects-content-scope .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Six columns side by side */
-.column {
+.projects-content-scope .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
+/* Add a transparency effect for thumbnail images */
+.projects-content-scope .demo {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.projects-content-scope .demo.active,
+.projects-content-scope .demo:hover {
   opacity: 1;
 }
   
-                                                                                      /* SideBar Config: */
-  .sidenav {
+/* SideBar Config: */
+.projects-content-scope .sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
@@ -558,7 +543,7 @@ img {
   padding-top: 20px;
 }
 
-.sidenav a {
+.projects-content-scope .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -566,25 +551,25 @@ img {
   display: block;
 }
 
-.sidenav a:hover {
+.projects-content-scope .sidenav a:hover {
   color: #f1f1f1;
 }
 
-.main {
+.projects-content-scope .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .projects-content-scope .sidenav {padding-top: 15px;}
+  .projects-content-scope .sidenav a {font-size: 18px;}
 }
   
 </style>
 
   
-</html>
+
 
 
   
