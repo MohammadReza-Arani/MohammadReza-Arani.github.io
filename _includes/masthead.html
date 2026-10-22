@@ -1,23 +1,52 @@
 {% include base_path %}
 
-<div class="masthead">
+<header class="masthead" role="banner">
+  <div class="masthead__accent-bar"></div>
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+    <div class="masthead__content">
+      <!-- Author Brand & Last Updated Badge -->
+      <div class="masthead__brand-container">
+        <a class="masthead__site-title" href="{{ base_path }}/" title="Home - MohammadReza Arani Bidhendi">
+          <span class="brand-icon"><i class="fa fa-graduation-cap"></i></span>
+          <span class="brand-text">
+            <strong class="brand-name">MohammadReza Arani Bidhendi</strong>
+            <span class="brand-divider">/</span>
+            <span class="brand-sub">Academic Profile</span>
+          </span>
+        </a>
+        <div class="masthead__updated-pill" title="Site content last updated date">
+          <span class="updated-dot"></span>
+          <i class="fa fa-clock-o"></i>
+          <span>Last updated: {{ site.time | date: "%B %Y" }}</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav id="site-nav" class="greedy-nav" aria-label="Main Navigation">
+        <button type="button" aria-label="Toggle navigation"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign full_url = domain | append: link.url %}
+            {% if page.url == link.url or page.url contains link.url and link.url != '/' %}
+              {% assign is_active = "active" %}
+            {% else %}
+              {% assign is_active = "" %}
+            {% endif %}
+            <li class="masthead__menu-item {{ is_active }}">
+              <a href="{{ full_url }}" class="{{ is_active }}">
+                {% if link.icon %}<i class="fa {{ link.icon }} nav-icon"></i>{% endif %}
+                <span>{{ link.title }}</span>
+              </a>
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
-</div>
+</header>

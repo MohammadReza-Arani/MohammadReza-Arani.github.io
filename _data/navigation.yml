@@ -1,27 +1,17 @@
-# main links links
+# main links
 main:
   - title: "Publications"
     url: /publications/
+    icon: "fa-book"
 
-#  - title: "Talks"
- #   url: /talks/    
-
- # - title: "Teaching"
- #   url: /teaching/    
-    
- # - title: "Portfolio"
- #   url: /portfolio/
-        
-  #- title: "Blog Posts"
-  #  url: /year-archive/
   - title: "Projects"
     url: /Projects/
-    
+    icon: "fa-code-fork"
+
   - title: "CV"
     url: /cv/
-    
+    icon: "fa-file-text-o"
+
   - title: "Certificates"
     url: /certificates/
-    
- # - title: "Guide"
- #   url: /markdown/
+    icon: "fa-certificate"

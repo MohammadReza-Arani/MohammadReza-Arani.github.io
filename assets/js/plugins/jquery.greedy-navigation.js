@@ -13,6 +13,16 @@ var $hlinks = $('#site-nav .hidden-links');
 var breaks = [];
 
 function updateNav() {
+  // On desktop / tablet (>= 768px), always keep all tabs visible inline!
+  if ($(window).width() >= 768) {
+    while ($hlinks.children().length > 0) {
+      $hlinks.children().first().appendTo($vlinks);
+    }
+    breaks = [];
+    $btn.addClass('hidden');
+    $hlinks.addClass('hidden');
+    return;
+  }
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
