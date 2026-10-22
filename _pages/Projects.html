@@ -8,568 +8,1669 @@ redirect_from:
 ---
 {% include base_path %}
 
+<script src="{{ base_path }}/assets/js/projects.js"></script>
+
 <div class="projects-content-scope">
-  
-<div class="sidenav"  style="background-image: url('/images/Back_Ground_Image.jpg');   background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-  <a href="https://mohammadreza-arani.github.io/">Home</a>
-  <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects">MATLAB Repo.</a>
-  <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main">Python Repo.</a>
-  <a href="#SSIW_Sensor">Undergrad. Project</a>
-</div>
-  
-<h2 style="text-align:center">Projects at a Glance</h2>
-
-<div class="container" style="background-image: url('/images/Back_Ground_Image.jpg');   background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-  <div class="mySlides">
-    <div class="numbertext">1 / 8</div>
-    <a href="#Traffic_Sensor"><img src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 8</div>
-    <a href="#SSIW_Sensor"><img src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 8</div>
-    <a href="#Optimization_GD"><img src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%"></a>
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 8</div>
-    <a href="#Machine_LAB"><img src="/images/UI_Visual_Diagram.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 8</div>
-    <a href="#Classifier_BSS"><img src="/images/Classifier_Model.png" style="width:100%"></a>
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 8</div>
-    <a href="#Array_Opt"><img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%"></a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">7 / 8</div>
-    <a href="#FDTD"><img src="/images/FDTD_Image.jpg" style="width:100%"></a>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">8 / 8</div>
-    <a href="#QML"><img src="/images/Quantum_Circuit_Draw.png" style="width:100%"></a>
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="/images/Traffic_Map_Sensor_Movement.jpg" style="width:100%" onclick="currentSlide(1)" alt="Traffic Map and Violation Detection Sensor">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Slotted_SIW_Leakage_Waves_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Slotted SIW Sensor">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Optimization_Curvature_GD_BSS.png" style="width:100%" onclick="currentSlide(3)" alt="Optimization with GD">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/UI_Visual_Diagram.jpg" style="width:100%" onclick="currentSlide(4)" alt="Machine Laboratory">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Classifier_Model.png" style="width:100%" onclick="currentSlide(5)" alt="Brain Interface Action Classifier">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" style="width:100%" onclick="currentSlide(6)" alt="Array Optimization">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/FDTD_Image.jpg" style="width:100%" onclick="currentSlide(7)" alt="Finite Difference Time Domain">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="/images/Quantum_Circuit_Draw.png" style="width:100%" onclick="currentSlide(8)" alt="QML Optimiztion">
-    </div>
-  </div>
-</div>
-
-                                                                                <!-- End of Gallery Section  --> 
-                                                                              <!-- Begining of Toggle Section  --> 
- 
-                                                                                         <!-- End of Toggle Section  -->
-                                                                                       <!-- Begining of Projects Section  -->  
-<hr class="dotted" style="color: #82d220; height: 10px; background-color: #82d220; ">
-  <div id="Traffic_Sensor">
-  <div style="text-align: center;">
-    <strong> Traffic Movement RF Sensor for Violation Detection </strong>
-  </div>
-  <div align="justify;">
-    <p style="text-align: justify;"> 
-    <em>Have you ever considered any other option for tracking, managing, and controlling roads and streets rather than widely used Traffic Cameras?</em>
-    </p>
-    <p style="text-align: justify;">
-    In Today's world with ever-increasing life speed and demanding life going on, we need to manage the high volume of traffic in the streets smoothly and swiftly. 
-    While considering the data associated with cameras and the processing time of such systems, it is unlikely to be able to handle real-time traffic data and provide a traffic map as a data feed for routing applications available worldwide utilizing their users' traffic data to illustrate traffic volume and suggest optimal routes.
-    If it was 10 years ago we would be happy if we could extract some simple data from Traffic Cameras even after a long period of breathtaking data processing, but by obtaining new options available right now, it is wise to prepare additional methods and devices to address issues around this problem. 
-    </p>
-    <p style="text-align: justify;">
-    With new Chips handling data at such a high rate, we can even obtain data from an RF sensor working at <strong>77GHz</strong> with low costs as a result of commercialized chipsets' technology and mass production.
-    We have this rule of thumb that any system's price rises rapidly as the frequency goes higher and equipment gets more expensive while there are some specific frequencies available that make our high-frequency system affordable and cost reasonably.
-    To obtain enough information from a moving vehicle, we need specific bandwidth and fairly good resolution both in Range and Frequency so that we can estimate the position and velocity of the vehicle accurately. 
-    </p>
-    <p style="text-align: justify;">
-    Adding up all these facts, we can consider RF sensors as the priority to use!
-    At the University of Tehran, we designed and simulated Traffic volume and obtained information from vehicles in MATLAB to implement it in real-world scenarios later. This requires putting the required algorithms available in Machine Learning, Neural Networks, available analytical solutions, and other numerical optimizations together to make this system work properly!
-    Below, there is a <strong>5GHz</strong> R-D Map and its corresponding XY plane available as the result of such simulations:
+  <!-- Hero Banner Card with Generated Engineering Banner -->
+  <div class="projects-hero-banner" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.72) 100%), url('{{ base_path }}/images/projects_hero_bg.jpg');">
+    <div class="projects-hero-content">
+      <div class="projects-hero-badge">
+        <i class="fa fa-microchip"></i>
+        <span>University of Tehran &bull; Electrical & Computer Engineering</span>
+      </div>
+      <h1 class="projects-hero-title">
+        <i class="fa fa-project-diagram"></i> Engineering & Applied Research Projects
+      </h1>
+      <p class="projects-hero-desc">
+        A portfolio of academic research spanning 77 GHz microwave radar sensors, conformal slotted waveguide antennas, convex optimization, brain-computer interfaces, computational electrodynamics, and quantum machine learning.
       </p>
+      <div class="projects-hero-stats">
+        <div class="projects-hero-stat-pill">
+          <span class="hero-stat-num">8</span>
+          <span class="hero-stat-label">Research Projects</span>
+        </div>
+        <div class="projects-hero-stat-pill">
+          <span class="hero-stat-num">77 GHz</span>
+          <span class="hero-stat-label">RF Radar & Sensors</span>
+        </div>
+        <div class="projects-hero-stat-pill">
+          <span class="hero-stat-num">2</span>
+          <span class="hero-stat-label">Code Repositories</span>
+        </div>
+      </div>
     </div>
-                                                                                <!-- Begining of Gifs  --> 
-      <div style="display: flex;">
-        <div style="flex: 45%; padding: 5px">
-          <img src="/images/Detection_RD_MAP_5GHz.gif" alt="R-D Map in 5GHz">
-        </div>
-        <div style="flex: 45%; padding: 5px">
-          <img src="/images/Detection_XY_MAP_5GHz.gif" alt="XY Map in 5GHz">
-        </div>
-      </div>
-</div>  
-
-
-
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="SSIW_Sensor">
-  <div style="text-align: center;">
-    <strong> Slotted Substrate Integrated Waveguide Sensor </strong>
   </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-     The very edge of distant Communication in any system at any location is the System's Sensor providing Telecommunication thanks to Hertz's and Marconi's first Sensors!
-     
-     <em>But why do we have so many different types of Sensors in different shapes and technology in the market?</em> 
-     
-     <em> What is the incentive to provide such a variety of Sensors in the market?</em>
-     </p>
-     <p style="text-align: justify;">
-     It is the very physical constraints and expense that bring us to design and implement different Sensors for different applications. Sensors are specified mostly by some of the limited parameters yet, their materials, technology, and physical state may differ even with equal values in those parameters!
 
-     Consider dipole, Yagi-Uda, Patch Sensor, Reflective Sensor, Horn Sensor, and other widely used types of Sensor. When starting this project, we were faced with different options to use for autonomous vehicles' RF sensors, and I decided to choose reasonable ones and compare those simulated to find the best!
-
-     One of the options was to start from a Waveguide, put a slot on it, and design a leaky-wave Sensor. 
-     </p>
-     <p style="text-align: justify;">
-     However, with limited space and available area for the Sensor, I decided to continue the project by designing a conformal annular slotted waveguide Sensor. 
-     Following design rules and simulation, the result was satisfying and took us to the next level which was to turn this bulky expensive design into a low profile cheap but still useful Sensor. 
-     This is where I designed and Slotted substrate-integrated Annular Sensor at <strong>77GHz</strong> and simulated this unit in <strong>HFSS</strong>.
-     Below we can see some design steps and output patterns of such a Sensor. 
-     You can also see the presentation of my undergraduate project in this <a href="https://www.aparat.com/v/mVNgA" style=" color: #82d220;">Link</a>.
-       </p>
-   </div>  
-
-                                                                                <!-- Begining of Gifs  --> 
-      <div style="display: flex;">
-        <div style="flex: 45%; padding: 5px">
-          <img src="/images/Annular_SIW_Sensor_Design_HFSS.png" alt="77GHz Annular Slotted SIW Sensor Design">
+  <!-- Main Three-Column Layout: Left Sidebar + Center Content + Right Floating TOC -->
+  <div class="projects-page-layout">
+    
+    <!-- LEFT SIDEBAR: Project Hub & Code Repositories -->
+    <aside class="projects-left-sidebar" aria-label="Project Quick Hub">
+      <div class="projects-sticky-sidebox">
+        <!-- Sidebar Header with Generated Vertical Tech Wallpaper -->
+        <div class="proj-side-banner" style="background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.95) 100%), url('{{ base_path }}/images/projects_sidebar_bg.jpg');">
+          <div class="proj-side-banner-content">
+            <span class="proj-side-insignia"><i class="fa fa-code-branch"></i></span>
+            <h3 class="proj-side-title">Project Hub</h3>
+            <span class="proj-side-sub">Repositories & Resources</span>
+          </div>
         </div>
-        <div style="flex: 45%; padding: 5px">
-          <img src="/images/Annular_SIW_Sensor_S11_HFSS.png" alt="S11 Parameter of ASSIW Sensor">
+
+        <!-- Quick Links Menu -->
+        <nav class="proj-side-nav">
+          <ul class="proj-side-menu">
+            <li class="proj-side-item">
+              <a href="{{ base_path }}/" class="proj-side-link">
+                <span class="proj-side-icon"><i class="fa fa-home"></i></span>
+                <span class="proj-side-text">Portfolio Home</span>
+              </a>
+            </li>
+            <li class="proj-side-item">
+              <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects" target="_blank" rel="noopener noreferrer" class="proj-side-link">
+                <span class="proj-side-icon"><i class="fa fa-code"></i></span>
+                <span class="proj-side-text">MATLAB Projects</span>
+                <span class="proj-side-badge">Repo</span>
+              </a>
+            </li>
+            <li class="proj-side-item">
+              <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main" target="_blank" rel="noopener noreferrer" class="proj-side-link">
+                <span class="proj-side-icon"><i class="fa fa-terminal"></i></span>
+                <span class="proj-side-text">Python Projects</span>
+                <span class="proj-side-badge">Repo</span>
+              </a>
+            </li>
+            <li class="proj-side-item">
+              <a href="#SSIW_Sensor" class="proj-side-link proj-side-highlight" onclick="scrollToProject('SSIW_Sensor'); return false;">
+                <span class="proj-side-icon"><i class="fa fa-satellite-dish"></i></span>
+                <span class="proj-side-text">Undergrad. Project</span>
+                <span class="proj-side-badge proj-badge-accent">77 GHz</span>
+              </a>
+            </li>
+            <li class="proj-side-item">
+              <a href="https://github.com/MohammadReza-Arani" target="_blank" rel="noopener noreferrer" class="proj-side-link">
+                <span class="proj-side-icon"><i class="fa fa-user"></i></span>
+                <span class="proj-side-text">GitHub Profile</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Technical Skill & Domain Tags -->
+        <div class="proj-side-tags-box">
+          <h4 class="proj-side-tags-heading"><i class="fa fa-tags"></i> Core Domains</h4>
+          <div class="proj-side-tags-wrap">
+            <span class="proj-tech-pill">77 GHz Radar</span>
+            <span class="proj-tech-pill">HFSS & CST</span>
+            <span class="proj-tech-pill">SIW Antennas</span>
+            <span class="proj-tech-pill">Convex Opt.</span>
+            <span class="proj-tech-pill">EEG / BCI</span>
+            <span class="proj-tech-pill">FDTD Method</span>
+            <span class="proj-tech-pill">Quantum ML</span>
+            <span class="proj-tech-pill">Array Pattern</span>
+          </div>
         </div>
       </div>
+    </aside>
+
+    <!-- CENTER COLUMN: Gallery + 8 Detailed Projects -->
+    <main class="projects-main-content">
+
+      <!-- Gallery Showcase -->
+      <section class="projects-gallery-section" aria-label="Projects at a Glance">
+        <div class="projects-section-header">
+          <h2 class="projects-section-title"><i class="fa fa-images"></i> Projects at a Glance</h2>
+          <span class="projects-section-sub">Interactive visual overview across all 8 research topics</span>
+        </div>
+
+        <div class="gallery-container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <a href="#Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); return false;"><img src="{{ base_path }}/images/Traffic_Map_Sensor_Movement.jpg" alt="Traffic Map and Violation Detection Sensor"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <a href="#SSIW_Sensor" onclick="scrollToProject('SSIW_Sensor'); return false;"><img src="{{ base_path }}/images/Slotted_SIW_Leakage_Waves_2.jpg" alt="Slotted SIW Sensor"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <a href="#Optimization_GD" onclick="scrollToProject('Optimization_GD'); return false;"><img src="{{ base_path }}/images/Optimization_Curvature_GD_BSS.png" alt="Optimization with GD"></a>
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <a href="#Machine_LAB" onclick="scrollToProject('Machine_LAB'); return false;"><img src="{{ base_path }}/images/UI_Visual_Diagram.jpg" alt="Machine Laboratory"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <a href="#Classifier_BSS" onclick="scrollToProject('Classifier_BSS'); return false;"><img src="{{ base_path }}/images/Classifier_Model.png" alt="Brain Interface Action Classifier"></a>
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <a href="#FDTD" onclick="scrollToProject('FDTD'); return false;"><img src="{{ base_path }}/images/FDTD_Image.jpg" alt="Finite Difference Time Domain"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <a href="#QML" onclick="scrollToProject('QML'); return false;"><img src="{{ base_path }}/images/Quantum_Circuit_Draw.png" alt="Quantum Machine Learning"></a>
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <a href="#Array_Opt" onclick="scrollToProject('Array_Opt'); return false;"><img src="{{ base_path }}/images/Optimized_Array_VS_Uniform_XZ_Plane.png" alt="Array Optimization"></a>
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)" aria-label="Previous Slide">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)" aria-label="Next Slide">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="gallery-thumbnails-row">
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Traffic_Map_Sensor_Movement.jpg" onclick="currentSlide(1)" alt="Traffic Map and Violation Detection Sensor"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Slotted_SIW_Leakage_Waves_2.jpg" onclick="currentSlide(2)" alt="Slotted SIW Sensor (77 GHz)"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Optimization_Curvature_GD_BSS.png" onclick="currentSlide(3)" alt="Optimization with GD & Newton"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/UI_Visual_Diagram.jpg" onclick="currentSlide(4)" alt="IoT Machine Laboratory"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Classifier_Model.png" onclick="currentSlide(5)" alt="Brain Interface EEG Classifier"></div>    
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/FDTD_Image.jpg" onclick="currentSlide(6)" alt="Finite Difference Time Domain"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Quantum_Circuit_Draw.png" onclick="currentSlide(7)" alt="Quantum Machine Learning"></div>
+            <div class="gallery-col"><img class="demo cursor" src="{{ base_path }}/images/Optimized_Array_VS_Uniform_XZ_Plane.png" onclick="currentSlide(8)" alt="Array Optimization & SLL"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project 1: Traffic Sensor -->
+      <article class="proj-detail-card" id="Traffic_Sensor">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-crosshairs"></i> Radar & RF Systems</span>
+            <span class="proj-tech-meta">5 GHz &bull; Range-Doppler Map &bull; MATLAB</span>
+          </div>
+          <h3 class="proj-detail-title">Traffic Movement RF Sensor for Violation Detection</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p class="proj-quote"><em>Have you ever considered any other option for tracking, managing, and controlling roads and streets rather than widely used Traffic Cameras?</em></p>
+          <p>
+            In today's world with ever-increasing life speed and demanding transportation needs, managing the high volume of traffic in the streets smoothly and swiftly is vital. While considering the high data volume associated with cameras and the intensive processing time of such computer vision systems, it is difficult to handle real-time traffic data at low latency.
+          </p>
+          <p>
+            With modern chipsets handling high sampling rates, we can obtain precise data from an RF sensor working at <strong>77 GHz</strong> and <strong>5 GHz</strong> with commercial affordability. To obtain sufficient kinematic information from a moving vehicle, specific bandwidth and high resolution in both Range and Doppler frequency are necessary to estimate velocity and position accurately.
+          </p>
+          <p>
+            At the University of Tehran, we designed and simulated traffic volume estimation and kinematic extraction from vehicles in MATLAB. Below, the <strong>5 GHz</strong> Range-Doppler (R-D) Map and corresponding XY plane localization are demonstrated:
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-chart-area"></i> R-D Map in 5 GHz</span>
+              <img src="{{ base_path }}/images/Detection_RD_MAP_5GHz.gif" alt="R-D Map in 5GHz">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-map-marker-alt"></i> XY Plane Vehicle Tracking</span>
+              <img src="{{ base_path }}/images/Detection_XY_MAP_5GHz.gif" alt="XY Map in 5GHz">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Slotted SIW Sensor (Undergrad Project) -->
+      <article class="proj-detail-card proj-card-featured" id="SSIW_Sensor">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-satellite-dish"></i> Microwave Antennas & Waveguides</span>
+            <span class="proj-featured-tag"><i class="fa fa-award"></i> Undergraduate Thesis</span>
+          </div>
+          <h3 class="proj-detail-title">Slotted Substrate Integrated Waveguide Sensor (77 GHz)</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p class="proj-quote"><em>What is the incentive to engineer such a variety of Sensors in the market?</em></p>
+          <p>
+            Physical constraints, volume limitations, and manufacturing expense guide sensor design. For autonomous vehicles' RF sensors, conventional waveguides are bulky and costly. Starting from leaky-wave principles, I designed a conformal annular slotted waveguide sensor.
+          </p>
+          <p>
+            To transform this bulky design into a low-profile, highly integrated, and cost-effective unit, I designed a <strong>Slotted Substrate Integrated Waveguide (SSIW) Annular Sensor at 77 GHz</strong> and simulated this unit in <strong>Ansys HFSS</strong>.
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-microchip"></i> 77 GHz Annular Slotted SIW Sensor Design</span>
+              <img src="{{ base_path }}/images/Annular_SIW_Sensor_Design_HFSS.png" alt="77GHz Annular Slotted SIW Sensor Design">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-chart-line"></i> S11 Return Loss Parameter</span>
+              <img src="{{ base_path }}/images/Annular_SIW_Sensor_S11_HFSS.png" alt="S11 Parameter of ASSIW Sensor">
+            </div>
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://www.aparat.com/v/mVNgA" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-play-circle"></i> Watch Undergrad Thesis Presentation
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 3: Quadratic Cost Optimization -->
+      <article class="proj-detail-card" id="Optimization_GD">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-chart-line"></i> Convex Optimization</span>
+            <span class="proj-tech-meta">Gradient Descent &bull; Newton Method &bull; MATLAB</span>
+          </div>
+          <h3 class="proj-detail-title">Optimization: Quadratic Cost-Function</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            One of the most powerful optimization methods when dealing with convex and non-convex problems is the Gradient Descent method family. Here, both Steepest Descent and Newton's Method are investigated for minimizing the quadratic cost function:
+          </p>
+          <div class="proj-math-box">
+            $$ f(x) = x_{1}^{2} + x_{2}^{2} - 4x_{1} - 6x_{2} + 13 + x_{1}x_{2} $$
+          </div>
+          <p>
+            Analytical differentiation verifies the global minimum since the objective is strictly convex. We then apply Gradient Descent and Newton's method to numerically trace the convergence trajectory across the curvature contours:
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-compass"></i> Newton Method Trajectory</span>
+              <img src="{{ base_path }}/images/Newton_GD_Contours.png" alt="Newton Method">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-route"></i> Steepest Descent Contours</span>
+              <img src="{{ base_path }}/images/Steepest_Descent_Contours.png" alt="Steepest Descent Method">
+            </div>
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/BSS/Hw1_Sparse_Dictionary_Learning_%26_Optimization" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-code"></i> View Optimization Code on GitHub
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 4: Machine Lab IoT Monitoring -->
+      <article class="proj-detail-card" id="Machine_LAB">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-microchip"></i> IoT & Industrial Systems</span>
+            <span class="proj-tech-meta">Raspberry Pi &bull; STM32 &bull; PyQt5 &bull; Python</span>
+          </div>
+          <h3 class="proj-detail-title">Implementation of IoT-based Monitoring System in a Machine Lab</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            During the 4th semester at the University of Tehran, our team designed and deployed an end-to-end industrial IoT monitoring system for the Electrical Machines Laboratory. 
+          </p>
+          <p>
+            The project encompassed real-time networking protocols, embedded telemetry with <strong>STM32 and Raspberry Pi</strong>, back-end communication in Python, and an interactive instrumentation GUI built with <strong>PyQt5</strong>.
+          </p>
+          <div class="proj-media-single">
+            <span class="proj-media-caption"><i class="fa fa-desktop"></i> Laboratory UI & Monitoring Dashboard Architecture</span>
+            <img src="{{ base_path }}/images/UI_Visual_Diagram.jpg" alt="Machine Laboratory UI">
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://mohammadreza-arani.github.io/publication/2010-10-01-paper-title-number-2" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-external-link-alt"></i> Related Publication & Report
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 5: BCI Action Classifier -->
+      <article class="proj-detail-card" id="Classifier_BSS">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-brain"></i> Neurotechnology & ML</span>
+            <span class="proj-tech-meta">EEG Signals &bull; CSP Filter &bull; LDA Classifier &bull; 90% Accuracy</span>
+          </div>
+          <h3 class="proj-detail-title">Brain-Computer Interface: EEG Action Classification via ML</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            In this project, we tackled motor-imagery electroencephalography (EEG) signal decoding to classify 4 distinct motor intentions:
+          </p>
+          <ul class="proj-styled-list">
+            <li><strong>Class 1:</strong> Movement of Right Finger</li>
+            <li><strong>Class 2:</strong> Movement of Right Arm</li>
+            <li><strong>Class 3:</strong> Movement of Right Leg</li>
+            <li><strong>Class 4:</strong> Rest / No Action</li>
+          </ul>
+          <p>
+            We engineered a processing pipeline utilizing <strong>Common Spatial Pattern (CSP)</strong> spatial filters followed by a <strong>Linear Discriminant Analysis (LDA)</strong> classifier in the mapped spatial domain. Pre-whitened signal matrices allowed the classifier to achieve approximately <strong>90% classification accuracy</strong>.
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-network-wired"></i> EEG Optimal Classifier Architecture</span>
+              <img src="{{ base_path }}/images/Classifier_Model.png" alt="EEG Classifier">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-th"></i> Confusion Matrix (90% Accuracy)</span>
+              <img src="{{ base_path }}/images/BSS_Conf_Classifier.png" alt="EEG Confusion Matrix">
+            </div>
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/BSS/BSS_Project_Human_Brain_Interface_ECG_Classification" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-code"></i> View BCI Classifier on GitHub
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 6: FDTD Wave Propagation -->
+      <article class="proj-detail-card" id="FDTD">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-water"></i> Computational Electromagnetics</span>
+            <span class="proj-tech-meta">FDTD &bull; Yee Grid &bull; Boundary Conditions &bull; MATLAB</span>
+          </div>
+          <h3 class="proj-detail-title">Finite Difference Time Domain: Wave Propagation</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            Numerical methods in electromagnetics form the core engine of industrial simulation suites such as <strong>Ansys HFSS, CST Studio, and COMSOL</strong>. Here, the Finite Difference Time Domain (FDTD) technique is employed to solve Maxwell's curl equations numerically on a discretized spatial-temporal grid.
+          </p>
+          <p>
+            Wave propagation was modeled in a closed conducting cavity containing a radiation excitation source, both with and without an obstacle in the wave path, utilizing Perfect Electric Conductor (PEC) hard-boundary conditions:
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-square"></i> FDTD with Interior Obstacle</span>
+              <img src="{{ base_path }}/images/Q3_30_Sadiku_4th_ed_Obstacle.gif" alt="FDTD with Obstacle">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-circle"></i> FDTD Cavity Propagation (Free)</span>
+              <img src="{{ base_path }}/images/Q3_30_Sadiku_4th_ed.gif" alt="FDTD without Obstacle">
+            </div>
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/Numerical_Methods_in_Electrical_Engineering" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-code"></i> View FDTD Simulation on GitHub
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 7: Quantum Machine Learning -->
+      <article class="proj-detail-card" id="QML">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-atom"></i> Quantum Computing & AI</span>
+            <span class="proj-tech-meta">QAOA &bull; Adiabatic Quantum Computing &bull; Hamiltonian &bull; Python</span>
+          </div>
+          <h3 class="proj-detail-title">Quantum Machine Learning & Parameterized Circuit Optimization</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            Quantum Machine Learning merges quantum mechanical principles with classical optimization paradigms to solve high-dimensional combinatorial and physics-based problems intractable for classical architectures.
+          </p>
+          <p>
+            The <strong>Quantum Approximate Optimization Algorithm (QAOA)</strong> numerically differentiates parameterized quantum circuits to interface with classical optimizers (e.g. Adam) to tune gate angles. Under <strong>Adiabatic Quantum Computing (AQC)</strong>, Hamiltonian minimization evolves the system ground state toward the optimal problem solution:
+          </p>
+          <div class="proj-math-box">
+            $$ Cost = \| F(ec{	heta}) - 0.4 \|^{2} $$
+          </div>
+          <p>
+            where $F(ec{	heta})$ denotes the expectation value of the quantum circuit and the objective is framed to minimize Mean Square Error (MSE):
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-project-diagram"></i> Parameterized QML Circuit Architecture</span>
+              <img src="{{ base_path }}/images/Quantum_Circuit_Draw.png" alt="QML Circuit">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-chart-line"></i> Optimization Cost vs. Iteration</span>
+              <img src="{{ base_path }}/images/Cost_vs_Iter.png" alt="QML Optimization Cost">
+            </div>
+          </div>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main/Quantum_Machine_Learning" target="_blank" rel="noopener noreferrer" class="proj-action-btn">
+            <i class="fa fa-code"></i> View Quantum ML Code on GitHub
+          </a>
+        </footer>
+      </article>
+
+      <!-- Project 8: Array Optimization -->
+      <article class="proj-detail-card" id="Array_Opt">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-broadcast-tower"></i> Antenna Arrays & Beamforming</span>
+            <span class="proj-tech-meta">Array Factor &bull; Convex Sparsity &bull; Side Lobe Level (SLL)</span>
+          </div>
+          <h3 class="proj-detail-title">Optimization of 1-D Array to Reach Desired Pattern</h3>
+        </header>
+        <div class="proj-detail-body">
+          <p>
+            Antenna array optimization synthesizes radiation patterns satisfying rigorous physical constraints and minimal element counts. We formulate 1-D array synthesis by minimizing the MSE cost function between the synthesized array factor $AF(	heta)$ and a target envelope $g(	heta)$:
+          </p>
+          <div class="proj-math-box">
+            $$ J = \| AF(	heta) - g(	heta) \|^{2} $$
+          </div>
+          <p>
+            By coupling convex optimization with $\ell_1$-norm regularization, we achieve a sparse antenna arrangement with minimized elements while maintaining the desired Side Lobe Level (SLL). Below is the comparison between uniform and optimized array configurations:
+          </p>
+          <div class="proj-media-row">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-chart-pie"></i> Array Configuration Comparison (XZ Plane)</span>
+              <img src="{{ base_path }}/images/Optimized_Array_VS_Uniform_XZ_Plane.png" alt="Comparison of Array Configs">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-wave-square"></i> Optimized vs. Desired Radiation Pattern</span>
+              <img src="{{ base_path }}/images/Optimized_vs_Desired_Array_Pattern.jpg" alt="Radiation Pattern Synthesis">
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- RIGHT FLOATING TABLE OF CONTENTS -->
+    <aside class="projects-toc-sidebar" id="projects-toc-sidebar" aria-label="Projects Table of Contents">
+      <div class="projects-sticky-toc-box">
+        <div class="proj-toc-header">
+          <h4 class="proj-toc-title"><i class="fa fa-bookmark"></i> Projects Index</h4>
+          <span class="proj-toc-badge">8</span>
+        </div>
+        <nav class="proj-toc-nav">
+          <ul class="proj-toc-menu">
+            <li class="proj-toc-item">
+              <a href="#Traffic_Sensor" class="proj-toc-link" data-target="Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-crosshairs"></i></span>
+                <span class="proj-toc-text">Traffic Radar Sensor</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#SSIW_Sensor" class="proj-toc-link" data-target="SSIW_Sensor" onclick="scrollToProject('SSIW_Sensor'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-satellite-dish"></i></span>
+                <span class="proj-toc-text">Slotted SIW (Undergrad)</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#Optimization_GD" class="proj-toc-link" data-target="Optimization_GD" onclick="scrollToProject('Optimization_GD'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-chart-line"></i></span>
+                <span class="proj-toc-text">Cost Optimization</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#Machine_LAB" class="proj-toc-link" data-target="Machine_LAB" onclick="scrollToProject('Machine_LAB'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-microchip"></i></span>
+                <span class="proj-toc-text">IoT Machine Lab</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#Classifier_BSS" class="proj-toc-link" data-target="Classifier_BSS" onclick="scrollToProject('Classifier_BSS'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-brain"></i></span>
+                <span class="proj-toc-text">BCI / EEG Classifier</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#FDTD" class="proj-toc-link" data-target="FDTD" onclick="scrollToProject('FDTD'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-water"></i></span>
+                <span class="proj-toc-text">FDTD Simulation</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#QML" class="proj-toc-link" data-target="QML" onclick="scrollToProject('QML'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-atom"></i></span>
+                <span class="proj-toc-text">Quantum ML (QML)</span>
+              </a>
+            </li>
+            <li class="proj-toc-item">
+              <a href="#Array_Opt" class="proj-toc-link" data-target="Array_Opt" onclick="scrollToProject('Array_Opt'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-broadcast-tower"></i></span>
+                <span class="proj-toc-text">Array Optimization</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="proj-toc-footer">
+          <a href="#" class="proj-toc-top-link" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <i class="fa fa-arrow-up"></i> Top of Page
+          </a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
 </div>
 
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="Optimization_GD">
-  <div style="text-align: center;">
-    <strong> Optimization: Quadratic Cost-Function  </strong>
-  </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-       One of the Most impressive Optimization methods that comes in handy when dealing with various types of problems is the Gradient Descent Method Family. 
-       Both the Steepest Descent Method and the Newton Method are illustrated here in a simple problem to show their potential specifically in higher dimensions. 
-     </p>
-     <p style="text-align: justify;">
-       Consider the problem of finding the minimum value of such a function:
-     </p>
-     <p style="text-align: center;">
-       $ f(x) = x_{1}^{2}+x_{2}^{2}-4x_{1}-6x_{2}+13+x_{1}x_{2}  $  
-     </p>
-     <p style="text-align: justify;">
-       We can use Analytical differentiation to find its minimum as far as the function is Convex meaning the local minimum is the same as the global minimum. 
-       Instead, we use GD to find its solution to test this method and visualize the result for better understanding.
-     </p>
-     <p>
-       Below we can see the problem illustration:
-     </p>
-     <div>
-        <figcaption style="text-align: center;">Problem Cost Function</figcaption>
-       <img src="/images/Optimization_Curvature_GD_BSS.png" alt="Problem Cost Function">
-     </div>
-     <p>
-       After Applying GD and Newton we can see their results here:
-     </p>
-       <div style="display: flex;">
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">Newton Method</figcaption>
-          <img src="/images/Newton_GD_Contours.png" alt="Newton Method">
-        </div>
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">Steepest Descent Method</figcaption>
-          <img src="/images/Steepest_Descent_Contours.png" alt="Steepest Descent Method">
-        </div>
-      </div>
-     For more details, visit this <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/BSS/Hw1_Sparse_Dictionary_Learning_%26_Optimization" style=" color: #82d220;">Link</a>.
-   </div>
-
-  
+<!-- Mobile Floating TOC FAB Button & Slide-up Drawer -->
+<div class="proj-mobile-toc-fab" id="proj-mobile-toc-fab" onclick="toggleMobileProjectsToc()" title="Jump to Project">
+  <i class="fa fa-list-ul"></i> <span>Projects (8)</span>
 </div>
+<div class="proj-mobile-toc-backdrop" id="proj-mobile-toc-backdrop" onclick="toggleMobileProjectsToc(false)"></div>
+<div class="proj-mobile-toc-drawer" id="proj-mobile-toc-drawer">
+  <div class="proj-mobile-drawer-header">
+    <h4 class="proj-mobile-drawer-title"><i class="fa fa-bookmark"></i> Projects Index</h4>
+    <button type="button" class="proj-mobile-drawer-close" onclick="toggleMobileProjectsToc(false)">&times;</button>
+  </div>
+  <ul class="proj-mobile-drawer-menu">
+    <li class="proj-mobile-drawer-item"><a href="#Traffic_Sensor" class="proj-toc-link" data-target="Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-crosshairs"></i></span> <span>Traffic Radar Sensor</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#SSIW_Sensor" class="proj-toc-link" data-target="SSIW_Sensor" onclick="scrollToProject('SSIW_Sensor'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-satellite-dish"></i></span> <span>Slotted SIW (Undergrad)</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#Optimization_GD" class="proj-toc-link" data-target="Optimization_GD" onclick="scrollToProject('Optimization_GD'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-chart-line"></i></span> <span>Cost Optimization</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#Machine_LAB" class="proj-toc-link" data-target="Machine_LAB" onclick="scrollToProject('Machine_LAB'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-microchip"></i></span> <span>IoT Machine Lab</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#Classifier_BSS" class="proj-toc-link" data-target="Classifier_BSS" onclick="scrollToProject('Classifier_BSS'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-brain"></i></span> <span>BCI / EEG Classifier</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#FDTD" class="proj-toc-link" data-target="FDTD" onclick="scrollToProject('FDTD'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-water"></i></span> <span>FDTD Simulation</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#QML" class="proj-toc-link" data-target="QML" onclick="scrollToProject('QML'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-atom"></i></span> <span>Quantum ML (QML)</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#Array_Opt" class="proj-toc-link" data-target="Array_Opt" onclick="scrollToProject('Array_Opt'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-broadcast-tower"></i></span> <span>Array Optimization</span></a></li>
+  </ul>
+</div>
+
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="Machine_LAB">
-  <div style="text-align: center;">
-    <strong> Implementation of IOT-based Monitoring System in a Machine Lab. </strong>
-  </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-       It was the end of the 4th Semester at the University of Tehran and I had pulled my strength together to find a laboratory to gain experience in the summer of 2019. 
-       I ran into one of my professors and while discussing score-related topics around the Electrical Machine Course, 
-       He mentioned that there is an urgent need for an IOT Team to design and implement a Monitoring System at the Machine Lab. in the Electrical Faculty. 
-       I took my chance and applied for this position along with my friends on the Team.  
-     </p>
-     <p style="text-align: justify;">
-       At the end of summer, we learned so much about different <strong>Networking and Monitoring systems, Raspberry-pi and STM32 devices, Python Programming, and UI design with PYQT5</strong>.
-     </p>
-   </div>
-  For more details, visit this <a href="https://mohammadreza-arani.github.io/publication/2010-10-01-paper-title-number-2" style=" color: #82d220;">Link</a>.
-</div>
-
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="Classifier_BSS">
-  <div style="text-align: center;">
-    <strong> Brain-Computer Interface Problem: Action Classification via Machine Learning from EEG </strong>
-  </div>
-   <div align="justify;">
-      <p style="text-align: justify;">
-        Most interesting problems are faced at the end of each semester in the form of Final Projects at the University of Tehran, 
-        but some projects are those that you can apply so much of your knowledge that makes you the happiest when reaching the ultimate result. The BSS Course's final project was one of them.
-      </p>
-      <p style="text-align: justify;">
-        In this project, we deal with a problem arising from a contest looking for an optimal method to classify EEG-recorded signals based on 4 labels consisting of:
-        <ol type="1"> 
-          <li>Movement of Right Finger</li>
-          <li>Movement of Right Arm</li>
-          <li>Movement of Right Leg</li>
-          <li>No Actions</li>
-        </ol>  
-      </p>
-     <p style="text-align: justify;">
-       To address this issue, we designed a classifier as shown below:
-     </p>
-    <figcaption style="text-align: center;">EEG Optimal Classifier</figcaption>
-    <img src="/images/Classifier_Model.png" alt="EEG Classifier">
-    <p style="text-align: justify;">
-       We used a CSP (Common Spatial Pattern) filter and applied an LDA (Linear Discriminator Analysis) classifier in the mapped domain. 
-       By applying these techniques and whitened data, the classifier reaches almost 90% Accuracy in most cases.
-    </p>
-    <figcaption style="text-align: center;">EEG Optimal Classifier Confusion Matrix</figcaption>
-    <img src="/images/BSS_Conf_Classifier.png" alt="EEG Classifier">  
-   </div>
-  For more details, visit this <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/BSS/BSS_Project_Human_Brain_Interface_ECG_Classification" style=" color: #82d220;">Link</a>.
-</div>
-
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="FDTD">
-  <div style="text-align: center;">
-    <strong> Finite Difference Time Domain: Wave Propagation </strong>
-  </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-       Numerical Methods in recent years have attracted a lot of attention even in Electromagnetics. The heart of many powerful simulation Tools such as 
-       <strong>HFSS, CST, and COMSOL</strong> is the very Finite Difference Method used to solve Differential equations numerically. 
-       Here we have used FDTD (Finite Difference Time Domain) Method to simulate wave propagation in a closed square with a source within the square and 
-       an obstacle in the middle of the sqaure.    
-     </p>
-     <p style="text-align: justify;">
-        We have used Hard-Boundary Condition in problem geometrical borders when modelling PEC surface.
-     </p>
-   </div>
-        <div style="display: flex;">
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">FDTD with Obstacle</figcaption>
-          <img src="/images/Q3_30_Sadiku_4th_ed_Obstacle.gif" alt="FDTD with Obstacle">
-        </div>
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">FDTD without Obstacle</figcaption>
-          <img src="/images/Q3_30_Sadiku_4th_ed.gif" alt="FDTD without Obstacle">
-        </div>
-      </div>
-  
-  For more details, visit this <a href="https://github.com/MohammadReza-Arani/MATLAB_Projects/tree/main/Numerical_Methods_in_Electrical_Engineering" style=" color: #82d220;">Link</a>.
-</div>  
-
-<!--
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="QML">
-  <div style="text-align: center;">
-    <strong>Quantum Machine Learning & Optimization </strong>
-  </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-       In recent years, Quantum Machine Learning methods are implemented inspired by Classical Machine Learning and New Quantum Mechanics view used in 
-       Quantum Computers to solve those problems with quantum nature much faster than classical computers (Sometimes it takes almost forever to solve in classical computers).
-       Even implementation of Classical Neural Networks is possible and common in Quantum Computing nowadays. 
-       The QAOA (Quantum Approximate Optimization Algorithm) is the method used to numerically differentiate Quantum Circuits 
-       to use with classical optimizers (Like Adam) to optimize circuit parameters to get desired output value. 
-       A general view of the quantum computing system can be seen below:
-     </p>
-     <p>
-          <figcaption style="text-align: center;">Quantum Computing</figcaption>
-          <img src="/images/Quantum_Computing.jpg" alt="Quantum Computing">
-     </p>
-     <p style="text-align: justify;">
-    Hamiltonian minimization is a technique for solving problems by finding the lowest energy state of a system. 
-       In quantum computing, this can be done by initializing a quantum system in a superposition of all possible states, 
-       and then gradually changing the Hamiltonian over time. As the Hamiltonian changes, the system will evolve towards the ground state, 
-       which is the state with the lowest energy.
-
-    AQC (Adiabatic Quantum Computing) is a form of quantum computing that uses Hamiltonian minimization to solve problems. 
-       The adiabatic theorem states that if a quantum system is slowly driven through a change in its Hamiltonian, 
-       then it will remain in its ground state. This means that by slowly changing the Hamiltonian of a quantum system, 
-       we can effectively find the ground state of the system, which can be used to solve problems.
-    For example, we can use AQC to solve the traveling salesman problem. The traveling salesman problem is the problem 
-       of finding the shortest possible route that visits a given set of cities. We can formulate this problem as a Hamiltonian, 
-       and then use AQC to find the ground state of the Hamiltonian. The ground state of the Hamiltonian will correspond to the shortest possible route.
-     </p>
-     <p style="text-align: justify;">
-        Below, we can see a simple Quantum Parameterized Circuit which is optimized to minimize this Cost Function:
-     </p>
-     <p style="text-align: center;">
-       $  Cost = \| F - 0.4 \|^{2}  $
-     </p>
-     <p style="text-align: justify;">
-       where $F$ is the return value of our circuit and the cost is defined to minimized MSE (Mean Square Error)!
-     </p>
-   </div>
-        <div style="display: flex;">
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">QML Circuit</figcaption>
-          <img src="/images/Quantum_Circuit_Draw.png" alt="QML Circuit">
-        </div>
-        <div style="flex: 45%; padding: 5px">
-          <figcaption style="text-align: center;">QML Circuit Optimization Cost VS Iteration</figcaption>
-          <img src="/images/Cost_vs_Iter.png" alt="QML Circuit Optimization Cost VS Iteration">
-        </div>
-      </div>
-  
-  For more details, visit this <a href="https://github.com/MohammadReza-Arani/Python_Projects/tree/main/Quantum_Machine_Learning" style=" color: #82d220;">Link</a>.
-</div>  
-  -->
-<hr class="dotted" style="color: #82d220; height: 3px; background-color: #82d220; ">  
-<div id="Array_Opt">
-  <div style="text-align: center;">
-    <strong> Optimization of 1-D Array to reach Desired Pattern </strong>
-  </div>
-   <div align="justify;">
-     <p style="text-align: justify;">
-       Array Optimization is one of those problems that requires a new direction to look at in order to find innovative ways to reach the optimal solution. 
-      Facing this problem with a new approach based on the Optimization of a 
-       specific cost function enables us to tackle this issue and address the problem in a wide area considering physical and practical constraints.
-     </p>
-     <p style="text-align: justify;">
-       Here, I present a 1-D Array Optimization approach based on the minimization of this cost function:
-     </p>
-     <p style="text-align: center;">
-       $ J = \|AF(\theta)-g(\theta)\|^{2} $
-     </p>
-     <p style="text-align: justify;">
-       By considering our desired pattern $g(\theta)$ we can optimize array parameters to minimize the MSE (Mean Square Error) between 
-       the desired pattern and the array factor within the feasible set of answers. Also, we can reach the minimum number of elements after 
-       this optimization by applying a Convex Optimization problem to get a sparse answer with the desired SLL (Side Lobe Level).  
-     </p>
-     <p style="text-align: justify;">
-       Below we can see a comparison between optimized and uniform arrays in terms of received power calculated by the Ferris equation in free space:
-     </p>
-    <figcaption style="text-align: center;">Comparison of Different Array Configurations</figcaption>
-    <img src="/images/Optimized_Array_VS_Uniform_XZ_Plane.png" alt="Comparison of Array COnfigs.">  
-    <figcaption style="text-align: center;">Simulation Results of 1-D Array Optimization</figcaption>
-    <img src="/images/Optimized_vs_Desired_Array_Pattern.jpg" alt="Simulation Results of 1-D Array Optimization">  
-     <p style="text-align: justify;">
-       More details will be published in the near future!
-     </p>
-   </div>  
-</div>
-  
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-</div>
-
+<!-- Scoped CSS Styles strictly encapsulated under .projects-content-scope -->
 <style>
 .projects-content-scope {
   font-family: inherit;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 3rem 1rem;
+  box-sizing: border-box;
 }
 
 .projects-content-scope * {
   box-sizing: border-box;
 }
 
-.projects-content-scope img {
-  vertical-align: middle;
+/* ==========================================================================
+   Hero Banner Card
+   ========================================================================== */
+.projects-content-scope .projects-hero-banner {
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  padding: 2.2rem 2.4rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.projects-content-scope .container {
+.projects-content-scope .projects-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.projects-content-scope .projects-hero-title {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  line-height: 1.25;
+}
+
+.projects-content-scope .projects-hero-title i {
+  color: #38bdf8;
+}
+
+.projects-content-scope .projects-hero-desc {
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  max-width: 900px;
+}
+
+.projects-content-scope .projects-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.projects-content-scope .projects-hero-stat-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+}
+
+.projects-content-scope .hero-stat-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.projects-content-scope .hero-stat-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   Multi-Column Page Layout
+   ========================================================================== */
+.projects-content-scope .projects-page-layout {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
   position: relative;
 }
 
-/* Hide the images by default */
+/* ==========================================================================
+   LEFT SIDEBAR: Project Hub & Code Repositories
+   ========================================================================== */
+.projects-content-scope .projects-left-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.projects-content-scope .projects-sticky-sidebox {
+  position: sticky;
+  top: 85px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+
+.projects-content-scope .proj-side-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 1.4rem 1.1rem 1rem 1.1rem;
+  color: #ffffff;
+}
+
+.projects-content-scope .proj-side-insignia {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(2, 132, 199, 0.35);
+  border: 1px solid #0284c7;
+  border-radius: 8px;
+  color: #38bdf8;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-content-scope .proj-side-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.projects-content-scope .proj-side-sub {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.projects-content-scope .proj-side-nav {
+  padding: 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.projects-content-scope .proj-side-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.projects-content-scope .proj-side-item {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-content-scope .proj-side-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none !important;
+  transition: all 0.16s ease;
+}
+
+.projects-content-scope .proj-side-icon {
+  width: 20px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+  transition: color 0.16s ease;
+}
+
+.projects-content-scope .proj-side-text {
+  flex: 1;
+}
+
+.projects-content-scope .proj-side-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.projects-content-scope .proj-badge-accent {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.projects-content-scope .proj-side-link:hover {
+  background: #f0fdf4;
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-side-link:hover .proj-side-icon {
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-side-highlight {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+}
+
+.projects-content-scope .proj-side-highlight:hover {
+  border-color: #0284c7;
+  background: #f0f9ff;
+}
+
+.projects-content-scope .proj-side-tags-box {
+  padding: 0.85rem;
+}
+
+.projects-content-scope .proj-side-tags-heading {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.projects-content-scope .proj-side-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.projects-content-scope .proj-tech-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   CENTER MAIN CONTENT COLUMN
+   ========================================================================== */
+.projects-content-scope .projects-main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Gallery Section */
+.projects-content-scope .projects-gallery-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  margin-bottom: 2rem;
+}
+
+.projects-content-scope .projects-section-header {
+  margin-bottom: 1.25rem;
+}
+
+.projects-content-scope .projects-section-title {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projects-content-scope .projects-section-title i {
+  color: #0284c7;
+}
+
+.projects-content-scope .projects-section-sub {
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.projects-content-scope .gallery-container {
+  position: relative;
+  background: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 .projects-content-scope .mySlides {
   display: none;
+  text-align: center;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.projects-content-scope .cursor {
-  cursor: pointer;
+.projects-content-scope .mySlides img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  background: #090d16;
 }
 
-/* Next & previous buttons */
+.projects-content-scope .numbertext {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  z-index: 5;
+}
+
 .projects-content-scope .prev,
 .projects-content-scope .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
+  padding: 12px 16px;
+  margin-top: -24px;
+  color: #ffffff;
   font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  font-size: 18px;
+  border-radius: 0 4px 4px 0;
   user-select: none;
-  -webkit-user-select: none;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+  z-index: 5;
 }
 
-/* Position the "next button" to the right */
 .projects-content-scope .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 4px 0 0 4px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .projects-content-scope .prev:hover,
 .projects-content-scope .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: #0284c7;
 }
 
-/* Number text (1/3 etc) */
-.projects-content-scope .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
 .projects-content-scope .caption-container {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  background-color: #0b1120;
+  padding: 8px 16px;
+  color: #e2e8f0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.projects-content-scope .row:after {
-  content: "";
-  display: table;
-  clear: both;
+.projects-content-scope .gallery-thumbnails-row {
+  display: flex;
+  background: #080c14;
+  padding: 6px;
+  gap: 6px;
+  overflow-x: auto;
 }
 
-/* Six columns side by side */
-.projects-content-scope .column {
-  float: left;
-  width: 16.66%;
+.projects-content-scope .gallery-col {
+  flex: 1;
+  min-width: 60px;
 }
 
-/* Add a transparency effect for thumbnail images */
 .projects-content-scope .demo {
-  opacity: 0.6;
+  opacity: 0.5;
+  width: 100%;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
 .projects-content-scope .demo.active,
 .projects-content-scope .demo:hover {
   opacity: 1;
+  border-color: #38bdf8;
+  transform: scale(1.02);
 }
-  
-/* SideBar Config: */
-.projects-content-scope .sidenav {
-  height: 100%;
-  width: 160px;
+
+/* ==========================================================================
+   Detailed Project Cards
+   ========================================================================== */
+.projects-content-scope .proj-detail-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.projects-content-scope .proj-detail-card:hover {
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.projects-content-scope .proj-card-featured {
+  border-left: 4px solid #0284c7;
+}
+
+.projects-content-scope .proj-detail-header {
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 1rem;
+}
+
+.projects-content-scope .proj-badge-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-content-scope .proj-cat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.projects-content-scope .proj-featured-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.projects-content-scope .proj-tech-meta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.projects-content-scope .proj-detail-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.projects-content-scope .proj-detail-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.projects-content-scope .proj-detail-body p {
+  margin: 0 0 1rem 0;
+  text-align: justify;
+}
+
+.projects-content-scope .proj-quote {
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border-left: 3px solid #0284c7;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #475569;
+}
+
+.projects-content-scope .proj-math-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.projects-content-scope .proj-styled-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1.25rem 0;
+}
+
+.projects-content-scope .proj-styled-list li {
+  padding: 0.4rem 0.75rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  border-left: 2px solid #0284c7;
+}
+
+.projects-content-scope .proj-media-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  flex-wrap: wrap;
+}
+
+.projects-content-scope .proj-media-item {
+  flex: 1;
+  min-width: 260px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.projects-content-scope .proj-media-single {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+.projects-content-scope .proj-media-caption {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.projects-content-scope .proj-media-item img,
+.projects-content-scope .proj-media-single img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.projects-content-scope .proj-detail-footer {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.projects-content-scope .proj-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+  transition: all 0.2s ease;
+}
+
+.projects-content-scope .proj-action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+/* Flash highlight animation when jumped to from TOC */
+.projects-content-scope .flash-highlight {
+  animation: flash-pulse 1.2s ease-out;
+}
+
+@keyframes flash-pulse {
+  0% { box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.6); }
+  100% { box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04); }
+}
+
+/* ==========================================================================
+   RIGHT FLOATING STICKY TABLE OF CONTENTS (TOC)
+   ========================================================================== */
+.projects-content-scope .projects-toc-sidebar {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.projects-content-scope .projects-sticky-toc-box {
+  position: sticky;
+  top: 85px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+
+.projects-content-scope .proj-toc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.projects-content-scope .proj-toc-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.projects-content-scope .proj-toc-title i {
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-toc-badge {
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.projects-content-scope .proj-toc-nav {
+  padding: 0.5rem 0.4rem;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.projects-content-scope .proj-toc-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.projects-content-scope .proj-toc-item {
+  margin: 0;
+  padding: 0;
+}
+
+.projects-content-scope .proj-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+}
+
+.projects-content-scope .proj-toc-icon {
+  width: 18px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  transition: color 0.15s ease;
+}
+
+.projects-content-scope .proj-toc-text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projects-content-scope .proj-toc-link:hover {
+  background: #f1f5f9;
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-toc-link:hover .proj-toc-icon {
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-toc-link.active {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-left-color: #0284c7;
+  font-weight: 700;
+}
+
+.projects-content-scope .proj-toc-link.active .proj-toc-icon {
+  color: #0284c7;
+}
+
+.projects-content-scope .proj-toc-footer {
+  padding: 0.65rem 0.85rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.projects-content-scope .proj-toc-top-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.15s ease;
+}
+
+.projects-content-scope .proj-toc-top-link:hover {
+  color: #0284c7;
+}
+
+/* ==========================================================================
+   MOBILE FLOATING TOC FAB BUTTON & SLIDE-UP DRAWER
+   ========================================================================== */
+.proj-mobile-toc-fab {
+  display: none;
   position: fixed;
-  z-index: 1;
+  bottom: 24px;
+  right: 20px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #ffffff;
+  padding: 0.65rem 1.1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+  cursor: pointer;
+  z-index: 990;
+  align-items: center;
+  gap: 0.45rem;
+  transition: transform 0.2s ease;
+}
+
+.proj-mobile-toc-fab:active {
+  transform: scale(0.96);
+}
+
+.proj-mobile-toc-backdrop {
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
 }
 
-.projects-content-scope .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+.proj-mobile-toc-drawer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 75vh;
+  background: #ffffff;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  overflow-y: auto;
+  padding: 1.25rem;
+  box-sizing: border-box;
 }
 
-.projects-content-scope .sidenav a:hover {
-  color: #f1f1f1;
+.proj-mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
 }
 
-.projects-content-scope .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.proj-mobile-drawer-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@media screen and (max-height: 450px) {
-  .projects-content-scope .sidenav {padding-top: 15px;}
-  .projects-content-scope .sidenav a {font-size: 18px;}
+.proj-mobile-drawer-title i {
+  color: #0284c7;
 }
-  
+
+.proj-mobile-drawer-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.proj-mobile-drawer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.proj-mobile-drawer-item {
+  margin: 0;
+}
+
+.proj-mobile-drawer-item .proj-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS (Media Queries)
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .projects-content-scope .projects-page-layout {
+    flex-direction: column;
+  }
+  .projects-content-scope .projects-left-sidebar {
+    width: 100%;
+  }
+  .projects-content-scope .projects-sticky-sidebox {
+    position: static;
+  }
+  .projects-content-scope .proj-side-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .projects-content-scope .proj-side-item {
+    flex: 1;
+    min-width: 160px;
+  }
+  .projects-content-scope .projects-toc-sidebar {
+    display: none;
+  }
+  .proj-mobile-toc-fab {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-content-scope .projects-hero-banner {
+    padding: 1.5rem 1.25rem;
+  }
+  .projects-content-scope .projects-hero-title {
+    font-size: 1.4rem;
+  }
+  .projects-content-scope .proj-detail-card {
+    padding: 1.25rem;
+  }
+  .projects-content-scope .proj-detail-title {
+    font-size: 1.15rem;
+  }
+  .projects-content-scope .gallery-col {
+    min-width: 45px;
+  }
+  .projects-content-scope .demo {
+    height: 40px;
+  }
+}
 </style>
 
-  
+<!-- Fallback pure JS for instant execution -->
+<script>
+/* Academic Pages - Projects & Research Controller */
+(function() {
+  /* Slideshow gallery index */
+  var slideIndex = 1;
 
+  /* Smooth scroll to target project section with header offset */
+  function scrollToProject(targetId) {
+    var targetElem = document.getElementById(targetId);
+    if (targetElem) {
+      var yOffset = -75;
+      var y = targetElem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
 
+      targetElem.classList.remove('flash-highlight');
+      void targetElem.offsetWidth;
+      targetElem.classList.add('flash-highlight');
 
-  
+      var tocLinks = document.querySelectorAll('.proj-toc-link');
+      for (var i = 0; i < tocLinks.length; i++) {
+        if (tocLinks[i].getAttribute('data-target') === targetId) {
+          tocLinks[i].classList.add('active');
+        } else {
+          tocLinks[i].classList.remove('active');
+        }
+      }
+
+      if (history.pushState) {
+        history.pushState(null, null, '#' + targetId);
+      }
+    }
+  }
+
+  /* Toggle mobile drawer */
+  function toggleMobileProjectsToc(forceState) {
+    var backdrop = document.getElementById('proj-mobile-toc-backdrop');
+    var drawer = document.getElementById('proj-mobile-toc-drawer');
+    if (!backdrop || !drawer) return;
+
+    var isOpening = (forceState !== undefined) ? forceState : (drawer.style.display !== 'block');
+    if (isOpening) {
+      backdrop.style.display = 'block';
+      drawer.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    } else {
+      backdrop.style.display = 'none';
+      drawer.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  }
+
+  /* Gallery Slideshow Controls */
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var slides = document.querySelectorAll('.projects-content-scope .mySlides');
+    var dots = document.querySelectorAll('.projects-content-scope .demo');
+    var captionText = document.getElementById('caption');
+    if (!slides || slides.length === 0) return;
+
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (var j = 0; j < dots.length; j++) {
+      dots[j].className = dots[j].className.replace(/\s*\bactive\b/g, '');
+    }
+
+    if (slides[slideIndex - 1]) {
+      slides[slideIndex - 1].style.display = 'block';
+    }
+    if (dots[slideIndex - 1]) {
+      dots[slideIndex - 1].className += ' active';
+      if (captionText) {
+        captionText.innerHTML = dots[slideIndex - 1].alt || '';
+      }
+    }
+  }
+
+  /* Expose functions on window for inline handlers */
+  window.scrollToProject = scrollToProject;
+  window.toggleMobileProjectsToc = toggleMobileProjectsToc;
+  window.plusSlides = plusSlides;
+  window.currentSlide = currentSlide;
+
+  /* Delegated event delegation on document */
+  document.addEventListener('click', function(e) {
+    var target = e.target;
+    if (!target) return;
+
+    var mobileFab = target.closest('#proj-mobile-toc-fab');
+    if (mobileFab) {
+      if (e.preventDefault) e.preventDefault();
+      toggleMobileProjectsToc(true);
+      return;
+    }
+
+    var mobileBackdrop = target.closest('#proj-mobile-toc-backdrop');
+    if (mobileBackdrop) {
+      if (e.preventDefault) e.preventDefault();
+      toggleMobileProjectsToc(false);
+      return;
+    }
+
+    var mobileClose = target.closest('.proj-mobile-drawer-close');
+    if (mobileClose) {
+      if (e.preventDefault) e.preventDefault();
+      toggleMobileProjectsToc(false);
+      return;
+    }
+
+    var tocLink = target.closest('.proj-toc-link');
+    if (tocLink) {
+      if (e.preventDefault) e.preventDefault();
+      var projectId = tocLink.getAttribute('data-target');
+      if (projectId) {
+        scrollToProject(projectId);
+        toggleMobileProjectsToc(false);
+      }
+      return;
+    }
+  });
+
+  /* Scrollspy: Highlight TOC link corresponding to active section */
+  var scrollTimer = null;
+  var projectIds = [
+    'Traffic_Sensor',
+    'SSIW_Sensor',
+    'Optimization_GD',
+    'Machine_LAB',
+    'Classifier_BSS',
+    'FDTD',
+    'QML',
+    'Array_Opt'
+  ];
+
+  window.addEventListener('scroll', function() {
+    if (scrollTimer) clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function() {
+      var currentId = '';
+      for (var i = 0; i < projectIds.length; i++) {
+        var elem = document.getElementById(projectIds[i]);
+        if (elem) {
+          var rect = elem.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom >= 100) {
+            currentId = projectIds[i];
+          }
+        }
+      }
+      if (currentId) {
+        var links = document.querySelectorAll('.proj-toc-link');
+        for (var j = 0; j < links.length; j++) {
+          if (links[j].getAttribute('data-target') === currentId) {
+            links[j].classList.add('active');
+          } else {
+            links[j].classList.remove('active');
+          }
+        }
+      }
+    }, 60);
+  }, { passive: true });
+
+  /* URL Hash navigation on page load */
+  function checkHash() {
+    if (window.location.hash) {
+      var hashId = window.location.hash.substring(1);
+      if (document.getElementById(hashId)) {
+        setTimeout(function() {
+          scrollToProject(hashId);
+        }, 300);
+      }
+    }
+  }
+
+  /* Initialization */
+  function init() {
+    showSlides(slideIndex);
+    checkHash();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
