@@ -1343,25 +1343,23 @@ redirect_from:
 }
 
 .contact-channel-items {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
-
-@media (min-width: 680px) {
-  .contact-channel-items {
-    grid-template-columns: 1fr 1fr;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
 }
 
 .channel-pill {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 58px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 10px 13px;
+  padding: 10px 16px;
   text-decoration: none !important;
   color: inherit !important;
   transition: all 0.2s ease;
