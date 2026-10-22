@@ -1,6 +1,6 @@
 /* Academic Pages - Home Page & Floating Table of Contents Controller */
 (function() {
-  /* Section IDs in sequential order */
+  /* Sequential Section IDs */
   var homeSectionIds = [
     'biography',
     'research-interests',
@@ -9,7 +9,7 @@
     'contact-me'
   ];
 
-  /* Smooth scroll to section with offset */
+  /* Smooth scroll to target section with sticky header offset */
   function scrollToHomeSection(targetId) {
     var targetElem = document.getElementById(targetId);
     if (targetElem) {
@@ -36,7 +36,7 @@
     }
   }
 
-  /* Mobile TOC Drawer Toggle */
+  /* Toggle mobile slide-up drawer */
   function toggleMobileHomeToc(forceState) {
     var backdrop = document.getElementById('home-mobile-toc-backdrop');
     var drawer = document.getElementById('home-mobile-toc-drawer');
@@ -54,11 +54,11 @@
     }
   }
 
-  /* Expose global functions */
+  /* Expose functions on window for inline event handlers */
   window.scrollToHomeSection = scrollToHomeSection;
   window.toggleMobileHomeToc = toggleMobileHomeToc;
 
-  /* Delegated clicks */
+  /* Delegated click handlers */
   document.addEventListener('click', function(e) {
     var target = e.target;
     if (!target) return;
@@ -96,7 +96,7 @@
     }
   });
 
-  /* Bulletproof scrollspy */
+  /* Bulletproof backward-iterating scrollspy */
   var scrollTimer = null;
   function updateActiveHomeToc() {
     var currentId = '';
@@ -133,7 +133,7 @@
     scrollTimer = setTimeout(updateActiveHomeToc, 35);
   }, { passive: true });
 
-  /* URL Hash navigation on page load */
+  /* URL Hash navigation check */
   function checkHash() {
     if (window.location.hash) {
       var hashId = window.location.hash.substring(1);
@@ -147,7 +147,7 @@
     }
   }
 
-  /* Keep top navigation tabs visible across all screen sizes */
+  /* Header navigation tab preservation across resizing */
   function ensureNavTabsVisible() {
     var vlinks = document.querySelector('#site-nav .visible-links');
     var hlinks = document.querySelector('#site-nav .hidden-links');

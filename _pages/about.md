@@ -2,7 +2,8 @@
 permalink: /
 title: "Biography"
 excerpt: "About me"
-author_profile: true
+layout: archive
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
@@ -13,7 +14,7 @@ redirect_from:
 
 <div class="home-page-scope">
 
-  <!-- Top Hero Banner with Generated Imagery -->
+  <!-- Top Full-Width Hero Banner Card with Generated Imagery -->
   <div class="home-hero-card" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.80) 100%), url('{{ base_path }}/images/home_hero_bg.jpg');">
     <div class="home-hero-content">
       <div class="home-hero-badge">
@@ -60,11 +61,18 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Two-Column Layout: Main Content + Right Floating Sticky TOC -->
-  <div class="home-layout">
+  <!-- Multi-Column Layout: Left Author Sidebar + Center Main Content + Right Floating Sticky TOC -->
+  <div class="home-page-layout">
     
-    <!-- MAIN CONTENT COLUMN -->
-    <main class="home-main-col">
+    <!-- LEFT COLUMN: Sticky Author Profile Card & Academic Links -->
+    <aside class="home-left-sidebar" aria-label="Author Profile &amp; Research Links">
+      <div class="home-sticky-left-box">
+        {% include author-profile.html %}
+      </div>
+    </aside>
+
+    <!-- CENTER COLUMN: Main Content Area (Spacious & Wide) -->
+    <main class="home-main-content">
 
       <!-- Section 1: Biography -->
       <section class="home-section-card" id="biography">
@@ -91,7 +99,7 @@ redirect_from:
           </p>
         </div>
 
-        <!-- Showcase Action Cards for Projects and CV -->
+        <!-- Featured Action Cards for Projects and CV -->
         <div class="home-featured-action-grid">
           <a href="{{ base_path }}/Projects.html" class="home-featured-card home-card--projects">
             <div class="home-featured-card-top">
@@ -178,7 +186,7 @@ redirect_from:
         </div>
       </section>
 
-      <!-- Section 3: Tools & Softwares (Styled per media_1792709561702.png) -->
+      <!-- Section 3: Tools & Softwares (Per Screenshot media_1792709561702.png) -->
       <section class="home-section-card" id="tools-softwares">
         <div class="home-section-header">
           <div class="home-section-title-wrap">
@@ -458,7 +466,7 @@ redirect_from:
 
     </main>
 
-    <!-- RIGHT FLOATING STICKY TABLE OF CONTENTS -->
+    <!-- RIGHT COLUMN: Floating Sticky Table of Contents (TOC) -->
     <aside class="home-toc-sidebar" id="home-toc-sidebar" aria-label="Home Table of Contents">
       <div class="home-sticky-toc-box">
         <div class="home-toc-header">
@@ -500,8 +508,8 @@ redirect_from:
           </ul>
         </nav>
         <div class="home-toc-footer">
-          <a href="#biography" onclick="scrollToHomeSection('biography'); return false;" class="home-toc-top-btn">
-            <i class="fas fa-arrow-up"></i> Back to Top
+          <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="home-toc-top-btn">
+            <i class="fas fa-arrow-up"></i> Top of Page
           </a>
         </div>
       </div>
@@ -538,10 +546,32 @@ redirect_from:
 
 </div>
 
-<!-- Encapsulated Home Page Styling -->
+<!-- Full-Width & Responsive Scoped CSS Styles -->
 <style>
-/* Suppress default page title and breadcrumbs */
-.page__title,
+/* ==========================================================================
+   Full Width Page Overrides (Maximal width, matching Projects page)
+   ========================================================================== */
+#main {
+  max-width: 98% !important;
+  width: 98% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  overflow: visible !important;
+}
+
+.archive {
+  width: 100% !important;
+  max-width: 100% !important;
+  float: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.archive > .page__title,
 .breadcrumbs {
   display: none !important;
 }
@@ -549,11 +579,17 @@ redirect_from:
 .home-page-scope {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #1e293b;
-  margin-top: -0.5rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.home-page-scope * {
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
-   Hero Banner Card
+   Top Full-Width Hero Banner Card
    ========================================================================== */
 .home-hero-card {
   position: relative;
@@ -561,12 +597,12 @@ redirect_from:
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px;
-  padding: 2.25rem 2rem;
-  margin-bottom: 2rem;
+  padding: 2.25rem 2.25rem;
+  margin-bottom: 1.75rem;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #ffffff;
-  overflow: hidden;
+  width: 100%;
 }
 
 .home-hero-badge {
@@ -580,12 +616,12 @@ redirect_from:
   font-size: 0.82rem;
   font-weight: 600;
   color: #7dd3fc;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .home-hero-title {
-  margin: 0 0 0.6rem 0;
-  font-size: 1.85rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.95rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #ffffff !important;
@@ -610,19 +646,21 @@ redirect_from:
 }
 
 .home-hero-subtitle {
-  margin: 0 0 1.5rem 0;
-  font-size: 0.96rem;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.98rem;
   line-height: 1.55;
   color: #e2e8f0;
-  max-width: 850px;
+  max-width: 950px;
 }
 
 .home-hero-stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .home-hero-stats {
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
   }
@@ -664,7 +702,7 @@ redirect_from:
 }
 
 .home-stat-val {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: #f8fafc;
 }
@@ -675,36 +713,54 @@ redirect_from:
 }
 
 /* ==========================================================================
-   Two-Column Layout
+   Multi-Column Page Layout with Full Height Stretch for Sticky Children
    ========================================================================== */
-.home-layout {
+.home-page-layout {
   display: flex;
-  flex-direction: column;
+  align-items: stretch; /* Crucial: lets both sidebars stretch full height */
   gap: 1.5rem;
+  width: 100%;
   position: relative;
 }
 
-@media (min-width: 992px) {
-  .home-layout {
-    display: grid;
-    grid-template-columns: 1fr 240px;
-    gap: 1.75rem;
-    align-items: start;
-  }
+/* ==========================================================================
+   LEFT SIDEBAR: Sticky Author Profile Card
+   ========================================================================== */
+.home-left-sidebar {
+  width: 270px;
+  min-width: 270px;
+  max-width: 270px;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
 }
 
-.home-main-col {
-  min-width: 0;
+.home-sticky-left-box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 95px);
+  overflow-y: auto;
+}
+
+/* Reset default margin on profile card when inside sticky box */
+.home-left-sidebar .author__card-wrapper {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
-   Section Cards
+   CENTER MAIN CONTENT (Spacious & Flexible)
    ========================================================================== */
+.home-main-content {
+  flex: 1;
+  min-width: 0;
+}
+
 .home-section-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  padding: 1.75rem 1.75rem;
+  padding: 1.85rem 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
   scroll-margin-top: 85px;
@@ -718,14 +774,14 @@ redirect_from:
 
 .home-section-card.flash-highlight {
   border-color: #0ea5e9;
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.25);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.25);
   transition: all 0.3s ease;
 }
 
 .home-section-header {
   border-bottom: 1px solid #f1f5f9;
   padding-bottom: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .home-section-title-wrap {
@@ -739,25 +795,25 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 8px;
   background: #f0f9ff;
   border: 1px solid #bae6fd;
   color: #0284c7;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .home-section-title {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.38rem;
   font-weight: 700;
   color: #0f172a;
   letter-spacing: -0.01em;
 }
 
 .home-section-subtitle {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: #64748b;
   font-weight: 500;
   display: inline-flex;
@@ -765,17 +821,15 @@ redirect_from:
   gap: 5px;
 }
 
-/* ==========================================================================
-   Biography Content
-   ========================================================================== */
+/* Biography Text */
 .home-bio-body {
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.94rem;
+  line-height: 1.75;
   color: #334155;
 }
 
 .home-bio-body p {
-  margin-bottom: 1.15rem;
+  margin-bottom: 1.25rem;
   text-align: justify;
 }
 
@@ -803,7 +857,7 @@ redirect_from:
 .home-featured-action-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
@@ -819,7 +873,7 @@ redirect_from:
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
-  padding: 1.25rem 1.25rem;
+  padding: 1.35rem 1.4rem;
   text-decoration: none !important;
   color: inherit !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -829,7 +883,7 @@ redirect_from:
 
 .home-featured-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
 }
 
 .home-card--projects:hover {
@@ -846,17 +900,17 @@ redirect_from:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .home-featured-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .home-card--projects .home-featured-icon {
@@ -870,9 +924,9 @@ redirect_from:
 }
 
 .home-featured-badge {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  padding: 3px 9px;
+  padding: 3px 10px;
   border-radius: 12px;
 }
 
@@ -887,16 +941,16 @@ redirect_from:
 }
 
 .home-featured-title {
-  margin: 0 0 0.4rem 0;
-  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #0f172a;
 }
 
 .home-featured-desc {
-  margin: 0 0 1rem 0;
-  font-size: 0.81rem;
-  line-height: 1.5;
+  margin: 0 0 1.15rem 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
   color: #64748b;
   flex-grow: 1;
 }
@@ -905,7 +959,7 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 700;
 }
 
@@ -923,10 +977,10 @@ redirect_from:
 .home-interests-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .home-interests-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -942,7 +996,7 @@ redirect_from:
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 1.15rem 1.15rem;
+  padding: 1.2rem 1.25rem;
   transition: all 0.25s ease;
 }
 
@@ -957,12 +1011,12 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   background: linear-gradient(135deg, #0ea5e9, #3b82f6);
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.05rem;
   flex-shrink: 0;
   box-shadow: 0 3px 10px rgba(14, 165, 233, 0.25);
 }
@@ -972,21 +1026,21 @@ redirect_from:
 }
 
 .interest-title {
-  margin: 0 0 0.35rem 0;
-  font-size: 0.95rem;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.98rem;
   font-weight: 700;
   color: #0f172a;
 }
 
 .interest-desc {
   margin: 0;
-  font-size: 0.81rem;
-  line-height: 1.48;
+  font-size: 0.83rem;
+  line-height: 1.5;
   color: #64748b;
 }
 
 /* ==========================================================================
-   Tools & Softwares (Exact Match to media_1792709561702.png)
+   Tools & Softwares Table (Exact Match per media_1792709561702.png)
    ========================================================================== */
 .prof-table-card {
   background: #ffffff;
@@ -1009,8 +1063,8 @@ redirect_from:
 }
 
 .home-prof-table th {
-  padding: 12px 16px;
-  font-size: 0.85rem;
+  padding: 12px 18px;
+  font-size: 0.86rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -1019,12 +1073,12 @@ redirect_from:
 
 .th-lang {
   text-align: left;
-  width: 38%;
+  width: 36%;
 }
 
 .th-prof {
   text-align: center;
-  width: 62%;
+  width: 64%;
 }
 
 .home-prof-table tbody tr {
@@ -1041,24 +1095,24 @@ redirect_from:
 }
 
 .td-lang {
-  padding: 10px 16px;
+  padding: 11px 18px;
   vertical-align: middle;
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: #1e293b;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .lang-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   border-radius: 6px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .lang-icon--matlab { background: #fee2e2; color: #dc2626; }
@@ -1071,13 +1125,13 @@ redirect_from:
 .lang-icon--solidity { background: #f1f5f9; color: #475569; }
 
 .td-prof {
-  padding: 10px 16px;
+  padding: 11px 18px;
   vertical-align: middle;
 }
 
 .prof-bar-track {
   width: 100%;
-  height: 28px;
+  height: 30px;
   background: #f1f5f9;
   border-radius: 6px;
   overflow: hidden;
@@ -1096,14 +1150,14 @@ redirect_from:
 }
 
 .prof-bar-label {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 800;
   color: #ffffff;
   letter-spacing: 0.02em;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 
-/* Exact user colors from screenshot */
+/* Exact user colors */
 .prof-fill--green {
   background: #3eba25; /* 90% Vibrant Green */
 }
@@ -1122,10 +1176,10 @@ redirect_from:
 .home-hobbies-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .home-hobbies-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1138,7 +1192,7 @@ redirect_from:
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 1.15rem 1.15rem;
+  padding: 1.2rem 1.25rem;
   transition: all 0.25s ease;
 }
 
@@ -1153,12 +1207,12 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   background: linear-gradient(135deg, #10b981, #06b6d4);
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.05rem;
   flex-shrink: 0;
   box-shadow: 0 3px 10px rgba(16, 185, 129, 0.25);
 }
@@ -1168,16 +1222,16 @@ redirect_from:
 }
 
 .hobby-title {
-  margin: 0 0 0.35rem 0;
-  font-size: 0.95rem;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.98rem;
   font-weight: 700;
   color: #0f172a;
 }
 
 .hobby-desc {
   margin: 0;
-  font-size: 0.81rem;
-  line-height: 1.48;
+  font-size: 0.83rem;
+  line-height: 1.5;
   color: #64748b;
 }
 
@@ -1201,14 +1255,14 @@ redirect_from:
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 1.35rem 1.25rem;
+  padding: 1.4rem 1.35rem;
 }
 
 .contact-card-subheading {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 0.5rem;
@@ -1220,31 +1274,31 @@ redirect_from:
 
 .contact-form-intro,
 .contact-channels-intro {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: #64748b;
-  margin-bottom: 1rem;
-  line-height: 1.45;
+  margin-bottom: 1.1rem;
+  line-height: 1.5;
 }
 
 .modern-contact-form .form-group {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.95rem;
 }
 
 .modern-contact-form label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #475569;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 
 .modern-contact-form input,
 .modern-contact-form textarea {
   width: 100%;
-  padding: 8px 12px;
+  padding: 9px 13px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   background: #ffffff;
   color: #1e293b;
   box-sizing: border-box;
@@ -1262,12 +1316,12 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 18px;
+  padding: 10px 20px;
   background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: #ffffff;
   border: none;
   border-radius: 8px;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
@@ -1293,7 +1347,7 @@ redirect_from:
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 9px 12px;
+  padding: 10px 13px;
   text-decoration: none !important;
   color: inherit !important;
   transition: all 0.2s ease;
@@ -1329,7 +1383,7 @@ redirect_from:
 }
 
 .channel-label {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #64748b;
@@ -1337,7 +1391,7 @@ redirect_from:
 }
 
 .channel-value {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: #0f172a;
 }
@@ -1348,23 +1402,23 @@ redirect_from:
 }
 
 /* ==========================================================================
-   Right Floating Sticky Table of Contents
+   RIGHT FLOATING STICKY TABLE OF CONTENTS (TOC)
    ========================================================================== */
 .home-toc-sidebar {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .home-toc-sidebar {
-    display: block;
-    width: 240px;
-  }
+  width: 220px;
+  min-width: 220px;
+  max-width: 220px;
+  flex-shrink: 0;
+  align-self: stretch; /* Crucial: stretches full column height so sticky works */
+  position: relative;
 }
 
 .home-sticky-toc-box {
   position: -webkit-sticky;
   position: sticky;
-  top: 75px;
+  top: 80px;
+  max-height: calc(100vh - 95px);
+  overflow-y: auto;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
@@ -1377,8 +1431,8 @@ redirect_from:
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #f1f5f9;
-  padding-bottom: 0.6rem;
-  margin-bottom: 0.6rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.65rem;
 }
 
 .home-toc-title {
@@ -1389,6 +1443,8 @@ redirect_from:
   display: flex;
   align-items: center;
   gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .home-toc-title i {
@@ -1425,7 +1481,7 @@ redirect_from:
   gap: 8px;
   padding: 7px 10px;
   border-radius: 8px;
-  font-size: 0.78rem;
+  font-size: 0.79rem;
   font-weight: 600;
   color: #64748b !important;
   text-decoration: none !important;
@@ -1472,7 +1528,7 @@ redirect_from:
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: #94a3b8 !important;
   text-decoration: none !important;
@@ -1487,7 +1543,7 @@ redirect_from:
    Mobile Floating Action Button & Drawer
    ========================================================================== */
 .home-mobile-toc-fab {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 8px;
   position: fixed;
@@ -1503,12 +1559,6 @@ redirect_from:
   font-weight: 700;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-}
-
-@media (min-width: 992px) {
-  .home-mobile-toc-fab {
-    display: none;
-  }
 }
 
 .home-mobile-toc-backdrop {
@@ -1601,5 +1651,59 @@ redirect_from:
 .home-mobile-drawer-list a i {
   color: #0ea5e9;
   font-size: 1rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1199px) {
+  .home-left-sidebar {
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .home-toc-sidebar {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-toc-sidebar {
+    display: none !important;
+  }
+  .home-mobile-toc-fab {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-page-layout {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  .home-left-sidebar {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .home-sticky-left-box {
+    position: static !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+  .home-hero-card {
+    padding: 1.5rem 1.25rem;
+  }
+  .home-hero-title {
+    font-size: 1.5rem;
+  }
+  .home-section-card {
+    padding: 1.25rem 1.25rem;
+  }
+  .home-featured-action-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
