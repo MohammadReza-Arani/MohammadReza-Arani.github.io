@@ -372,7 +372,7 @@ redirect_from:
         </div>
 
         <div class="contact-section-grid">
-          <!-- Left: Modern Contact Form -->
+          <!-- Top Vertical: Modern Contact Form (Spacious Full Width) -->
           <div class="contact-form-card">
             <div class="contact-card-subheading">
               <i class="fas fa-envelope-open-text"></i>
@@ -382,13 +382,15 @@ redirect_from:
               Please fill out the form below to contact me. I will get back to you as soon as possible.
             </p>
             <form action="mailto:mohammadreza.arani.bidhendi@gmail.com" method="post" enctype="text/plain" class="modern-contact-form">
-              <div class="form-group">
-                <label for="contact-name"><i class="fas fa-user"></i> Your Name</label>
-                <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <label for="contact-email"><i class="fas fa-at"></i> Your Email</label>
-                <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="contact-name"><i class="fas fa-user"></i> Your Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email"><i class="fas fa-at"></i> Your Email</label>
+                  <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+                </div>
               </div>
               <div class="form-group">
                 <label for="contact-subject"><i class="fas fa-tag"></i> Subject</label>
@@ -404,7 +406,7 @@ redirect_from:
             </form>
           </div>
 
-          <!-- Right: Direct Channels -->
+          <!-- Bottom Vertical: Direct Channels (Spacious Full Width) -->
           <div class="contact-channels-card">
             <div class="contact-card-subheading">
               <i class="fas fa-address-book"></i>
@@ -471,7 +473,6 @@ redirect_from:
       <div class="home-sticky-toc-box">
         <div class="home-toc-header">
           <h4 class="home-toc-title"><i class="fas fa-bookmark"></i> On This Page</h4>
-          <span class="home-toc-badge">Quick Nav</span>
         </div>
         <nav class="home-toc-nav">
           <ul class="home-toc-menu">
@@ -1239,14 +1240,21 @@ redirect_from:
    Contact Section
    ========================================================================== */
 .contact-section-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .contact-section-grid {
-    grid-template-columns: 1.1fr 1fr;
+.modern-contact-form .form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .modern-contact-form .form-row-2col {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1335,9 +1343,15 @@ redirect_from:
 }
 
 .contact-channel-items {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 680px) {
+  .contact-channel-items {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .channel-pill {
