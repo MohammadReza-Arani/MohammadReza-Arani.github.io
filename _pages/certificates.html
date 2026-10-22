@@ -36,18 +36,18 @@ author_profile: true
   <div class="certs-toolbar">
     <div class="certs-search-wrap">
       <i class="fa fa-search certs-search-icon"></i>
-      <input type="text" id="cert-search-input" class="certs-search-input" placeholder="Search 42 certificates by course name or keyword (e.g. MLOps, Docker, ARIMA, Kafka)..." aria-label="Search certificates">
-      <button type="button" id="cert-search-clear" class="certs-search-clear" style="display:none;" aria-label="Clear search">&times;</button>
+      <input type="text" id="cert-search-input" class="certs-search-input" oninput="filterCertificates(this.value)" placeholder="Search 42 certificates by course name or keyword (e.g. MLOps, Docker, ARIMA, Kafka)..." aria-label="Search certificates">
+      <button type="button" id="cert-search-clear" class="certs-search-clear" onclick="clearCertSearch()" style="display:none;" aria-label="Clear search">&times;</button>
     </div>
     <div class="certs-global-toggle-btns">
-      <button type="button" id="global-expand-btn" class="certs-btn-pill"><i class="fa fa-angle-double-down"></i> Expand All</button>
-      <button type="button" id="global-collapse-btn" class="certs-btn-pill"><i class="fa fa-angle-double-up"></i> Collapse All</button>
+      <button type="button" id="global-expand-btn" class="certs-btn-pill" onclick="expandAllCertificates()"><i class="fa fa-angle-double-down"></i> Expand All</button>
+      <button type="button" id="global-collapse-btn" class="certs-btn-pill" onclick="collapseAllCertificates()"><i class="fa fa-angle-double-up"></i> Collapse All</button>
     </div>
   </div>
 
   <div id="cert-search-status" class="cert-search-status" style="display:none;"></div>
 
-  <!-- Two-Column Layout: Categories + Floating Sticky TOC -->
+  <!-- Two-Column Layout: Categories + Floating Sticky TOC on Right Side -->
   <div class="certs-layout">
     <!-- Main Content: Category Accordions -->
     <main class="certs-main-content">
@@ -977,7 +977,7 @@ author_profile: true
     </main>
 
     <!-- Floating Right-Side Table of Contents -->
-    <aside class="certs-toc-sidebar" aria-label="Certificates Table of Contents">
+    <aside class="certs-toc-sidebar" id="certs-toc-sidebar" aria-label="Certificates Table of Contents">
       <div class="certs-sticky-toc-box">
         <div class="certs-toc-header">
           <h4 class="certs-toc-title"><i class="fa fa-bookmark"></i> Domains</h4>
@@ -986,77 +986,77 @@ author_profile: true
         <nav class="certs-toc-nav">
           <ul class="certs-toc-menu">
             <li class="certs-toc-item">
-              <a href="#cat-ai" class="certs-toc-link" data-target="cat-ai">
+              <a href="#cat-ai" class="certs-toc-link" data-target="cat-ai" onclick="scrollToDomain('cat-ai'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-microchip"></i></span>
                 <span class="certs-toc-text">AI &amp; LLMs</span>
                 <span class="certs-toc-num">9</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-mlops" class="certs-toc-link" data-target="cat-mlops">
+              <a href="#cat-mlops" class="certs-toc-link" data-target="cat-mlops" onclick="scrollToDomain('cat-mlops'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-cogs"></i></span>
                 <span class="certs-toc-text">ML &amp; MLOps</span>
                 <span class="certs-toc-num">5</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-time-series" class="certs-toc-link" data-target="cat-time-series">
+              <a href="#cat-time-series" class="certs-toc-link" data-target="cat-time-series" onclick="scrollToDomain('cat-time-series'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-line-chart"></i></span>
                 <span class="certs-toc-text">Time Series</span>
                 <span class="certs-toc-num">5</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-finance" class="certs-toc-link" data-target="cat-finance">
+              <a href="#cat-finance" class="certs-toc-link" data-target="cat-finance" onclick="scrollToDomain('cat-finance'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-usd"></i></span>
                 <span class="certs-toc-text">Quantitative Finance</span>
                 <span class="certs-toc-num">5</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-visualization" class="certs-toc-link" data-target="cat-visualization">
+              <a href="#cat-visualization" class="certs-toc-link" data-target="cat-visualization" onclick="scrollToDomain('cat-visualization'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-bar-chart"></i></span>
                 <span class="certs-toc-text">Data Visualization</span>
                 <span class="certs-toc-num">4</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-containerization" class="certs-toc-link" data-target="cat-containerization">
+              <a href="#cat-containerization" class="certs-toc-link" data-target="cat-containerization" onclick="scrollToDomain('cat-containerization'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-cubes"></i></span>
                 <span class="certs-toc-text">Cloud &amp; Containers</span>
                 <span class="certs-toc-num">4</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-oop" class="certs-toc-link" data-target="cat-oop">
+              <a href="#cat-oop" class="certs-toc-link" data-target="cat-oop" onclick="scrollToDomain('cat-oop'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-code"></i></span>
                 <span class="certs-toc-text">OOP &amp; Architecture</span>
                 <span class="certs-toc-num">3</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-governance" class="certs-toc-link" data-target="cat-governance">
+              <a href="#cat-governance" class="certs-toc-link" data-target="cat-governance" onclick="scrollToDomain('cat-governance'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-shield"></i></span>
                 <span class="certs-toc-text">Privacy &amp; Security</span>
                 <span class="certs-toc-num">3</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-statistics" class="certs-toc-link" data-target="cat-statistics">
+              <a href="#cat-statistics" class="certs-toc-link" data-target="cat-statistics" onclick="scrollToDomain('cat-statistics'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-pie-chart"></i></span>
                 <span class="certs-toc-text">Applied Statistics</span>
                 <span class="certs-toc-num">2</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-rl" class="certs-toc-link" data-target="cat-rl">
+              <a href="#cat-rl" class="certs-toc-link" data-target="cat-rl" onclick="scrollToDomain('cat-rl'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-gamepad"></i></span>
                 <span class="certs-toc-text">Reinforcement Learning</span>
                 <span class="certs-toc-num">1</span>
               </a>
             </li>
             <li class="certs-toc-item">
-              <a href="#cat-queue" class="certs-toc-link" data-target="cat-queue">
+              <a href="#cat-queue" class="certs-toc-link" data-target="cat-queue" onclick="scrollToDomain('cat-queue'); return false;">
                 <span class="certs-toc-icon"><i class="fa fa-exchange"></i></span>
                 <span class="certs-toc-text">Distributed Systems</span>
                 <span class="certs-toc-num">1</span>
@@ -1065,22 +1065,55 @@ author_profile: true
           </ul>
         </nav>
         <div class="certs-toc-footer">
-          <a href="#" id="back-to-top-btn" class="certs-toc-top-link"><i class="fa fa-arrow-up"></i> Top of Page</a>
+          <a href="#" id="back-to-top-btn" class="certs-toc-top-link" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;"><i class="fa fa-arrow-up"></i> Top of Page</a>
         </div>
       </div>
     </aside>
   </div>
 </div>
 
+<!-- Mobile Floating TOC Trigger Button & Drawer -->
+<div class="certs-mobile-toc-fab" id="certs-mobile-toc-fab" onclick="toggleMobileToc()" title="Jump to Domain">
+  <i class="fa fa-list-ul"></i> <span>Domains (11)</span>
+</div>
+<div class="certs-mobile-toc-backdrop" id="certs-mobile-toc-backdrop" onclick="toggleMobileToc(false)"></div>
+<div class="certs-mobile-toc-drawer" id="certs-mobile-toc-drawer">
+  <div class="certs-mobile-drawer-header">
+    <h4><i class="fa fa-bookmark"></i> Certificate Domains</h4>
+    <button type="button" class="certs-mobile-drawer-close" onclick="toggleMobileToc(false)">&times;</button>
+  </div>
+  <ul class="certs-mobile-drawer-menu">
+    <li><a href="#cat-ai" onclick="scrollToDomain('cat-ai'); toggleMobileToc(false); return false;"><i class="fa fa-microchip"></i> AI &amp; LLMs <span class="certs-toc-num">9</span></a></li>
+    <li><a href="#cat-mlops" onclick="scrollToDomain('cat-mlops'); toggleMobileToc(false); return false;"><i class="fa fa-cogs"></i> ML &amp; MLOps <span class="certs-toc-num">5</span></a></li>
+    <li><a href="#cat-time-series" onclick="scrollToDomain('cat-time-series'); toggleMobileToc(false); return false;"><i class="fa fa-line-chart"></i> Time Series <span class="certs-toc-num">5</span></a></li>
+    <li><a href="#cat-finance" onclick="scrollToDomain('cat-finance'); toggleMobileToc(false); return false;"><i class="fa fa-usd"></i> Quantitative Finance <span class="certs-toc-num">5</span></a></li>
+    <li><a href="#cat-visualization" onclick="scrollToDomain('cat-visualization'); toggleMobileToc(false); return false;"><i class="fa fa-bar-chart"></i> Data Visualization <span class="certs-toc-num">4</span></a></li>
+    <li><a href="#cat-containerization" onclick="scrollToDomain('cat-containerization'); toggleMobileToc(false); return false;"><i class="fa fa-cubes"></i> Cloud &amp; Containers <span class="certs-toc-num">4</span></a></li>
+    <li><a href="#cat-oop" onclick="scrollToDomain('cat-oop'); toggleMobileToc(false); return false;"><i class="fa fa-code"></i> OOP &amp; Architecture <span class="certs-toc-num">3</span></a></li>
+    <li><a href="#cat-governance" onclick="scrollToDomain('cat-governance'); toggleMobileToc(false); return false;"><i class="fa fa-shield"></i> Privacy &amp; Security <span class="certs-toc-num">3</span></a></li>
+    <li><a href="#cat-statistics" onclick="scrollToDomain('cat-statistics'); toggleMobileToc(false); return false;"><i class="fa fa-pie-chart"></i> Applied Statistics <span class="certs-toc-num">2</span></a></li>
+    <li><a href="#cat-rl" onclick="scrollToDomain('cat-rl'); toggleMobileToc(false); return false;"><i class="fa fa-gamepad"></i> Reinforcement Learning <span class="certs-toc-num">1</span></a></li>
+    <li><a href="#cat-queue" onclick="scrollToDomain('cat-queue'); toggleMobileToc(false); return false;"><i class="fa fa-exchange"></i> Distributed Systems <span class="certs-toc-num">1</span></a></li>
+  </ul>
+</div>
+
 <style>
-/* Certificates Page Styling */
+/* Ensure container expands on large screens for comfortable multi-column layout */
+@media (min-width: 1024px) {
+  #main {
+    max-width: 1350px !important;
+  }
+}
+
 .certs-page {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #334155;
   line-height: 1.5;
   margin-top: 0.5rem;
+  position: relative;
 }
 
+/* Header & Intro */
 .certs-header-card {
   background: linear-gradient(135deg, #f8fafc 0%, #edf6f9 100%);
   border: 1px solid #e2e8f0;
@@ -1143,6 +1176,7 @@ author_profile: true
   font-weight: 500;
 }
 
+/* Toolbar & Search */
 .certs-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -1244,9 +1278,10 @@ author_profile: true
   font-weight: 500;
 }
 
+/* Two-Column Layout: Main Content + Right-Side Floating Sticky TOC */
 .certs-layout {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 1.5rem;
   position: relative;
 }
@@ -1256,43 +1291,47 @@ author_profile: true
   min-width: 0;
 }
 
+/* Floating Sticky Right-Side Table of Contents */
 .certs-toc-sidebar {
-  width: 250px;
+  width: 220px;
   flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
 }
 
 .certs-sticky-toc-box {
   position: -webkit-sticky;
   position: sticky;
-  top: 1.5rem;
+  top: 80px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  padding: 1rem;
-  max-height: calc(100vh - 3rem);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 0.9rem;
+  max-height: calc(100vh - 100px);
   overflow-y: auto;
+  z-index: 50;
 }
 
 .certs-toc-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 0.65rem;
-  margin-bottom: 0.65rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #f1f5f9;
 }
 
 .certs-toc-title {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #1e293b;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.4rem;
 }
 
 .certs-toc-title i {
@@ -1302,9 +1341,9 @@ author_profile: true
 .certs-toc-badge {
   background: #edf6f9;
   color: #2488a6;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  padding: 0.15rem 0.5rem;
+  padding: 0.15rem 0.45rem;
   border-radius: 9999px;
 }
 
@@ -1314,17 +1353,17 @@ author_profile: true
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.15rem;
 }
 
 .certs-toc-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 0.6rem;
+  gap: 0.45rem;
+  padding: 0.4rem 0.5rem;
   border-radius: 6px;
   color: #475569;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-decoration: none !important;
   transition: all 0.15s ease;
   line-height: 1.3;
@@ -1346,7 +1385,7 @@ author_profile: true
   width: 16px;
   text-align: center;
   color: #64748b;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
 }
 
 .certs-toc-link.active .certs-toc-icon {
@@ -1361,34 +1400,35 @@ author_profile: true
 }
 
 .certs-toc-num {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: #94a3b8;
   font-weight: 600;
   background: #f8fafc;
-  padding: 0.1rem 0.4rem;
+  padding: 0.1rem 0.35rem;
   border-radius: 4px;
 }
 
 .certs-toc-footer {
-  margin-top: 0.85rem;
-  padding-top: 0.65rem;
+  margin-top: 0.65rem;
+  padding-top: 0.5rem;
   border-top: 1px solid #f1f5f9;
   text-align: center;
 }
 
 .certs-toc-top-link {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: #64748b;
   text-decoration: none !important;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .certs-toc-top-link:hover {
   color: #2488a6;
 }
 
+/* Category Accordions (<details>) */
 .cert-category-accordion {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -1624,39 +1664,125 @@ author_profile: true
   border-color: #cbd5e1;
 }
 
-@media (max-width: 991px) {
-  .certs-layout {
-    flex-direction: column;
-  }
-
-  .certs-toc-sidebar {
-    width: 100%;
-    order: -1;
-    margin-bottom: 0.5rem;
-  }
-
-  .certs-sticky-toc-box {
-    position: static;
-    max-height: none;
-    padding: 0.75rem;
-  }
-
-  .certs-toc-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 0.35rem;
-  }
-
-  .certs-toc-footer {
-    display: none;
-  }
-
-  .cert-cat-desc {
-    max-width: 320px;
-  }
+/* Mobile FAB and Drawer (screens <= 768px) */
+.certs-mobile-toc-fab {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #2488a6;
+  color: #ffffff;
+  padding: 0.65rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(36, 136, 166, 0.4);
+  cursor: pointer;
+  z-index: 999;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-@media (max-width: 600px) {
+.certs-mobile-toc-fab:hover {
+  background: #1b6e87;
+  transform: translateY(-2px);
+}
+
+.certs-mobile-toc-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+}
+
+.certs-mobile-toc-drawer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 1.25rem 1.5rem 2rem 1.5rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  z-index: 1001;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.15);
+  animation: slideUpDrawer 0.25s ease-out;
+}
+
+@keyframes slideUpDrawer {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.certs-mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.certs-mobile-drawer-header h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.certs-mobile-drawer-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #64748b;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.certs-mobile-drawer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.certs-mobile-drawer-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  color: #334155;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+  background: #f8fafc;
+}
+
+.certs-mobile-drawer-menu a:hover {
+  background: #edf6f9;
+  color: #2488a6;
+}
+
+/* Breakpoint for Mobile (screens <= 768px) */
+@media (max-width: 768px) {
+  .certs-toc-sidebar {
+    display: none !important;
+  }
+
+  .certs-mobile-toc-fab {
+    display: flex !important;
+  }
+
   .certs-header-card {
     padding: 1.25rem 1rem;
   }
@@ -1698,148 +1824,182 @@ author_profile: true
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const accordions = document.querySelectorAll('.cert-category-accordion');
-  const tocLinks = document.querySelectorAll('.certs-toc-link');
-  const searchInput = document.getElementById('cert-search-input');
-  const searchClear = document.getElementById('cert-search-clear');
-  const searchStatus = document.getElementById('cert-search-status');
-  const expandAllBtn = document.getElementById('global-expand-btn');
-  const collapseAllBtn = document.getElementById('global-collapse-btn');
-  const backToTopBtn = document.getElementById('back-to-top-btn');
-
-  // Master Expand / Collapse
-  if (expandAllBtn) {
-    expandAllBtn.addEventListener('click', function() {
-      accordions.forEach(acc => acc.open = true);
-    });
-  }
-
-  if (collapseAllBtn) {
-    collapseAllBtn.addEventListener('click', function() {
-      accordions.forEach(acc => acc.open = false);
-    });
-  }
-
-  // Smooth scroll and auto-open on TOC link click
-  tocLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('data-target');
-      const targetElem = document.getElementById(targetId);
-      if (targetElem) {
-        targetElem.open = true;
-        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        targetElem.classList.remove('flash-highlight');
-        void targetElem.offsetWidth;
-        targetElem.classList.add('flash-highlight');
-
-        tocLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-
-        if (history.pushState) {
-          history.pushState(null, null, '#' + targetId);
-        }
-      }
-    });
+// Global functions defined directly on window
+window.expandAllCertificates = function() {
+  var accordions = document.querySelectorAll('.cert-category-accordion');
+  accordions.forEach(function(acc) {
+    acc.open = true;
+    acc.setAttribute('open', '');
   });
+};
 
-  // Back to top
-  if (backToTopBtn) {
-    backToTopBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+window.collapseAllCertificates = function() {
+  var accordions = document.querySelectorAll('.cert-category-accordion');
+  accordions.forEach(function(acc) {
+    acc.open = false;
+    acc.removeAttribute('open');
+  });
+};
+
+window.filterCertificates = function(queryVal) {
+  var query = (queryVal || '').trim().toLowerCase();
+  var clearBtn = document.getElementById('cert-search-clear');
+  var statusElem = document.getElementById('cert-search-status');
+  var accordions = document.querySelectorAll('.cert-category-accordion');
+
+  if (clearBtn) {
+    clearBtn.style.display = query.length > 0 ? 'block' : 'none';
   }
 
-  // Live Instant Search Filter
-  if (searchInput) {
-    searchInput.addEventListener('input', function() {
-      const query = this.value.trim().toLowerCase();
-      
-      if (query.length > 0) {
-        searchClear.style.display = 'block';
-        let matchCount = 0;
-        let visibleCats = 0;
+  if (query.length > 0) {
+    var matchCount = 0;
+    var visibleCats = 0;
 
-        accordions.forEach(acc => {
-          const cards = acc.querySelectorAll('.cert-card');
-          let catMatchCount = 0;
+    accordions.forEach(function(acc) {
+      var cards = acc.querySelectorAll('.cert-card');
+      var catMatches = 0;
 
-          cards.forEach(card => {
-            const courseName = card.getAttribute('data-course') || '';
-            if (courseName.includes(query)) {
-              card.style.display = 'flex';
-              catMatchCount++;
-              matchCount++;
-            } else {
-              card.style.display = 'none';
-            }
-          });
+      cards.forEach(function(card) {
+        var courseName = (card.getAttribute('data-course') || '').toLowerCase();
+        if (courseName.indexOf(query) !== -1) {
+          card.style.display = 'flex';
+          catMatches++;
+          matchCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
 
-          if (catMatchCount > 0) {
-            acc.style.display = 'block';
-            acc.open = true;
-            visibleCats++;
-          } else {
-            acc.style.display = 'none';
-          }
-        });
-
-        searchStatus.style.display = 'block';
-        searchStatus.textContent = 'Found ' + matchCount + ' matching ' + (matchCount === 1 ? 'certificate' : 'certificates') + ' across ' + visibleCats + ' ' + (visibleCats === 1 ? 'domain' : 'domains') + '.';
+      if (catMatches > 0) {
+        acc.style.display = 'block';
+        acc.open = true;
+        acc.setAttribute('open', '');
+        visibleCats++;
       } else {
-        searchClear.style.display = 'none';
-        searchStatus.style.display = 'none';
-        accordions.forEach(acc => {
-          acc.style.display = 'block';
-          const cards = acc.querySelectorAll('.cert-card');
-          cards.forEach(card => card.style.display = 'flex');
-        });
+        acc.style.display = 'none';
       }
     });
 
-    if (searchClear) {
-      searchClear.addEventListener('click', function() {
-        searchInput.value = '';
-        searchInput.dispatchEvent(new Event('input'));
-        searchInput.focus();
+    if (statusElem) {
+      statusElem.style.display = 'block';
+      statusElem.textContent = 'Found ' + matchCount + ' ' + (matchCount === 1 ? 'certificate' : 'certificates') + ' matching "' + queryVal.trim() + '" across ' + visibleCats + ' ' + (visibleCats === 1 ? 'domain' : 'domains') + '.';
+    }
+  } else {
+    if (statusElem) {
+      statusElem.style.display = 'none';
+    }
+    accordions.forEach(function(acc) {
+      acc.style.display = 'block';
+      var cards = acc.querySelectorAll('.cert-card');
+      cards.forEach(function(card) {
+        card.style.display = 'flex';
       });
+    });
+  }
+};
+
+window.clearCertSearch = function() {
+  var searchInput = document.getElementById('cert-search-input');
+  if (searchInput) {
+    searchInput.value = '';
+    window.filterCertificates('');
+    searchInput.focus();
+  }
+};
+
+window.scrollToDomain = function(targetId) {
+  var targetElem = document.getElementById(targetId);
+  if (targetElem) {
+    targetElem.open = true;
+    targetElem.setAttribute('open', '');
+
+    var yOffset = -75;
+    var y = targetElem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+
+    targetElem.classList.remove('flash-highlight');
+    void targetElem.offsetWidth;
+    targetElem.classList.add('flash-highlight');
+
+    var tocLinks = document.querySelectorAll('.certs-toc-link');
+    tocLinks.forEach(function(l) {
+      if (l.getAttribute('data-target') === targetId) {
+        l.classList.add('active');
+      } else {
+        l.classList.remove('active');
+      }
+    });
+
+    if (history.pushState) {
+      history.pushState(null, null, '#' + targetId);
     }
   }
+};
 
-  // Check URL hash on page load (e.g., #cat-mlops)
+window.toggleMobileToc = function(forceState) {
+  var backdrop = document.getElementById('certs-mobile-toc-backdrop');
+  var drawer = document.getElementById('certs-mobile-toc-drawer');
+  if (!backdrop || !drawer) return;
+
+  var isOpening = (forceState !== undefined) ? forceState : (drawer.style.display !== 'block');
+  if (isOpening) {
+    backdrop.style.display = 'block';
+    drawer.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  } else {
+    backdrop.style.display = 'none';
+    drawer.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+};
+
+function setupCertificateListeners() {
+  // Bind expand / collapse buttons
+  var expandBtn = document.getElementById('global-expand-btn');
+  if (expandBtn) {
+    expandBtn.onclick = function() { window.expandAllCertificates(); };
+  }
+
+  var collapseBtn = document.getElementById('global-collapse-btn');
+  if (collapseBtn) {
+    collapseBtn.onclick = function() { window.collapseAllCertificates(); };
+  }
+
+  // Bind search input
+  var searchInput = document.getElementById('cert-search-input');
+  if (searchInput) {
+    searchInput.oninput = function() { window.filterCertificates(this.value); };
+  }
+
+  var searchClear = document.getElementById('cert-search-clear');
+  if (searchClear) {
+    searchClear.onclick = function() { window.clearCertSearch(); };
+  }
+
+  // Check URL hash on page load (e.g. #cat-mlops)
   if (window.location.hash) {
-    const hashTarget = document.querySelector(window.location.hash);
-    if (hashTarget && hashTarget.classList.contains('cert-category-accordion')) {
-      hashTarget.open = true;
-      setTimeout(() => {
-        hashTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        hashTarget.classList.add('flash-highlight');
-      }, 200);
-      const activeLink = document.querySelector('.certs-toc-link[data-target="' + window.location.hash.substring(1) + '"]');
-      if (activeLink) {
-        tocLinks.forEach(l => l.classList.remove('active'));
-        activeLink.classList.add('active');
-      }
+    var hashId = window.location.hash.substring(1);
+    if (document.getElementById(hashId)) {
+      setTimeout(function() { window.scrollToDomain(hashId); }, 250);
     }
   }
 
   // Scrollspy: update active TOC item on scroll
-  let isScrolling;
+  var scrollTimer;
   window.addEventListener('scroll', function() {
-    clearTimeout(isScrolling);
-    isScrolling = setTimeout(function() {
-      let currentId = '';
-      accordions.forEach(acc => {
-        const rect = acc.getBoundingClientRect();
-        if (rect.top <= 160 && rect.bottom >= 160) {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(function() {
+      var accordions = document.querySelectorAll('.cert-category-accordion');
+      var currentId = '';
+      accordions.forEach(function(acc) {
+        var rect = acc.getBoundingClientRect();
+        if (rect.top <= 180 && rect.bottom >= 100) {
           currentId = acc.id;
         }
       });
       if (currentId) {
-        tocLinks.forEach(link => {
+        var links = document.querySelectorAll('.certs-toc-link');
+        links.forEach(function(link) {
           if (link.getAttribute('data-target') === currentId) {
             link.classList.add('active');
           } else {
@@ -1847,7 +2007,15 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       }
-    }, 50);
+    }, 60);
   });
-});
+}
+
+// Execute setup immediately or on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupCertificateListeners);
+} else {
+  setupCertificateListeners();
+}
+
 </script>
