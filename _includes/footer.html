@@ -1,24 +1,71 @@
 {% include base_path %}
 
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-</div>
+<div class="academic-footer-top-accent"></div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="academic-footer-container">
+  <div class="academic-footer-grid">
+    <!-- Col 1: Scholar Information & Affiliation -->
+    <div class="academic-footer-col academic-footer-col--bio">
+      <div class="footer-brand-header">
+        <span class="footer-brand-icon"><i class="fas fa-graduation-cap"></i></span>
+        <h3 class="footer-brand-name">MohammadReza Arani Bidhendi</h3>
+      </div>
+      <p class="footer-brand-title">
+        <i class="fas fa-university"></i> University of Tehran &bull; Dept. of Electrical &amp; Computer Engineering
+      </p>
+      <p class="footer-brand-desc">
+        Graduate researcher in Field &amp; Wave Electromagnetics, 77 GHz Slotted SIW radar systems, convex optimization, and biomedical signal processing.
+      </p>
+      <div class="footer-meta-badges">
+        <span class="footer-meta-pill"><i class="fas fa-map-marker-alt"></i> Tehran, Iran</span>
+        <span class="footer-meta-pill"><i class="fas fa-award"></i> Brilliant Talent Quota</span>
+      </div>
+    </div>
+
+    <!-- Col 2: Academic Pages Navigation -->
+    <div class="academic-footer-col academic-footer-col--nav">
+      <h4 class="footer-col-heading"><i class="fas fa-compass"></i> Academic Pages</h4>
+      <ul class="footer-nav-list">
+        <li><a href="{{ base_path }}/"><i class="fas fa-home"></i> Biography / Home</a></li>
+        <li><a href="{{ base_path }}/Projects.html"><i class="fas fa-project-diagram"></i> Engineering Projects</a></li>
+        <li><a href="{{ base_path }}/certificates/"><i class="fas fa-certificate"></i> Verified Certificates</a></li>
+        <li><a href="{{ base_path }}/cv/"><i class="fas fa-file-alt"></i> Curriculum Vitae</a></li>
+        <li><a href="{{ base_path }}/publications/"><i class="fas fa-book"></i> Publications</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Research & Scholarly Profiles -->
+    <div class="academic-footer-col academic-footer-col--links">
+      <h4 class="footer-col-heading"><i class="fas fa-network-wired"></i> Research &amp; Connect</h4>
+      <ul class="footer-links-list">
+        {% if site.author.googlescholar %}
+          <li><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+        {% endif %}
+        {% if site.author.researchgate %}
+          <li><a href="{{ site.author.researchgate }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate"></i> ResearchGate</a></li>
+        {% endif %}
+        {% assign linkedin_url = site.author.linkedin | default: site.author.LinkedIn %}
+        {% if linkedin_url %}
+          <li><a href="{{ linkedin_url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        {% endif %}
+        {% if site.author.github %}
+          <li><a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+        {% endif %}
+        {% assign so_url = site.author.stackoverflow | default: site.author.StackOverflow %}
+        {% if so_url %}
+          <li><a href="{{ so_url }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-stack-overflow"></i> Stack Overflow</a></li>
+        {% endif %}
+        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fas fa-rss"></i> RSS Feed</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="academic-footer-bottom">
+    <div class="academic-footer-bottom-left">
+      &copy; {{ site.time | date: '%Y' }} <strong>MohammadReza Arani Bidhendi</strong>. Hosted via GitHub Pages.
+    </div>
+    <div class="academic-footer-bottom-right">
+      <span>Academic Profile &bull; University of Tehran</span>
+    </div>
+  </div>
+</div>
