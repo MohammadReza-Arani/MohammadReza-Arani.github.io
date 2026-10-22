@@ -257,19 +257,17 @@
     }
   }
 
-  /* Ensure all header navigation tabs remain visible on desktop */
+  /* Ensure all header navigation tabs remain visible on all screen sizes */
   function ensureNavTabsVisible() {
-    if (window.innerWidth >= 768) {
-      var vlinks = document.querySelector('#site-nav .visible-links');
-      var hlinks = document.querySelector('#site-nav .hidden-links');
-      var btn = document.querySelector('#site-nav button');
-      if (vlinks && hlinks) {
-        while (hlinks.children.length > 0) {
-          vlinks.appendChild(hlinks.children[0]);
-        }
-        if (btn) btn.classList.add('hidden');
-        hlinks.classList.add('hidden');
+    var vlinks = document.querySelector('#site-nav .visible-links');
+    var hlinks = document.querySelector('#site-nav .hidden-links');
+    var btn = document.querySelector('#site-nav button');
+    if (vlinks && hlinks) {
+      while (hlinks.children.length > 0) {
+        vlinks.appendChild(hlinks.children[0]);
       }
+      if (btn) btn.classList.add('hidden');
+      hlinks.classList.add('hidden');
     }
   }
   window.addEventListener('resize', ensureNavTabsVisible);

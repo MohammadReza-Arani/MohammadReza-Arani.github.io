@@ -359,17 +359,55 @@
   }
 }
 
-/* Ensure that on desktop/tablets (>= 768px), ALL tabs are ALWAYS visible inline */
-@media (min-width: 768px) {
+/* Ensure ALL 4 navigation tabs are ALWAYS visible inline across ALL screen sizes (no hamburger dropdown) */
+#site-nav {
+  button {
+    display: none !important;
+  }
+  .hidden-links {
+    display: none !important;
+  }
+  .visible-links {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 767px) {
   #site-nav {
-    button {
-      display: none !important;
-    }
-    .hidden-links {
-      display: none !important;
-    }
+    width: 100% !important;
+
     .visible-links {
+      width: 100% !important;
       display: flex !important;
+      justify-content: space-between !important;
+      gap: 4px !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        flex: 1 1 0 !important;
+        text-align: center !important;
+        min-width: 0 !important;
+        display: block !important;
+      }
+
+      a {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.38rem 0.2rem !important;
+        font-size: 0.76rem !important;
+        white-space: nowrap !important;
+        border-radius: 6px !important;
+
+        .nav-icon {
+          font-size: 0.72rem !important;
+          margin-right: 3px !important;
+        }
+      }
     }
   }
 }
