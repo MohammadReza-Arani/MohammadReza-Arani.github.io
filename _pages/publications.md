@@ -149,7 +149,7 @@ redirect_from:
         <div class="pub-entry-card thesis-card">
           <div class="pub-entry-badge-row">
             <span class="pub-type-badge msc"><i class="fas fa-user-graduate"></i> M.Sc. Graduate Thesis</span>
-            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2022 &ndash; Present</span>
+            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2022 &ndash; 2024</span>
             <span class="pub-venue-badge"><i class="fas fa-university"></i> Univ. of Tehran</span>
           </div>
 
@@ -162,7 +162,7 @@ redirect_from:
           </p>
 
           <p class="pub-entry-venue">
-            <i class="fas fa-building"></i> Department of Electrical &amp; Computer Engineering, University of Tehran. Degree: Master of Science in Electrical Engineering (Field and Wave).
+            <i class="fas fa-building"></i> Department of Electrical &amp; Computer Engineering, University of Tehran. Degree: Master of Science in Electrical Engineering (Field and Wave) &bull; Defended &amp; Conferred: September 21, 2024.
           </p>
 
           <div class="pub-thesis-highlights">

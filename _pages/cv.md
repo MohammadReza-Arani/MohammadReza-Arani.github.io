@@ -45,7 +45,7 @@ redirect_from:
         <div class="cv-stat-pill">
           <span class="cv-stat-icon"><i class="fas fa-clipboard-check"></i></span>
           <div class="cv-stat-info">
-            <span class="cv-stat-val">GRE 323 / TOEFL 101</span>
+            <span class="cv-stat-val">GRE 323 / TOEFL 105</span>
             <span class="cv-stat-lbl">ETS Standardized Tests</span>
           </div>
         </div>
@@ -91,7 +91,7 @@ redirect_from:
                 <span class="cv-item-org"><i class="fas fa-university"></i> <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> &bull; Department of Electrical &amp; Computer Engineering</span>
               </div>
               <div class="cv-item-meta">
-                <span class="cv-badge-date"><i class="fas fa-calendar-alt"></i> 2021 &ndash; Present</span>
+                <span class="cv-badge-date"><i class="fas fa-calendar-alt"></i> 2021 &ndash; 2024</span>
                 <span class="cv-badge-gpa"><i class="fas fa-star"></i> GPA: <strong>17.37 / 20 (3.76 / 4.00)</strong></span>
               </div>
             </div>
@@ -102,7 +102,8 @@ redirect_from:
               <div class="cv-callout-box">
                 <i class="fas fa-crosshairs cv-callout-icon"></i>
                 <div class="cv-callout-text">
-                  <strong>Master's Thesis:</strong> <em>A Novel Framework to Optimize Sensor Arrays in 1, 2, and 3 Dimensions with Physical Constraints for Medical Brain Stimulation and Signal Processing</em> (Advisor: <strong>Dr. S. Akhavan</strong>).
+                  <strong>Master's Thesis:</strong> <em>A Novel Framework to Optimize Sensor Arrays in 1, 2, and 3 Dimensions with Physical Constraints for Medical Brain Stimulation and Signal Processing</em> (Advisor: <strong>Dr. S. Akhavan</strong>).<br>
+                  <span style="font-size: 0.88rem; color: #475569; display: inline-block; margin-top: 5px;"><i class="fas fa-check-circle" style="color: #059669;"></i> <strong>Degree Conferred:</strong> September 21, 2024</span>
                 </div>
               </div>
             </div>
@@ -179,7 +180,7 @@ redirect_from:
             </div>
           </div>
 
-          <!-- TOEFL Card -->
+          <!-- TOEFL Card (Latest: Sep 2025) -->
           <div class="cv-score-card">
             <div class="score-card-top">
               <div class="score-logo toefl"><i class="fas fa-language"></i></div>
@@ -187,24 +188,71 @@ redirect_from:
                 <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
                 <span class="score-issuer">Educational Testing Service (ETS)</span>
               </div>
-              <span class="score-total-badge toefl">101 / 120</span>
+              <span class="score-total-badge toefl">105 / 120</span>
             </div>
             <div class="score-date-row">
-              <i class="fas fa-calendar-alt"></i> Test Date: <strong>August 5, 2023</strong>
+              <i class="fas fa-calendar-alt"></i> Test Date: <strong>September 03, 2025</strong>
+              <span style="margin-left:auto; font-size:0.72rem; background:#dcfce7; color:#15803d; padding:2px 7px; border-radius:999px; font-weight:700;"><i class="fas fa-star"></i> Latest</span>
             </div>
             <div class="score-sub-list">
               <div class="score-sub-item">
                 <span class="score-sub-label">Reading</span>
-                <span class="score-sub-val high">Advanced</span>
+                <span class="score-sub-val high">25 / 30 &bull; Advanced</span>
               </div>
               <div class="score-sub-item">
                 <span class="score-sub-label">Listening</span>
-                <span class="score-sub-val high">Advanced</span>
+                <span class="score-sub-val high">28 / 30 &bull; Advanced</span>
               </div>
               <div class="score-sub-item">
-                <span class="score-sub-label">Speaking &amp; Writing</span>
-                <span class="score-sub-val">High Proficiency</span>
+                <span class="score-sub-label">Speaking</span>
+                <span class="score-sub-val high">26 / 30 &bull; Advanced</span>
               </div>
+              <div class="score-sub-item">
+                <span class="score-sub-label">Writing</span>
+                <span class="score-sub-val high">26 / 30 &bull; Advanced</span>
+              </div>
+            </div>
+            <div class="score-extra-note" style="margin-top:8px; font-size:0.75rem; color:#64748b; display:flex; justify-content:space-between; border-top:1px dashed #e2e8f0; padding-top:6px;">
+              <span>CEFR Level: <strong>C1 (Advanced)</strong></span>
+              <span>Center: <strong>Khatam Univ.</strong></span>
+            </div>
+          </div>
+
+          <!-- TOEFL Card (Previous: Aug 2023) -->
+          <div class="cv-score-card">
+            <div class="score-card-top">
+              <div class="score-logo toefl" style="opacity: 0.9;"><i class="fas fa-language"></i></div>
+              <div class="score-title-wrap">
+                <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
+                <span class="score-issuer">Educational Testing Service (ETS)</span>
+              </div>
+              <span class="score-total-badge toefl" style="background: #fef9c3; color: #854d0e; border-color: #fef08a;">101 / 120</span>
+            </div>
+            <div class="score-date-row">
+              <i class="fas fa-calendar-alt"></i> Test Date: <strong>August 05, 2023</strong>
+              <span style="margin-left:auto; font-size:0.72rem; background:#f1f5f9; color:#475569; padding:2px 7px; border-radius:999px; font-weight:600;">Prior Test</span>
+            </div>
+            <div class="score-sub-list">
+              <div class="score-sub-item">
+                <span class="score-sub-label">Reading</span>
+                <span class="score-sub-val high">27 / 30 &bull; Advanced</span>
+              </div>
+              <div class="score-sub-item">
+                <span class="score-sub-label">Listening</span>
+                <span class="score-sub-val high">27 / 30 &bull; Advanced</span>
+              </div>
+              <div class="score-sub-item">
+                <span class="score-sub-label">Speaking</span>
+                <span class="score-sub-val">21 / 30 &bull; High-Interm.</span>
+              </div>
+              <div class="score-sub-item">
+                <span class="score-sub-label">Writing</span>
+                <span class="score-sub-val high">26 / 30 &bull; Advanced</span>
+              </div>
+            </div>
+            <div class="score-extra-note" style="margin-top:8px; font-size:0.75rem; color:#64748b; display:flex; justify-content:space-between; border-top:1px dashed #e2e8f0; padding-top:6px;">
+              <span>CEFR Level: <strong>C1 (Advanced)</strong></span>
+              <span>Center: <strong>Khatam Univ.</strong></span>
             </div>
           </div>
         </div>
@@ -221,7 +269,7 @@ redirect_from:
             <span class="lang-flag"><i class="fas fa-globe"></i></span>
             <div class="lang-info">
               <span class="lang-name">English</span>
-              <span class="lang-level">Professional &amp; Academic Working Proficiency (TOEFL 101, GRE 323)</span>
+              <span class="lang-level">Professional &amp; Academic Working Proficiency (TOEFL 105 [Sep 2025] &amp; 101 [Aug 2023], GRE 323)</span>
             </div>
           </div>
         </div>
@@ -239,13 +287,32 @@ redirect_from:
 
         <div class="cv-timeline">
 
+          <!-- Position: Compulsory Military Service -->
+          <div class="cv-timeline-node">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Compulsory Military Service</h3>
+                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> Nov 2025 &ndash; Mar 2027</span>
+              </div>
+              <span class="timeline-inst"><i class="fas fa-shield-alt"></i> National Military Service Duty</span>
+              <ul class="timeline-bullets">
+                <li>Currently fulfilling mandatory national military service obligation (commenced: November 22, 2025; scheduled completion: March 21, 2027).</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="cv-chip"><i class="fas fa-flag"></i> National Service</span>
+                <span class="cv-chip"><i class="fas fa-hourglass-half"></i> Active Service</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Position 1 -->
           <div class="cv-timeline-node">
             <div class="timeline-marker"></div>
             <div class="timeline-content-card">
               <div class="timeline-header">
                 <h3 class="timeline-role">Graduate Researcher &bull; Master's Project</h3>
-                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> Jan 2022 &ndash; Present</span>
+                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> Jan 2022 &ndash; Sep 2024</span>
               </div>
               <span class="timeline-inst"><i class="fas fa-university"></i> University of Tehran &bull; Department of Electrical &amp; Computer Engineering</span>
               <p class="timeline-supervisor">
@@ -1187,9 +1254,15 @@ window.addEventListener('scroll', function() {
   margin-bottom: 1.25rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 960px) {
   .cv-scores-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 620px) and (max-width: 959px) {
+  .cv-scores-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

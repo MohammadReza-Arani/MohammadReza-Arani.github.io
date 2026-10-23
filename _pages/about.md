@@ -86,7 +86,7 @@ redirect_from:
         
         <div class="home-bio-body">
           <p>
-            I am a graduate student at the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a>, studying the Electrical Engineering master program majoring in <strong>Field and wave</strong>. I received my B.Sc. in Electrical Engineering from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in 2021 with a brilliant talent quota, which means I was able to register for the master's program without taking the Master's Entrance Exam based on my ranking in the undergraduate program.
+            I received my Master of Science in Electrical Engineering (Field and Wave) from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in September 2024. Prior to that, I earned my B.Sc. in Electrical Engineering from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in 2021 with the National Brilliant Talent Quota (exempted from the national M.Sc. entrance exam based on top undergraduate ranking). Currently, I am fulfilling my mandatory national military service duty (Nov 2025 &ndash; Mar 2027).
           </p>
           <p>
             I am passionate about learning new technologies and concepts, especially those that involve <strong>complex mathematics</strong>. I have a strong foundation in mathematics, which allows me to understand and apply these technologies in creative and innovative ways. My interests tend over in <strong>optimization</strong>, <strong>machine learning</strong>, <strong>neural networks</strong>, <strong>Biomedical Signal Processing</strong>, and <strong>Brain Signal Processing</strong>. These technologies have the potential to revolutionize many industries and solve some of the world's most challenging problems. I am excited to be a part of this revolution and to use these technologies to make a positive impact on the world.
@@ -145,6 +145,30 @@ redirect_from:
         </div>
 
         <div class="home-news-timeline">
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Nov 2025</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Compulsory Military Service:</strong> Commenced national compulsory military service obligation (Nov 22, 2025 &ndash; Mar 21, 2027).</span>
+              <a href="{{ base_path }}/cv/#research-experience" class="news-link">View Trajectory <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Sep 2025</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>New TOEFL iBT&reg; Score (105 / 120):</strong> Achieved an updated overall score of <strong>105 / 120</strong> on the official ETS TOEFL examination (Reading: 25, Listening: 28, Speaking: 26, Writing: 26 — all Advanced / CEFR C1).</span>
+              <a href="{{ base_path }}/cv/#test-scores" class="news-link">View Score Breakdown <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Sep 2024</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>M.Sc. Graduation:</strong> Successfully graduated from the Master of Science program in Electrical Engineering (Field and Wave) at University of Tehran (Sep 21, 2024; GPA: 17.37/20, 3.76/4.00).</span>
+              <a href="{{ base_path }}/cv/#education" class="news-link">View Degree Credentials <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
 
           <div class="home-news-item">
             <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
