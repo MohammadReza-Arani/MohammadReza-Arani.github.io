@@ -154,15 +154,20 @@ redirect_from:
           <!-- GRE Card -->
           <div class="cv-score-card">
             <div class="score-card-top">
-              <div class="score-logo"><i class="fas fa-certificate"></i></div>
-              <div class="score-title-wrap">
-                <h3 class="score-exam-name">GRE&reg; General Test</h3>
-                <span class="score-issuer">Educational Testing Service (ETS)</span>
+              <div class="score-card-brand">
+                <div class="score-logo"><i class="fas fa-certificate"></i></div>
+                <div class="score-title-wrap">
+                  <h3 class="score-exam-name">GRE&reg; General Test</h3>
+                  <span class="score-issuer">ETS &bull; Educational Testing</span>
+                </div>
               </div>
-              <span class="score-total-badge">323 / 340</span>
+              <div class="score-total-badge">
+                <span class="score-num">323</span><span class="score-slash">/</span><span class="score-denom">340</span>
+              </div>
             </div>
             <div class="score-date-row">
-              <i class="fas fa-calendar-alt"></i> Test Date: <strong>October 16, 2023</strong>
+              <span class="score-date-val"><i class="fas fa-calendar-alt"></i> <strong>Oct 16, 2023</strong></span>
+              <span class="score-status-badge ets">Official ETS</span>
             </div>
             <div class="score-sub-list">
               <div class="score-sub-item">
@@ -178,21 +183,29 @@ redirect_from:
                 <span class="score-sub-val">Demonstrated</span>
               </div>
             </div>
+            <div class="score-extra-note">
+              <span>Exam: <strong>General Test</strong></span>
+              <span>Percentile: <strong>Competitive</strong></span>
+            </div>
           </div>
 
           <!-- TOEFL Card (Latest: Sep 2025) -->
           <div class="cv-score-card">
             <div class="score-card-top">
-              <div class="score-logo toefl"><i class="fas fa-language"></i></div>
-              <div class="score-title-wrap">
-                <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
-                <span class="score-issuer">Educational Testing Service (ETS)</span>
+              <div class="score-card-brand">
+                <div class="score-logo toefl"><i class="fas fa-language"></i></div>
+                <div class="score-title-wrap">
+                  <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
+                  <span class="score-issuer">ETS &bull; Educational Testing</span>
+                </div>
               </div>
-              <span class="score-total-badge toefl">105 / 120</span>
+              <div class="score-total-badge toefl">
+                <span class="score-num">105</span><span class="score-slash">/</span><span class="score-denom">120</span>
+              </div>
             </div>
             <div class="score-date-row">
-              <i class="fas fa-calendar-alt"></i> Test Date: <strong>September 03, 2025</strong>
-              <span style="margin-left:auto; font-size:0.72rem; background:#dcfce7; color:#15803d; padding:2px 7px; border-radius:999px; font-weight:700;"><i class="fas fa-star"></i> Latest</span>
+              <span class="score-date-val"><i class="fas fa-calendar-alt"></i> <strong>Sep 03, 2025</strong></span>
+              <span class="score-status-badge latest"><i class="fas fa-star"></i> Latest Exam</span>
             </div>
             <div class="score-sub-list">
               <div class="score-sub-item">
@@ -212,7 +225,7 @@ redirect_from:
                 <span class="score-sub-val high">26 / 30 &bull; Advanced</span>
               </div>
             </div>
-            <div class="score-extra-note" style="margin-top:8px; font-size:0.75rem; color:#64748b; display:flex; justify-content:space-between; border-top:1px dashed #e2e8f0; padding-top:6px;">
+            <div class="score-extra-note">
               <span>CEFR Level: <strong>C1 (Advanced)</strong></span>
               <span>Center: <strong>Khatam Univ.</strong></span>
             </div>
@@ -221,16 +234,20 @@ redirect_from:
           <!-- TOEFL Card (Previous: Aug 2023) -->
           <div class="cv-score-card">
             <div class="score-card-top">
-              <div class="score-logo toefl" style="opacity: 0.9;"><i class="fas fa-language"></i></div>
-              <div class="score-title-wrap">
-                <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
-                <span class="score-issuer">Educational Testing Service (ETS)</span>
+              <div class="score-card-brand">
+                <div class="score-logo toefl" style="opacity: 0.9;"><i class="fas fa-language"></i></div>
+                <div class="score-title-wrap">
+                  <h3 class="score-exam-name">TOEFL iBT&reg; Test</h3>
+                  <span class="score-issuer">ETS &bull; Educational Testing</span>
+                </div>
               </div>
-              <span class="score-total-badge toefl" style="background: #fef9c3; color: #854d0e; border-color: #fef08a;">101 / 120</span>
+              <div class="score-total-badge toefl prior">
+                <span class="score-num">101</span><span class="score-slash">/</span><span class="score-denom">120</span>
+              </div>
             </div>
             <div class="score-date-row">
-              <i class="fas fa-calendar-alt"></i> Test Date: <strong>August 05, 2023</strong>
-              <span style="margin-left:auto; font-size:0.72rem; background:#f1f5f9; color:#475569; padding:2px 7px; border-radius:999px; font-weight:600;">Prior Test</span>
+              <span class="score-date-val"><i class="fas fa-calendar-alt"></i> <strong>Aug 05, 2023</strong></span>
+              <span class="score-status-badge prior">Prior Exam</span>
             </div>
             <div class="score-sub-list">
               <div class="score-sub-item">
@@ -243,14 +260,14 @@ redirect_from:
               </div>
               <div class="score-sub-item">
                 <span class="score-sub-label">Speaking</span>
-                <span class="score-sub-val">21 / 30 &bull; High-Interm.</span>
+                <span class="score-sub-val">21 / 30 &bull; High-Int.</span>
               </div>
               <div class="score-sub-item">
                 <span class="score-sub-label">Writing</span>
                 <span class="score-sub-val high">26 / 30 &bull; Advanced</span>
               </div>
             </div>
-            <div class="score-extra-note" style="margin-top:8px; font-size:0.75rem; color:#64748b; display:flex; justify-content:space-between; border-top:1px dashed #e2e8f0; padding-top:6px;">
+            <div class="score-extra-note">
               <span>CEFR Level: <strong>C1 (Advanced)</strong></span>
               <span>Center: <strong>Khatam Univ.</strong></span>
             </div>
@@ -1254,44 +1271,63 @@ window.addEventListener('scroll', function() {
   margin-bottom: 1.25rem;
 }
 
-@media (min-width: 960px) {
+/* Laptops & Desktops: 3 columns when >= 1200px */
+@media (min-width: 1200px) {
   .cv-scores-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 620px) and (max-width: 959px) {
+/* Medium viewports (tablets & laptops with sidebar visible, 660px to 1199px) */
+@media (min-width: 660px) and (max-width: 1199px) {
   .cv-scores-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
 
 .cv-score-card {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1.4rem;
+  border-radius: 14px;
+  padding: 1.25rem 1.2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  transition: all 0.2s ease;
+}
+
+.cv-score-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
 }
 
 .score-card-top {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 8px;
   margin-bottom: 0.85rem;
 }
 
+.score-card-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
 .score-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
   background: #dbeafe;
   color: #1d4ed8;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   flex-shrink: 0;
 }
 
@@ -1303,29 +1339,37 @@ window.addEventListener('scroll', function() {
 .score-title-wrap {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  min-width: 0;
 }
 
 .score-exam-name {
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   font-weight: 800;
   color: #0f172a;
   margin: 0;
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 .score-issuer {
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   color: #64748b;
+  white-space: nowrap;
 }
 
+/* Strictly Horizontal Single-Line Score Badge (No Vertical Expansion) */
 .score-total-badge {
-  font-size: 1.15rem;
-  font-weight: 800;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
   color: #1e40af;
   background: #dbeafe;
   border: 1px solid #bfdbfe;
-  padding: 4px 10px;
+  padding: 4px 10px !important;
   border-radius: 8px;
+  line-height: 1 !important;
 }
 
 .score-total-badge.toefl {
@@ -1334,23 +1378,84 @@ window.addEventListener('scroll', function() {
   border-color: #fde68a;
 }
 
+.score-total-badge.toefl.prior {
+  background: #fef9c3;
+  color: #854d0e;
+  border-color: #fef08a;
+}
+
+.score-total-badge .score-num {
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.score-total-badge .score-slash {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 2px;
+  opacity: 0.65;
+}
+
+.score-total-badge .score-denom {
+  font-size: 0.88rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
 .score-date-row {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: #475569;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   padding: 6px 10px;
-  border-radius: 6px;
-  margin-bottom: 0.9rem;
+  border-radius: 7px;
+  margin-bottom: 0.85rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 6px;
+}
+
+.score-date-val {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.score-status-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.score-status-badge.latest {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.score-status-badge.prior {
+  background: #f1f5f9;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+.score-status-badge.ets {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
 }
 
 .score-sub-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
+  flex-grow: 1;
 }
 
 .score-sub-item {
@@ -1360,22 +1465,38 @@ window.addEventListener('scroll', function() {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 0.8rem;
+  padding: 5px 9px;
+  font-size: 0.78rem;
+  gap: 6px;
 }
 
 .score-sub-label {
   font-weight: 600;
   color: #334155;
+  white-space: nowrap;
 }
 
 .score-sub-val {
   font-weight: 700;
   color: #0284c7;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .score-sub-val.high {
   color: #059669;
+}
+
+.score-extra-note {
+  margin-top: 8px;
+  font-size: 0.73rem;
+  color: #64748b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 6px;
+  white-space: nowrap;
 }
 
 .cv-lang-bar {
@@ -2183,6 +2304,32 @@ window.addEventListener('scroll', function() {
   }
   .cv-item-card {
     padding: 1.15rem 1.15rem;
+  }
+  .cv-score-card {
+    padding: 1.15rem 1rem;
+  }
+  .score-card-brand {
+    gap: 8px;
+  }
+  .score-logo {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  .score-exam-name {
+    font-size: 0.92rem;
+  }
+  .score-total-badge {
+    padding: 3px 8px !important;
+  }
+  .score-total-badge .score-num {
+    font-size: 1.1rem;
+  }
+  .score-total-badge .score-slash {
+    font-size: 0.9rem;
+  }
+  .score-total-badge .score-denom {
+    font-size: 0.82rem;
   }
   .cv-download-btn-hero {
     margin-left: 0;
