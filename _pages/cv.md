@@ -150,45 +150,46 @@ redirect_from:
           <span class="cv-section-subtitle"><i class="fas fa-globe-americas"></i> Official ETS Standardized Examinations &amp; Linguistic Proficiencies</span>
         </div>
 
-        <div class="cv-scores-grid">
-          <!-- GRE Card -->
-          <div class="cv-score-card">
-            <div class="score-card-top">
-              <div class="score-card-brand">
-                <div class="score-logo"><i class="fas fa-certificate"></i></div>
-                <div class="score-title-wrap">
-                  <h3 class="score-exam-name">GRE&reg; General Test</h3>
-                  <span class="score-issuer">ETS &bull; Educational Testing</span>
-                </div>
-              </div>
-              <div class="score-total-badge">
-                <span class="score-num">323</span><span class="score-slash">/</span><span class="score-denom">340</span>
+        <!-- Row 1: GRE General Test Box (Full Width) -->
+        <div class="cv-score-card gre-card-full">
+          <div class="score-card-top">
+            <div class="score-card-brand">
+              <div class="score-logo"><i class="fas fa-certificate"></i></div>
+              <div class="score-title-wrap">
+                <h3 class="score-exam-name">GRE&reg; General Test</h3>
+                <span class="score-issuer">ETS &bull; Educational Testing</span>
               </div>
             </div>
-            <div class="score-date-row">
-              <span class="score-date-val"><i class="fas fa-calendar-alt"></i> <strong>Oct 16, 2023</strong></span>
-              <span class="score-status-badge ets">Official ETS</span>
-            </div>
-            <div class="score-sub-list">
-              <div class="score-sub-item">
-                <span class="score-sub-label">Quantitative Reasoning</span>
-                <span class="score-sub-val high">Top Percentile</span>
-              </div>
-              <div class="score-sub-item">
-                <span class="score-sub-label">Verbal Reasoning</span>
-                <span class="score-sub-val">Proficient</span>
-              </div>
-              <div class="score-sub-item">
-                <span class="score-sub-label">Analytical Writing (AWA)</span>
-                <span class="score-sub-val">Demonstrated</span>
-              </div>
-            </div>
-            <div class="score-extra-note">
-              <span>Exam: <strong>General Test</strong></span>
-              <span>Percentile: <strong>Competitive</strong></span>
+            <div class="score-total-badge">
+              <span class="score-num">323</span><span class="score-slash">/</span><span class="score-denom">340</span>
             </div>
           </div>
+          <div class="score-date-row">
+            <span class="score-date-val"><i class="fas fa-calendar-alt"></i> <strong>Oct 16, 2023</strong></span>
+            <span class="score-status-badge ets">Official ETS</span>
+          </div>
+          <div class="gre-sub-grid">
+            <div class="gre-sub-item">
+              <span class="gre-sub-label">Quantitative Reasoning</span>
+              <span class="gre-sub-val high">Top Percentile</span>
+            </div>
+            <div class="gre-sub-item">
+              <span class="gre-sub-label">Verbal Reasoning</span>
+              <span class="gre-sub-val">Proficient</span>
+            </div>
+            <div class="gre-sub-item">
+              <span class="gre-sub-label">Analytical Writing (AWA)</span>
+              <span class="gre-sub-val">Demonstrated</span>
+            </div>
+          </div>
+          <div class="score-extra-note">
+            <span>Exam: <strong>General Test</strong></span>
+            <span>Percentile: <strong>Competitive</strong></span>
+          </div>
+        </div>
 
+        <!-- Row 2: Two TOEFL Boxes Side-by-Side (2 Columns on Desktop, 1 Column on Mobile) -->
+        <div class="cv-toefl-grid">
           <!-- TOEFL Card (Latest: Sep 2025) -->
           <div class="cv-score-card">
             <div class="score-card-top">
@@ -1108,11 +1109,13 @@ window.addEventListener('scroll', function() {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .cv-section-icon {
   font-size: 1.2rem;
   color: #0ea5e9;
+  flex-shrink: 0;
 }
 
 .cv-section-title {
@@ -1120,12 +1123,16 @@ window.addEventListener('scroll', function() {
   font-weight: 800;
   color: #0f172a;
   margin: 0;
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 .cv-section-subtitle {
   font-size: 0.84rem;
   font-weight: 500;
   color: #64748b;
+  line-height: 1.4;
+  word-break: break-word;
 }
 
 /* Education Items */
@@ -1263,25 +1270,73 @@ window.addEventListener('scroll', function() {
   flex-shrink: 0;
 }
 
-/* Scores Grid */
-.cv-scores-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+/* GRE Row 1 (Full Width) & TOEFL Row 2 (2 Columns Grid) */
+.gre-card-full {
+  width: 100%;
   margin-bottom: 1.25rem;
+  box-sizing: border-box;
 }
 
-/* Laptops & Desktops: 3 columns when >= 1200px */
-@media (min-width: 1200px) {
-  .cv-scores-grid {
-    grid-template-columns: repeat(3, 1fr);
+.gre-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gre-sub-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+}
+
+.gre-sub-label {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gre-sub-val {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0284c7;
+  white-space: nowrap;
+}
+
+.gre-sub-val.high {
+  color: #059669;
+}
+
+@media (max-width: 680px) {
+  .gre-sub-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
-/* Medium viewports (tablets & laptops with sidebar visible, 660px to 1199px) */
-@media (min-width: 660px) and (max-width: 1199px) {
-  .cv-scores-grid {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+.cv-toefl-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 680px) {
+  .cv-toefl-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
@@ -1295,6 +1350,8 @@ window.addEventListener('scroll', function() {
   justify-content: space-between;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
   transition: all 0.2s ease;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .cv-score-card:hover {
@@ -1348,18 +1405,18 @@ window.addEventListener('scroll', function() {
   color: #0f172a;
   margin: 0;
   line-height: 1.25;
-  white-space: nowrap;
 }
 
 .score-issuer {
   font-size: 0.72rem;
   color: #64748b;
-  white-space: nowrap;
 }
 
 /* Strictly Horizontal Single-Line Score Badge (No Vertical Expansion) */
 .score-total-badge {
   display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
   align-items: baseline !important;
   justify-content: center !important;
   white-space: nowrap !important;
@@ -1415,6 +1472,7 @@ window.addEventListener('scroll', function() {
   align-items: center;
   justify-content: space-between;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .score-date-val {
@@ -1496,7 +1554,8 @@ window.addEventListener('scroll', function() {
   align-items: center;
   border-top: 1px dashed #e2e8f0;
   padding-top: 6px;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .cv-lang-bar {
@@ -2300,13 +2359,19 @@ window.addEventListener('scroll', function() {
     font-size: 1.5rem;
   }
   .cv-section-card {
-    padding: 1.25rem 1.15rem;
+    padding: 1.25rem 1rem;
+  }
+  .cv-section-title {
+    font-size: 1.15rem;
+  }
+  .cv-section-subtitle {
+    font-size: 0.78rem;
   }
   .cv-item-card {
-    padding: 1.15rem 1.15rem;
+    padding: 1.15rem 1rem;
   }
   .cv-score-card {
-    padding: 1.15rem 1rem;
+    padding: 1.1rem 0.9rem;
   }
   .score-card-brand {
     gap: 8px;
@@ -2319,8 +2384,23 @@ window.addEventListener('scroll', function() {
   .score-exam-name {
     font-size: 0.92rem;
   }
+  .gre-sub-item {
+    padding: 7px 10px;
+  }
+  .score-sub-item {
+    padding: 5px 8px;
+    font-size: 0.76rem;
+  }
+  .score-sub-label {
+    font-size: 0.76rem;
+  }
+  .score-sub-val {
+    font-size: 0.76rem;
+  }
   .score-total-badge {
     padding: 3px 8px !important;
+    flex-direction: row !important;
+    white-space: nowrap !important;
   }
   .score-total-badge .score-num {
     font-size: 1.1rem;
