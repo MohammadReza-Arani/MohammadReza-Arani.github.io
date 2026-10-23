@@ -989,8 +989,8 @@ window.addEventListener('scroll', function() {
 /* Page Layout */
 .cv-page-layout {
   display: flex;
+  align-items: stretch;
   gap: 1.5rem;
-  align-items: flex-start;
   width: 100%;
 }
 
@@ -1881,18 +1881,21 @@ window.addEventListener('scroll', function() {
   min-width: 220px;
   max-width: 220px;
   flex-shrink: 0;
+  align-self: stretch; /* Crucial: stretches full column height so sticky works */
+  position: relative;
 }
 
 .cv-sticky-toc-box {
+  position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 80px;
+  max-height: calc(100vh - 95px);
+  overflow-y: auto;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
-  padding: 1.1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
+  padding: 1rem 0.9rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
 }
 
 .cv-toc-header {

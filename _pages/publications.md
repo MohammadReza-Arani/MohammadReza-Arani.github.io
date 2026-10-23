@@ -22,7 +22,7 @@ redirect_from:
         <span>Publications &amp; Academic Research</span>
       </h1>
       <p class="pub-hero-subtitle">
-        Peer-reviewed journal articles, academic theses, and computational research contributions spanning smart grid telemetry, 77 GHz RF radar sensors, convex array optimization, and electrodynamics.
+        Peer-reviewed journal articles, academic graduate and undergraduate theses, and research contributions spanning smart grid telemetry, 77 GHz RF radar sensors, and multidimensional sensor array optimization.
       </p>
       <div class="pub-hero-stats">
         <div class="pub-stat-pill">
@@ -37,13 +37,6 @@ redirect_from:
           <div class="pub-stat-info">
             <span class="pub-stat-val">2 Theses</span>
             <span class="pub-stat-lbl">M.Sc. &amp; B.Sc. Degrees</span>
-          </div>
-        </div>
-        <div class="pub-stat-pill">
-          <span class="pub-stat-icon"><i class="fas fa-pencil-ruler"></i></span>
-          <div class="pub-stat-info">
-            <span class="pub-stat-val">2 Manuscripts</span>
-            <span class="pub-stat-lbl">In Preparation</span>
           </div>
         </div>
         <a href="https://scholar.google.com/citations?hl=en&user=hgi3rPAAAAAJ" target="_blank" rel="noopener noreferrer" class="pub-scholar-btn">
@@ -249,82 +242,7 @@ redirect_from:
         </div>
       </section>
 
-      <!-- Section 3: Working Papers & Manuscripts in Preparation -->
-      <section class="pub-section-card" id="working-papers">
-        <div class="pub-section-header">
-          <div class="pub-section-title-wrap">
-            <span class="pub-section-icon"><i class="fas fa-pencil-ruler"></i></span>
-            <h2 class="pub-section-title">Working Papers &amp; Preprints</h2>
-          </div>
-          <span class="pub-section-subtitle"><i class="fas fa-hourglass-half"></i> Current Research Manuscripts in Preparation</span>
-        </div>
-
-        <div class="pub-entry-card working-card">
-          <div class="pub-entry-badge-row">
-            <span class="pub-type-badge prep"><i class="fas fa-edit"></i> In Preparation</span>
-            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2024</span>
-            <span class="pub-venue-badge"><i class="fas fa-calculator"></i> Applied Optimization</span>
-          </div>
-
-          <h3 class="pub-entry-title">
-            Quadratic Cost-Function Optimization for Conformal Antenna Arrays with Coupled Electromagnetic Constraints
-          </h3>
-
-          <p class="pub-entry-authors">
-            <strong>MohammadReza Arani Bidhendi</strong>
-          </p>
-
-          <p class="pub-entry-venue">
-            Investigation of second-order cone programming (SOCP) and semidefinite relaxation (SDR) methods to synthesize non-planar antenna array patterns while minimizing sidelobe levels (SLL) and controlling reactive near-field mutual coupling.
-          </p>
-
-          <div class="pub-tag-list">
-            <span class="pub-tag"><i class="fas fa-square-root-alt"></i> Quadratic Cost</span>
-            <span class="pub-tag"><i class="fas fa-satellite"></i> Pattern Synthesis</span>
-            <span class="pub-tag"><i class="fas fa-sliders-h"></i> SLL Minimization</span>
-          </div>
-
-          <div class="pub-actions-bar">
-            <a href="{{ base_path }}/Projects/#convex-opt" class="pub-btn pub-btn-primary">
-              <i class="fas fa-code"></i> Explore Optimization Project
-            </a>
-          </div>
-        </div>
-
-        <div class="pub-entry-card working-card">
-          <div class="pub-entry-badge-row">
-            <span class="pub-type-badge prep"><i class="fas fa-edit"></i> In Preparation</span>
-            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2024</span>
-            <span class="pub-venue-badge"><i class="fas fa-laptop-code"></i> Computational Electrodynamics</span>
-          </div>
-
-          <h3 class="pub-entry-title">
-            High-Performance 2D/3D Finite-Difference Time-Domain (FDTD) Solvers with Unsplit Convolutional PML Formulations
-          </h3>
-
-          <p class="pub-entry-authors">
-            <strong>MohammadReza Arani Bidhendi</strong>
-          </p>
-
-          <p class="pub-entry-venue">
-            Custom vectorized Python and MATLAB electrodynamic solvers implementing Yee grid discretization, total-field scattered-field (TFSF) excitation, and CPML boundaries for microwave planar scattering analysis.
-          </p>
-
-          <div class="pub-tag-list">
-            <span class="pub-tag"><i class="fas fa-cubes"></i> FDTD Electrodynamics</span>
-            <span class="pub-tag"><i class="fas fa-border-all"></i> CPML Boundaries</span>
-            <span class="pub-tag"><i class="fab fa-python"></i> Vectorized Python</span>
-          </div>
-
-          <div class="pub-actions-bar">
-            <a href="{{ base_path }}/Projects/#fdtd-em" class="pub-btn pub-btn-primary">
-              <i class="fas fa-code"></i> Explore FDTD Project
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: Scholarly Profiles & Citation Indices -->
+      <!-- Section 3: Scholarly Profiles & Citation Indices -->
       <section class="pub-section-card" id="citation-metrics">
         <div class="pub-section-header">
           <div class="pub-section-title-wrap">
@@ -348,7 +266,7 @@ redirect_from:
             <div class="profile-box-icon"><i class="fab fa-researchgate"></i></div>
             <div class="profile-box-info">
               <span class="profile-box-name">ResearchGate</span>
-              <span class="profile-box-sub">RG Score &bull; Research Network &bull; Preprints</span>
+              <span class="profile-box-sub">RG Score &bull; Research Network &bull; Publications</span>
             </div>
             <i class="fas fa-chevron-right profile-box-arrow"></i>
           </a>
@@ -396,12 +314,6 @@ redirect_from:
               </a>
             </li>
             <li class="pub-toc-item">
-              <a href="#working-papers" class="pub-toc-link" onclick="scrollToPubSection('working-papers'); return false;">
-                <span class="pub-toc-icon"><i class="fas fa-pencil-ruler"></i></span>
-                <span class="pub-toc-text">Working Papers</span>
-              </a>
-            </li>
-            <li class="pub-toc-item">
               <a href="#citation-metrics" class="pub-toc-link" onclick="scrollToPubSection('citation-metrics'); return false;">
                 <span class="pub-toc-icon"><i class="fas fa-chart-line"></i></span>
                 <span class="pub-toc-text">Scholarly Profiles</span>
@@ -439,7 +351,6 @@ redirect_from:
       <ul class="pub-mobile-drawer-list">
         <li><a href="#journal-articles" onclick="togglePubMobileDrawer(false); scrollToPubSection('journal-articles'); return false;"><i class="fas fa-award"></i> Journal Articles</a></li>
         <li><a href="#theses-dissertations" onclick="togglePubMobileDrawer(false); scrollToPubSection('theses-dissertations'); return false;"><i class="fas fa-graduation-cap"></i> Theses &amp; Dissertations</a></li>
-        <li><a href="#working-papers" onclick="togglePubMobileDrawer(false); scrollToPubSection('working-papers'); return false;"><i class="fas fa-pencil-ruler"></i> Working Papers</a></li>
         <li><a href="#citation-metrics" onclick="togglePubMobileDrawer(false); scrollToPubSection('citation-metrics'); return false;"><i class="fas fa-chart-line"></i> Scholarly Profiles</a></li>
       </ul>
     </nav>
@@ -494,7 +405,7 @@ function togglePubMobileDrawer(open) {
 
 // Active TOC indicator on scroll
 window.addEventListener('scroll', function() {
-  var sections = ['journal-articles', 'theses-dissertations', 'working-papers', 'citation-metrics'];
+  var sections = ['journal-articles', 'theses-dissertations', 'citation-metrics'];
   var scrollPos = window.scrollY + 120;
   for (var i = sections.length - 1; i >= 0; i--) {
     var el = document.getElementById(sections[i]);
@@ -670,11 +581,11 @@ window.addEventListener('scroll', function() {
   box-shadow: 0 6px 16px rgba(2, 132, 199, 0.45);
 }
 
-/* Page Layout */
+/* Page Layout - Crucial: align-items stretch allows sticky TOC sidebar to span full content height */
 .pub-page-layout {
   display: flex;
+  align-items: stretch;
   gap: 1.5rem;
-  align-items: flex-start;
   width: 100%;
 }
 
@@ -766,7 +677,6 @@ window.addEventListener('scroll', function() {
 .pub-type-badge.journal { background: #dbeafe; color: #1e40af; }
 .pub-type-badge.msc { background: #fef3c7; color: #92400e; }
 .pub-type-badge.bsc { background: #e0e7ff; color: #3730a3; }
-.pub-type-badge.prep { background: #f1f5f9; color: #475569; }
 
 .pub-year-badge {
   font-size: 0.76rem;
@@ -1063,24 +973,27 @@ window.addEventListener('scroll', function() {
   min-width: 220px;
   max-width: 220px;
   flex-shrink: 0;
+  align-self: stretch; /* Crucial: stretches full column height so sticky works */
+  position: relative;
 }
 
 .pub-sticky-toc-box {
+  position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 80px;
+  max-height: calc(100vh - 95px);
+  overflow-y: auto;
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
-  padding: 1.1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
+  padding: 1rem 0.9rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
 }
 
 .pub-toc-header {
   border-bottom: 1px solid #f1f5f9;
-  padding-bottom: 0.6rem;
-  margin-bottom: 0.75rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.65rem;
 }
 
 .pub-toc-title {
