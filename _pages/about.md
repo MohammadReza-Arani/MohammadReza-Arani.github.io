@@ -86,16 +86,16 @@ redirect_from:
         
         <div class="home-bio-body">
           <p>
-            I received my Master of Science in Electrical Engineering (Field and Wave) from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in September 2024. Prior to that, I earned my B.Sc. in Electrical Engineering from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in 2021 with the National Brilliant Talent Quota (exempted from the national M.Sc. entrance exam based on top undergraduate ranking). Currently, I am fulfilling my mandatory national military service duty (Nov 2025 &ndash; Mar 2027).
+            I received my Master of Science in Electrical Engineering (Field and Wave) from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> in September 2024 (graduated September 21, 2024). Prior to that, I earned my B.Sc. in Electrical Engineering from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> (September 22, 2017 &ndash; September 22, 2021) with the National Brilliant Talent Quota (exempted from the national M.Sc. entrance exam based on top undergraduate ranking). Currently, I am fulfilling my mandatory national military service duty (November 22, 2025 &ndash; March 21, 2027), while actively conducting research on the fundamentals of DevSecOps, enterprise security architecture, and regulatory governance frameworks including ISO/IEC 27001, NIST SP 800-53 / CSF, SABSA, and TOGAF.
           </p>
           <p>
-            I am passionate about learning new technologies and concepts, especially those that involve <strong>complex mathematics</strong>. I have a strong foundation in mathematics, which allows me to understand and apply these technologies in creative and innovative ways. My interests tend over in <strong>optimization</strong>, <strong>machine learning</strong>, <strong>neural networks</strong>, <strong>Biomedical Signal Processing</strong>, and <strong>Brain Signal Processing</strong>. These technologies have the potential to revolutionize many industries and solve some of the world's most challenging problems. I am excited to be a part of this revolution and to use these technologies to make a positive impact on the world.
+            I am passionate about learning new technologies and concepts, especially those that involve <strong>complex mathematics</strong>. I have a strong foundation in mathematics, which allows me to understand and apply these technologies in creative and innovative ways. My research spans <strong>MIMO radar sensory arrays</strong>, <strong>convex and non-convex optimization</strong>, <strong>numerical methods (Gradient Descent)</strong>, <strong>target tracking (Kalman filtering)</strong>, <strong>spatial noise clustering (DBSCAN)</strong>, <strong>machine learning</strong>, and <strong>enterprise security &amp; DevSecOps architectures</strong>.
           </p>
           <p>
-            One of the most important tasks of any researcher is to apply available tools and methods in our enriched engineering literature to address today's world's issues in different areas from <strong>transportation</strong> (Autonomous Vehicles) to <strong>Social Media Management</strong> (including recommender systems) and absolutely to <strong>Medical</strong> areas where one can restore disabled's will and power to live normally.
+            One of the most important tasks of any researcher is to apply available tools and methods in our enriched engineering literature to address today's world's issues in different areas from <strong>transportation</strong> (Autonomous Vehicles, radar-based traffic violation detection) to <strong>Social Media Management</strong> (including recommender systems) and absolutely to <strong>Medical</strong> areas where one can restore disabled's will and power to live normally.
           </p>
           <p>
-            I believe that most problems can be solved if we are willing to look at them from a different angle. I find it a great pleasure to use my mathematical skills to solve complex problems, especially those that involve modeling high-dimensional problems with matrix notations and taking advantage of convex optimization to find optimal solutions. I am confident that my skills and interests make me a valuable asset to any team. I believe in <strong>hard deep work</strong> which gives me the power to <strong>learn new things fast</strong>. I am also a <strong>team player</strong> and willing to help others.
+            I believe that most problems can be solved if we are willing to look at them from a different angle. I find it a great pleasure to use my mathematical skills to solve complex problems, especially those that involve modeling high-dimensional problems with matrix notations and taking advantage of convex and non-convex optimization to find optimal solutions. I am confident that my skills and interests make me a valuable asset to any team. I believe in <strong>hard deep work</strong> which gives me the power to <strong>learn new things fast</strong>. I am also a <strong>team player</strong> and willing to help others.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ redirect_from:
           <a href="{{ base_path }}/Projects.html" class="home-featured-card home-card--projects">
             <div class="home-featured-card-top">
               <span class="home-featured-icon"><i class="fas fa-project-diagram"></i></span>
-              <span class="home-featured-badge">8 Topics</span>
+              <span class="home-featured-badge">9 Topics</span>
             </div>
             <h3 class="home-featured-title">Engineering Projects</h3>
             <p class="home-featured-desc">
@@ -145,6 +145,14 @@ redirect_from:
         </div>
 
         <div class="home-news-timeline">
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> 2025 &ndash; Pres.</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Active Research &bull; DevSecOps &amp; Enterprise Security Architecture:</strong> Initiated comprehensive research and literature review on the fundamentals of DevSecOps, enterprise-wide implementation strategies, and bureaucratic integration across ISO/IEC 27001, NIST SP 800-53 / CSF, SABSA, and TOGAF frameworks.</span>
+              <a href="{{ base_path }}/Projects.html#DevSecOps_Security" class="news-link">View Research Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
 
           <div class="home-news-item">
             <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Nov 2025</span>
@@ -205,15 +213,15 @@ redirect_from:
           <div class="home-news-item">
             <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Jan 2022</span>
             <div class="news-content-box">
-              <span class="news-title"><strong>Master's Thesis Commenced:</strong> Formulating multidimensional sensor array optimization under Dr. S. Akhavan for medical brain stimulation.</span>
-              <a href="{{ base_path }}/Projects/#bsp-eeg" class="news-link">Explore Research Details <i class="fas fa-arrow-right"></i></a>
+              <span class="news-title"><strong>Master's Thesis Commenced:</strong> Formulating 1-D &amp; 2-D sensory array design and optimization for tracking offending vehicles using MIMO radar systems under Dr. S. Akhavan &amp; Prof. K. PoorAghdam, utilizing convex/non-convex optimization, Gradient Descent, Kalman filter tracking, and DBSCAN noise clustering.</span>
+              <a href="{{ base_path }}/Projects.html#Traffic_Sensor" class="news-link">Explore Radar Thesis <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="home-news-item">
-            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> 2021</span>
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Sep 2021</span>
             <div class="news-content-box">
-              <span class="news-title"><strong>Brilliant Talent Quota Honors:</strong> Graduated B.Sc. with honors and admitted to University of Tehran M.Sc. without entrance exam based on top class ranking.</span>
+              <span class="news-title"><strong>B.Sc. Degree Completed (Brilliant Talent Quota):</strong> Successfully completed B.Sc. in Electrical Engineering at University of Tehran (Sep 22, 2017 &ndash; Sep 22, 2021) with top honors, earning direct admission to the M.Sc. program without the nationwide entrance examination.</span>
               <a href="{{ base_path }}/cv/#education" class="news-link">View Degree Credentials <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
@@ -236,42 +244,53 @@ redirect_from:
             <div class="interest-icon-badge"><i class="fas fa-chart-line"></i></div>
             <div class="interest-text-content">
               <h3 class="interest-title">Optimization &amp; Numerical Methods</h3>
-              <p class="interest-desc">Convex optimization, Gradient Descent, Newton-Raphson curvature modeling, high-dimensional matrix formulation, and algorithmic convergence.</p>
-              <a href="{{ base_path }}/Projects/#convex-opt" class="interest-deep-link"><i class="fas fa-project-diagram"></i> Explore Convex Optimization Project &rarr;</a>
+              <p class="interest-desc">Convex and non-convex mathematical optimization, Gradient Descent (GD), Newton-Raphson curvature modeling, high-dimensional matrix formulation, and convergence rate analysis.</p>
+              <a href="{{ base_path }}/Projects.html#Optimization_GD" class="interest-deep-link"><i class="fas fa-project-diagram"></i> Explore Optimization Project &rarr;</a>
             </div>
           </div>
 
           <div class="interest-topic-card">
             <div class="interest-icon-badge"><i class="fas fa-broadcast-tower"></i></div>
             <div class="interest-text-content">
-              <h3 class="interest-title">RF Circuits &amp; Systems Design &amp; Implementation</h3>
-              <p class="interest-desc">77 GHz millimeter-wave radar front-ends, Substrate Integrated Waveguides (SIW), slotted leaky-wave antennas, and high-frequency RF transmission.</p>
-              <a href="{{ base_path }}/Projects/#siw-radar" class="interest-deep-link"><i class="fas fa-satellite-dish"></i> Explore 77 GHz SIW Radar Project &rarr;</a>
+              <h3 class="interest-title">MIMO Radar Sensory Arrays &amp; Tracking</h3>
+              <p class="interest-desc">1-D and 2-D antenna array synthesis, sidelobe level suppression, multi-target Kalman filter kinematic tracking, and DBSCAN spatial noise and clutter clustering.</p>
+              <a href="{{ base_path }}/Projects.html#Traffic_Sensor" class="interest-deep-link"><i class="fas fa-satellite-dish"></i> Explore Master's Radar Project &rarr;</a>
             </div>
           </div>
 
           <div class="interest-topic-card">
-            <div class="interest-icon-badge"><i class="fas fa-satellite"></i></div>
+            <div class="interest-icon-badge"><i class="fas fa-shield-alt"></i></div>
             <div class="interest-text-content">
-              <h3 class="interest-title">Remote Sensing</h3>
-              <p class="interest-desc">Range-Doppler mapping, velocity &amp; range target resolution, automotive radar imaging, and spatial-temporal microwave electromagnetic detection.</p>
+              <h3 class="interest-title">DevSecOps &amp; Enterprise Security Architecture</h3>
+              <p class="interest-desc">Literature review and enterprise implementation blueprints, automated CI/CD pipeline security, ISO/IEC 27001, NIST CSF, SABSA security architecture, and TOGAF governance.</p>
+              <a href="{{ base_path }}/Projects.html#DevSecOps_Security" class="interest-deep-link"><i class="fas fa-lock"></i> Explore DevSecOps Research &rarr;</a>
             </div>
           </div>
 
           <div class="interest-topic-card">
-            <div class="interest-icon-badge"><i class="fab fa-ethereum"></i></div>
+            <div class="interest-icon-badge"><i class="fas fa-wave-square"></i></div>
             <div class="interest-text-content">
-              <h3 class="interest-title">Blockchain Development (Decentralized Applications)</h3>
-              <p class="interest-desc">Smart contracts, Solidity programming, decentralized consensus mechanisms, Web3 application architecture, and cryptographic token protocols.</p>
+              <h3 class="interest-title">RF Circuits &amp; Waveguide Sensors</h3>
+              <p class="interest-desc">77 GHz millimeter-wave radar front-ends, Substrate Integrated Waveguides (SIW), slotted leaky-wave antennas, and high-frequency microwave transmission.</p>
+              <a href="{{ base_path }}/Projects.html#SSIW_Sensor" class="interest-deep-link"><i class="fas fa-microchip"></i> Explore 77 GHz SIW Project &rarr;</a>
             </div>
           </div>
 
-          <div class="interest-topic-card interest-topic-card--wide">
+          <div class="interest-topic-card">
+            <div class="interest-icon-badge"><i class="fas fa-water"></i></div>
+            <div class="interest-text-content">
+              <h3 class="interest-title">Computational Electromagnetics &amp; Sensing</h3>
+              <p class="interest-desc">Range-Doppler mapping, velocity &amp; range target resolution, Finite Difference Time Domain (FDTD) wave propagation in conducting PEC cavities, and numerical simulation.</p>
+              <a href="{{ base_path }}/Projects.html#FDTD" class="interest-deep-link"><i class="fas fa-compass"></i> Explore FDTD Wave Project &rarr;</a>
+            </div>
+          </div>
+
+          <div class="interest-topic-card">
             <div class="interest-icon-badge"><i class="fas fa-brain"></i></div>
             <div class="interest-text-content">
-              <h3 class="interest-title">Neural Networks &amp; Machine Learning Applications</h3>
-              <p class="interest-desc">Biomedical and brain signal processing (EEG / BCI classification), time series forecasting, deep neural network architectures, and quantum ML optimization.</p>
-              <a href="{{ base_path }}/Projects/#bsp-eeg" class="interest-deep-link"><i class="fas fa-brain"></i> Explore Neural Signal Processing Project &rarr;</a>
+              <h3 class="interest-title">Machine Learning &amp; Brain Interfaces</h3>
+              <p class="interest-desc">Brain-computer interface (BCI) decoding, Common Spatial Pattern (CSP) filtering with Linear Discriminant Analysis (LDA), and Quantum Machine Learning (QML) circuits.</p>
+              <a href="{{ base_path }}/Projects.html#Classifier_BSS" class="interest-deep-link"><i class="fas fa-brain"></i> Explore BCI Classifier Project &rarr;</a>
             </div>
           </div>
         </div>

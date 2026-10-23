@@ -97,12 +97,15 @@ redirect_from:
             </div>
             <div class="cv-item-body">
               <p class="cv-item-desc">
-                Graduate coursework and thesis research concentrated on advanced electromagnetics, 3D sensor array optimization, conformal antennas, numerical methods, and biomedical neural signal processing.
+                Graduate coursework and thesis research concentrated on advanced electromagnetics, MIMO sensory array design, convex and non-convex optimization, Kalman target tracking, and computational microwave radar.
               </p>
               <div class="cv-callout-box">
                 <i class="fas fa-crosshairs cv-callout-icon"></i>
                 <div class="cv-callout-text">
-                  <strong>Master's Thesis:</strong> <em>A Novel Framework to Optimize Sensor Arrays in 1, 2, and 3 Dimensions with Physical Constraints for Medical Brain Stimulation and Signal Processing</em> (Advisor: <strong>Dr. S. Akhavan</strong>).<br>
+                  <strong>Master's Thesis:</strong> <em>Design and Optimization of 1-D and 2-D Sensory Arrays for Tracking Offending and Violating Vehicles on Roads Using MIMO Systems</em> (Advisors: <strong>Dr. S. Akhavan</strong> &amp; <strong>Prof. K. PoorAghdam</strong>).<br>
+                  <span style="font-size: 0.84rem; color: #475569; display: block; margin-top: 4px;">
+                    <i class="fas fa-tools" style="color: #0284c7;"></i> <strong>Methodologies:</strong> 1-D &amp; 2-D sensory array synthesis, convex and non-convex optimization (Gradient Descent), Kalman filtering for kinematic vehicle tracking, and DBSCAN algorithm for spatial noise clustering.
+                  </span>
                   <span style="font-size: 0.88rem; color: #475569; display: inline-block; margin-top: 5px;"><i class="fas fa-check-circle" style="color: #059669;"></i> <strong>Degree Conferred:</strong> September 21, 2024</span>
                 </div>
               </div>
@@ -117,7 +120,7 @@ redirect_from:
                 <span class="cv-item-org"><i class="fas fa-university"></i> <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a> &bull; Department of Electrical &amp; Computer Engineering</span>
               </div>
               <div class="cv-item-meta">
-                <span class="cv-badge-date"><i class="fas fa-calendar-alt"></i> 2017 &ndash; 2021</span>
+                <span class="cv-badge-date"><i class="fas fa-calendar-alt"></i> Sep 22, 2017 &ndash; Sep 22, 2021</span>
                 <span class="cv-badge-gpa"><i class="fas fa-star"></i> GPA: <strong>17.36 / 20 (3.70 / 4.00)</strong></span>
               </div>
             </div>
@@ -305,6 +308,29 @@ redirect_from:
 
         <div class="cv-timeline">
 
+          <!-- Active Research Project: DevSecOps & Enterprise Security Architecture -->
+          <div class="cv-timeline-node">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Active Research Project &bull; DevSecOps &amp; Enterprise Security Architecture</h3>
+                <span class="timeline-period"><i class="fas fa-calendar-alt"></i> 2025 &ndash; Present</span>
+              </div>
+              <span class="timeline-inst"><i class="fas fa-shield-alt"></i> Enterprise Systems &amp; Security Engineering</span>
+              <ul class="timeline-bullets">
+                <li>Conducting a comprehensive literature review on the core fundamentals of DevSecOps to formulate strategies for organizational-wide adoption and deployment.</li>
+                <li>Developing implementation blueprints that bridge modern automated continuous security (CI/CD) pipelines with complex bureaucratic routines and corporate governance policies.</li>
+                <li>Synthesizing and aligning compliance, risk management, and enterprise architecture standards featuring <strong>ISO/IEC 27001</strong>, <strong>NIST SP 800-53 / CSF</strong>, <strong>SABSA</strong> (Sherwood Applied Business Security Architecture), and <strong>TOGAF</strong> (The Open Group Architecture Framework).</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="cv-chip"><i class="fas fa-shield-alt"></i> DevSecOps</span>
+                <span class="cv-chip"><i class="fas fa-lock"></i> ISO &amp; NIST CSF</span>
+                <span class="cv-chip"><i class="fas fa-sitemap"></i> SABSA Architecture</span>
+                <span class="cv-chip"><i class="fas fa-building"></i> TOGAF Framework</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Position: Compulsory Military Service -->
           <div class="cv-timeline-node">
             <div class="timeline-marker"></div>
@@ -324,7 +350,7 @@ redirect_from:
             </div>
           </div>
 
-          <!-- Position 1 -->
+          <!-- Position 1: Graduate Researcher -->
           <div class="cv-timeline-node">
             <div class="timeline-marker"></div>
             <div class="timeline-content-card">
@@ -334,17 +360,19 @@ redirect_from:
               </div>
               <span class="timeline-inst"><i class="fas fa-university"></i> University of Tehran &bull; Department of Electrical &amp; Computer Engineering</span>
               <p class="timeline-supervisor">
-                <i class="fas fa-user-tie"></i> Supervisor: <a href="https://ece.ut.ac.ir/~s.akhavan" target="_blank" rel="noopener noreferrer">Dr. S. Akhavan</a>
+                <i class="fas fa-user-tie"></i> Advisors: <a href="https://ece.ut.ac.ir/~s.akhavan" target="_blank" rel="noopener noreferrer">Dr. S. Akhavan</a> &amp; <a href="https://ece.ut.ac.ir/~kaghdam" target="_blank" rel="noopener noreferrer">Prof. K. PoorAghdam</a>
               </p>
               <ul class="timeline-bullets">
-                <li>Developed a novel mathematical optimization framework to synthesize 1D, 2D, and 3D sensor arrays under stringent physical, geometrical, and safety constraints.</li>
-                <li>Optimized transmitter (TX) and receiver (RX) array configurations to reach desired spatial accuracy and satisfy 3D power diversity constraints.</li>
-                <li>Applied algorithms to medical brain stimulation, target field focusing, and non-invasive neural signal processing (EEG).</li>
+                <li>Designed and optimized 1-D and 2-D sensory arrays capable of tracking offending and violating vehicles in roads using MIMO radar systems.</li>
+                <li>Applied convex and non-convex optimization methods, alongside Gradient Descent (GD), to synthesize tailored array factors with optimal radiation patterns and minimal sidelobe levels.</li>
+                <li>Implemented Kalman filtering for multi-vehicle kinematic state estimation (range, velocity, azimuth) and integrated the DBSCAN algorithm for spatial noise clustering and radar clutter mitigation.</li>
               </ul>
               <div class="timeline-tags">
-                <span class="cv-chip"><i class="fas fa-square-root-alt"></i> Convex Optimization</span>
-                <span class="cv-chip"><i class="fas fa-brain"></i> Neural Signal Processing</span>
-                <span class="cv-chip"><i class="fas fa-broadcast-tower"></i> Array Synthesis</span>
+                <span class="cv-chip"><i class="fas fa-broadcast-tower"></i> MIMO Radar Arrays</span>
+                <span class="cv-chip"><i class="fas fa-compress-arrows-alt"></i> 1-D &amp; 2-D Array Design</span>
+                <span class="cv-chip"><i class="fas fa-square-root-alt"></i> Gradient Descent &amp; Non-Convex Opt</span>
+                <span class="cv-chip"><i class="fas fa-filter"></i> Kalman Filter</span>
+                <span class="cv-chip"><i class="fas fa-project-diagram"></i> DBSCAN Clustering</span>
               </div>
             </div>
           </div>
@@ -620,7 +648,10 @@ redirect_from:
           <div class="cv-skill-group">
             <h4 class="skill-group-title"><i class="fas fa-calculator"></i> Mathematical Modeling &amp; Numerical Optimization</h4>
             <div class="skill-chips-wrap">
-              <span class="skill-badge primary"><i class="fas fa-square-root-alt"></i> Convex Optimization (CVX)</span>
+              <span class="skill-badge primary"><i class="fas fa-square-root-alt"></i> Convex &amp; Non-Convex Optimization</span>
+              <span class="skill-badge primary"><i class="fas fa-chart-line"></i> Gradient Descent (GD)</span>
+              <span class="skill-badge primary"><i class="fas fa-filter"></i> Kalman Filtering &amp; Kinematics</span>
+              <span class="skill-badge primary"><i class="fas fa-project-diagram"></i> DBSCAN Noise Clustering</span>
               <span class="skill-badge primary"><i class="fas fa-brain"></i> Machine Learning &amp; Neural Networks</span>
               <span class="skill-badge"><i class="fas fa-border-all"></i> Finite-Difference Time-Domain (FDTD)</span>
               <span class="skill-badge"><i class="fas fa-dna"></i> Genetic Algorithms (GA)</span>
@@ -634,6 +665,10 @@ redirect_from:
           <div class="cv-skill-group">
             <h4 class="skill-group-title"><i class="fas fa-network-wired"></i> Operating Systems, Networking &amp; Security</h4>
             <div class="skill-chips-wrap">
+              <span class="skill-badge primary"><i class="fas fa-shield-alt"></i> DevSecOps Frameworks</span>
+              <span class="skill-badge primary"><i class="fas fa-certificate"></i> ISO/IEC 27001 &amp; NIST CSF</span>
+              <span class="skill-badge"><i class="fas fa-sitemap"></i> SABSA Enterprise Architecture</span>
+              <span class="skill-badge"><i class="fas fa-building"></i> TOGAF Governance</span>
               <span class="skill-badge"><i class="fab fa-linux"></i> Linux (Ubuntu, Debian, CentOS, Kali)</span>
               <span class="skill-badge"><i class="fab fa-docker"></i> Docker Containers</span>
               <span class="skill-badge"><i class="fas fa-desktop"></i> VMware Workstation</span>

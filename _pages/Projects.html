@@ -23,12 +23,12 @@ redirect_from:
         <span>Engineering & Applied Research Projects</span>
       </h1>
       <p class="projects-hero-desc">
-        Academic and engineering research in 77 GHz RF radar systems, conformal slotted waveguide antennas, convex optimization, neural signal processing, computational electrodynamics, and quantum computing.
+        Academic and engineering research in 77 GHz RF radar systems, MIMO sensory array optimization, DevSecOps &amp; enterprise security architectures, conformal slotted waveguide antennas, convex optimization, and computational electrodynamics.
       </p>
       <div class="projects-hero-stats">
         <div class="projects-hero-stat-pill">
           <i class="fa fa-layer-group"></i>
-          <span class="hero-stat-num">8</span>
+          <span class="hero-stat-num">9</span>
           <span class="hero-stat-label">Research Projects</span>
         </div>
         <div class="projects-hero-stat-pill">
@@ -103,14 +103,16 @@ redirect_from:
         <div class="proj-side-tags-box">
           <h4 class="proj-side-tags-heading"><i class="fa fa-tags"></i> Core Domains & Methods</h4>
           <div class="proj-side-tags-wrap">
-            <span class="proj-tech-pill"><i class="fa fa-crosshairs"></i> 77 GHz Radar</span>
-            <span class="proj-tech-pill"><i class="fa fa-microchip"></i> HFSS & CST</span>
-            <span class="proj-tech-pill"><i class="fas fa-satellite-dish"></i> SIW Antennas</span>
-            <span class="proj-tech-pill"><i class="fa fa-chart-line"></i> Convex Opt.</span>
-            <span class="proj-tech-pill"><i class="fa fa-brain"></i> EEG / BCI</span>
+            <span class="proj-tech-pill"><i class="fa fa-crosshairs"></i> MIMO Radar</span>
+            <span class="proj-tech-pill"><i class="fa fa-shield-alt"></i> DevSecOps</span>
+            <span class="proj-tech-pill"><i class="fa fa-lock"></i> ISO &amp; NIST CSF</span>
+            <span class="proj-tech-pill"><i class="fas fa-satellite-dish"></i> 77 GHz SIW</span>
+            <span class="proj-tech-pill"><i class="fa fa-chart-line"></i> Convex &amp; GD Opt.</span>
+            <span class="proj-tech-pill"><i class="fa fa-filter"></i> Kalman Filter</span>
+            <span class="proj-tech-pill"><i class="fa fa-project-diagram"></i> DBSCAN Cluster</span>
             <span class="proj-tech-pill"><i class="fa fa-water"></i> FDTD Method</span>
+            <span class="proj-tech-pill"><i class="fa fa-brain"></i> EEG / BCI</span>
             <span class="proj-tech-pill"><i class="fa fa-atom"></i> Quantum ML</span>
-            <span class="proj-tech-pill"><i class="fa fa-broadcast-tower"></i> Array Pattern</span>
           </div>
         </div>
       </div>
@@ -190,28 +192,37 @@ redirect_from:
         </div>
       </section>
 
-      <!-- Project 1: Traffic Sensor -->
-      <article class="proj-detail-card" id="Traffic_Sensor">
+      <!-- Project 1: Traffic Sensor (Master's Thesis Project) -->
+      <article class="proj-detail-card proj-card-featured" id="Traffic_Sensor">
         <header class="proj-detail-header">
           <div class="proj-badge-line">
-            <span class="proj-cat-pill"><i class="fa fa-crosshairs"></i> Radar & RF Systems</span>
-            <span class="proj-tech-meta"><i class="fa fa-microchip"></i> 5 GHz &bull; Range-Doppler Map &bull; MATLAB</span>
+            <span class="proj-cat-pill"><i class="fa fa-crosshairs"></i> MIMO Radar Systems &amp; Sensory Arrays</span>
+            <span class="proj-featured-tag"><i class="fa fa-user-graduate"></i> Master's Graduate Thesis</span>
+            <span class="proj-tech-meta"><i class="fa fa-users"></i> Advisors: Dr. S. Akhavan &amp; Prof. K. PoorAghdam</span>
           </div>
           <h3 class="proj-detail-title">
             <span class="proj-title-icon-badge"><i class="fa fa-crosshairs"></i></span>
-            <span>Traffic Movement RF Sensor for Violation Detection</span>
+            <span>Design &amp; Optimization of 1-D &amp; 2-D Sensory Arrays for Tracking Offending Vehicles (Master's Thesis)</span>
           </h3>
         </header>
         <div class="proj-detail-body">
           <p class="proj-quote"><em>Have you ever considered any other option for tracking, managing, and controlling roads and streets rather than widely used Traffic Cameras?</em></p>
           <p>
-            In today's world with ever-increasing life speed and demanding transportation needs, managing the high volume of traffic in the streets smoothly and swiftly is vital. While considering the high data volume associated with cameras and the intensive processing time of such computer vision systems, it is difficult to handle real-time traffic data at low latency.
+            In today's world with ever-increasing life speed and demanding transportation needs, managing the high volume of traffic smoothly and swiftly is vital. While optical cameras are widely deployed, their high data volume, vulnerability to adverse weather or lighting conditions, and computationally intensive computer vision pipelines pose major bottlenecks for low-latency violation detection.
           </p>
           <p>
-            With modern chipsets handling high sampling rates, we can obtain precise data from an RF sensor working at <strong>77 GHz</strong> and <strong>5 GHz</strong> with commercial affordability. To obtain sufficient kinematic information from a moving vehicle, specific bandwidth and high resolution in both Range and Doppler frequency are necessary to estimate velocity and position accurately.
+            To address these challenges, my Master's thesis at the University of Tehran focused on the <strong>design and mathematical optimization of 1-D and 2-D sensory arrays</strong> capable of tracking offending and violating vehicles in roads using <strong>MIMO (Multiple-Input Multiple-Output) radar systems</strong>. By synthesizing tailored radiation patterns and suppressing sidelobe levels, MIMO radar achieves high angular resolution with a reduced number of physical RF transceivers.
           </p>
           <p>
-            At the University of Tehran, we designed and simulated traffic volume estimation and kinematic extraction from vehicles in MATLAB. Below, the <strong>5 GHz</strong> Range-Doppler (R-D) Map and corresponding XY plane localization are demonstrated:
+            Key scientific and algorithmic contributions include:
+          </p>
+          <ul class="proj-styled-list">
+            <li><strong>1-D &amp; 2-D Sensory Array Optimization:</strong> Formulated sensory array synthesis using both <em>convex optimization</em> and <em>non-convex optimizers</em>, alongside <strong>Gradient Descent (GD)</strong> algorithms to optimize element positions, phase weights, and excitation amplitudes for maximum directivity and sidelobe suppression.</li>
+            <li><strong>Multi-Target Kinematic Tracking:</strong> Deployed <strong>Kalman Filtering</strong> to continuously track vehicles' kinematic state vectors (range, radial velocity, azimuth angle) across consecutive radar frames to identify speeding, lane violations, and erratic maneuvers.</li>
+            <li><strong>Clutter &amp; Spatial Noise Clustering:</strong> Integrated the <strong>DBSCAN</strong> (Density-Based Spatial Clustering of Applications with Noise) algorithm to cluster dense radar point clouds and eliminate multi-path reflections and environmental ground clutter before feeding detections to the kinematic tracking filters.</li>
+          </ul>
+          <p>
+            The entire MIMO radar pipeline, array synthesis, and kinematic estimators were modeled and simulated in MATLAB, evaluated across <strong>5 GHz</strong> and <strong>77 GHz</strong> automotive millimeter-wave radar bands:
           </p>
           <div class="proj-media-row">
             <div class="proj-media-item">
@@ -223,7 +234,25 @@ redirect_from:
               <img src="{{ base_path }}/images/Detection_XY_MAP_5GHz.gif" alt="XY Map in 5GHz">
             </div>
           </div>
+          <div class="proj-media-row" style="margin-top: 1rem;">
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-car"></i> Violation Detection &amp; Road Tracking</span>
+              <img src="{{ base_path }}/images/Violation_Detection_5GHz.gif" alt="Violation Detection in 5GHz">
+            </div>
+            <div class="proj-media-item">
+              <span class="proj-media-caption"><i class="fa fa-chart-line"></i> GD Cost Function vs. Iterations</span>
+              <img src="{{ base_path }}/images/Cost_Function_VS_Iters_Compare_Mu.png" alt="Cost Function Convergence in Gradient Descent">
+            </div>
+          </div>
         </div>
+        <footer class="proj-detail-footer">
+          <a href="{{ base_path }}/cv/#research-experience" class="proj-action-btn">
+            <i class="fa fa-file-alt"></i> View Thesis Details in CV
+          </a>
+          <a href="{{ base_path }}/publications/#msc-thesis" class="proj-action-btn">
+            <i class="fa fa-book"></i> View Thesis Publication Record
+          </a>
+        </footer>
       </article>
 
       <!-- Project 2: Slotted SIW Sensor (Undergrad Project) -->
@@ -474,11 +503,11 @@ redirect_from:
         </header>
         <div class="proj-detail-body">
           <p>
-            Antenna array optimization synthesizes radiation patterns satisfying rigorous physical constraints and minimal element counts. We formulate 1-D array synthesis by minimizing the MSE cost function between the synthesized array factor $AF(	heta)$ and a target envelope $g(	heta)$:
+            Antenna array optimization synthesizes radiation patterns satisfying rigorous physical constraints and minimal element counts. We formulate 1-D array synthesis by minimizing the MSE cost function between the synthesized array factor $AF(\theta)$ and a target envelope $g(\theta)$:
           </p>
           <div class="proj-math-box">
             <span class="proj-math-label"><i class="fa fa-square-root-alt"></i> Synthesis Cost Function:</span>
-            $$ J = \| AF(	heta) - g(	heta) \|^{2} $$
+            $$ J = \| AF(\theta) - g(\theta) \|^{2} $$
           </div>
           <p>
             By coupling convex optimization with $\ell_1$-norm regularization, we achieve a sparse antenna arrangement with minimized elements while maintaining the desired Side Lobe Level (SLL). Below is the comparison between uniform and optimized array configurations:
@@ -496,6 +525,44 @@ redirect_from:
         </div>
       </article>
 
+      <!-- Project 9: DevSecOps & Enterprise Security Architecture -->
+      <article class="proj-detail-card proj-card-featured" id="DevSecOps_Security">
+        <header class="proj-detail-header">
+          <div class="proj-badge-line">
+            <span class="proj-cat-pill"><i class="fa fa-shield-alt"></i> Enterprise Security &amp; Systems Architecture</span>
+            <span class="proj-featured-tag" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);"><i class="fa fa-sync fa-spin"></i> Active Research (2025–Present)</span>
+            <span class="proj-tech-meta"><i class="fa fa-sitemap"></i> ISO/IEC 27001 &bull; NIST CSF &bull; SABSA &bull; TOGAF</span>
+          </div>
+          <h3 class="proj-detail-title">
+            <span class="proj-title-icon-badge"><i class="fa fa-shield-alt"></i></span>
+            <span>DevSecOps Fundamentals &amp; Enterprise Architecture Implementation</span>
+          </h3>
+        </header>
+        <div class="proj-detail-body">
+          <p class="proj-quote"><em>How can modern automated DevSecOps pipelines successfully permeate complex organizational hierarchies without stalling under bureaucratic routines?</em></p>
+          <p>
+            While continuous integration and continuous delivery (CI/CD) pipelines offer unparalleled deployment velocity, integrating robust security (Shift-Left) across enterprise-wide ecosystems often encounters organizational resistance, compliance friction, and rigid bureaucratic routines.
+          </p>
+          <p>
+            This active research project investigates the theoretical foundations and applied frameworks of DevSecOps, conducting an exhaustive literature review to establish a unified operational model tailored for enterprise adoption. The research develops actionable blueprints to harmonize automated security telemetry with formal governance, risk, and compliance (GRC) workflows.
+          </p>
+          <p>
+            The architectural synthesis bridges four internationally recognized standards:
+          </p>
+          <ul class="proj-styled-list">
+            <li><strong>ISO/IEC 27001:</strong> Mapping automated vulnerability assessments, artifact signing, and pipeline access controls to Annex A security control objectives and continuous audit trails.</li>
+            <li><strong>NIST SP 800-53 &amp; NIST CSF:</strong> Implementing risk mitigation matrices, continuous authorization (cATO), software supply chain security (NIST SSDF), and automated compliance enforcement.</li>
+            <li><strong>SABSA (Sherwood Applied Business Security Architecture):</strong> Developing business-driven security matrices to guarantee end-to-end traceability from contextual enterprise goals down to component-level pipeline security policies.</li>
+            <li><strong>TOGAF (The Open Group Architecture Framework):</strong> Embedding DevSecOps capabilities into enterprise architecture domains (Business, Data, Application, and Technology) via the TOGAF Architecture Development Method (ADM).</li>
+          </ul>
+        </div>
+        <footer class="proj-detail-footer">
+          <a href="{{ base_path }}/cv/#research-experience" class="proj-action-btn">
+            <i class="fa fa-file-alt"></i> View Research Trajectory in CV
+          </a>
+        </footer>
+      </article>
+
     </main>
 
     <!-- RIGHT FLOATING STICKY TABLE OF CONTENTS -->
@@ -503,14 +570,14 @@ redirect_from:
       <div class="projects-sticky-toc-box">
         <div class="proj-toc-header">
           <h4 class="proj-toc-title"><i class="fa fa-bookmark"></i> Projects Index</h4>
-          <span class="proj-toc-badge">8 Topics</span>
+          <span class="proj-toc-badge">9 Topics</span>
         </div>
         <nav class="proj-toc-nav">
           <ul class="proj-toc-menu">
             <li class="proj-toc-item">
               <a href="#Traffic_Sensor" class="proj-toc-link" data-target="Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); return false;">
                 <span class="proj-toc-icon"><i class="fa fa-crosshairs"></i></span>
-                <span class="proj-toc-text">Traffic Radar Sensor</span>
+                <span class="proj-toc-text">Traffic Radar (Thesis)</span>
               </a>
             </li>
             <li class="proj-toc-item">
@@ -555,6 +622,12 @@ redirect_from:
                 <span class="proj-toc-text">Array Optimization</span>
               </a>
             </li>
+            <li class="proj-toc-item">
+              <a href="#DevSecOps_Security" class="proj-toc-link" data-target="DevSecOps_Security" onclick="scrollToProject('DevSecOps_Security'); return false;">
+                <span class="proj-toc-icon"><i class="fa fa-shield-alt"></i></span>
+                <span class="proj-toc-text">DevSecOps &amp; Security</span>
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="proj-toc-footer">
@@ -570,7 +643,7 @@ redirect_from:
 
 <!-- Mobile Floating TOC FAB Button & Slide-up Drawer -->
 <div class="proj-mobile-toc-fab" id="proj-mobile-toc-fab" onclick="toggleMobileProjectsToc()" title="Jump to Project">
-  <i class="fa fa-list-ul"></i> <span>Projects (8)</span>
+  <i class="fa fa-list-ul"></i> <span>Projects (9)</span>
 </div>
 <div class="proj-mobile-toc-backdrop" id="proj-mobile-toc-backdrop" onclick="toggleMobileProjectsToc(false)"></div>
 <div class="proj-mobile-toc-drawer" id="proj-mobile-toc-drawer">
@@ -579,7 +652,7 @@ redirect_from:
     <button type="button" class="proj-mobile-drawer-close" onclick="toggleMobileProjectsToc(false)">&times;</button>
   </div>
   <ul class="proj-mobile-drawer-menu">
-    <li class="proj-mobile-drawer-item"><a href="#Traffic_Sensor" class="proj-toc-link" data-target="Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-crosshairs"></i></span> <span>Traffic Radar Sensor</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#Traffic_Sensor" class="proj-toc-link" data-target="Traffic_Sensor" onclick="scrollToProject('Traffic_Sensor'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-crosshairs"></i></span> <span>Traffic Radar (Thesis)</span></a></li>
     <li class="proj-mobile-drawer-item"><a href="#SSIW_Sensor" class="proj-toc-link" data-target="SSIW_Sensor" onclick="scrollToProject('SSIW_Sensor'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fas fa-satellite-dish"></i></span> <span>Slotted SIW (Undergrad)</span></a></li>
     <li class="proj-mobile-drawer-item"><a href="#Optimization_GD" class="proj-toc-link" data-target="Optimization_GD" onclick="scrollToProject('Optimization_GD'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-chart-line"></i></span> <span>Cost Optimization</span></a></li>
     <li class="proj-mobile-drawer-item"><a href="#Machine_LAB" class="proj-toc-link" data-target="Machine_LAB" onclick="scrollToProject('Machine_LAB'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-microchip"></i></span> <span>IoT Machine Lab</span></a></li>
@@ -587,6 +660,7 @@ redirect_from:
     <li class="proj-mobile-drawer-item"><a href="#FDTD" class="proj-toc-link" data-target="FDTD" onclick="scrollToProject('FDTD'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-water"></i></span> <span>FDTD Simulation</span></a></li>
     <li class="proj-mobile-drawer-item"><a href="#QML" class="proj-toc-link" data-target="QML" onclick="scrollToProject('QML'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-atom"></i></span> <span>Quantum ML (QML)</span></a></li>
     <li class="proj-mobile-drawer-item"><a href="#Array_Opt" class="proj-toc-link" data-target="Array_Opt" onclick="scrollToProject('Array_Opt'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-broadcast-tower"></i></span> <span>Array Optimization</span></a></li>
+    <li class="proj-mobile-drawer-item"><a href="#DevSecOps_Security" class="proj-toc-link" data-target="DevSecOps_Security" onclick="scrollToProject('DevSecOps_Security'); toggleMobileProjectsToc(false); return false;"><span class="proj-toc-icon"><i class="fa fa-shield-alt"></i></span> <span>DevSecOps &amp; Security</span></a></li>
   </ul>
 </div>
 

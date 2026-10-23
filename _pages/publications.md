@@ -149,16 +149,16 @@ redirect_from:
         <div class="pub-entry-card thesis-card">
           <div class="pub-entry-badge-row">
             <span class="pub-type-badge msc"><i class="fas fa-user-graduate"></i> M.Sc. Graduate Thesis</span>
-            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2022 &ndash; 2024</span>
+            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2021 &ndash; 2024</span>
             <span class="pub-venue-badge"><i class="fas fa-university"></i> Univ. of Tehran</span>
           </div>
 
           <h3 class="pub-entry-title">
-            A Novel Framework to Optimize Sensor Arrays in Multi-Dimensions with Physical Constraints for Medical Brain Stimulation and Neural Signal Processing
+            Design and Optimization of 1-D and 2-D Sensory Arrays for Tracking Offending and Violating Vehicles on Roads Using MIMO Systems
           </h3>
 
           <p class="pub-entry-authors">
-            <strong>MohammadReza Arani Bidhendi</strong> &bull; Advisor: <strong>Dr. S. Akhavan</strong>
+            <strong>MohammadReza Arani Bidhendi</strong> &bull; Advisors: <strong>Dr. S. Akhavan</strong> &amp; <strong>Prof. K. PoorAghdam</strong>
           </p>
 
           <p class="pub-entry-venue">
@@ -168,24 +168,26 @@ redirect_from:
           <div class="pub-thesis-highlights">
             <div class="thesis-highlight-item">
               <i class="fas fa-crosshairs"></i>
-              <span><strong>Multidimensional Optimization:</strong> Formulated convex and non-convex mathematical programming to optimize transmitter (TX) and receiver (RX) electrode and coil geometries in 1D, 2D, and 3D space.</span>
+              <span><strong>MIMO Sensory Array Design &amp; Optimization:</strong> Formulated 1-D and 2-D antenna array synthesis using both convex and non-convex optimization methods, alongside Gradient Descent (GD), to synthesize tailored radiation patterns and suppress sidelobe levels for road traffic monitoring.</span>
             </div>
             <div class="thesis-highlight-item">
-              <i class="fas fa-wave-square"></i>
-              <span><strong>Medical Biophysics:</strong> Enforced safety power diversity limits, targeted field depth penetration, and maximum spatial resolution for transcranial neuro-stimulation and non-invasive brain EEG telemetry.</span>
+              <i class="fas fa-filter"></i>
+              <span><strong>Target Tracking &amp; Noise Clustering:</strong> Deployed Kalman filtering for multi-vehicle kinematic state estimation (range, velocity, azimuth) and integrated DBSCAN (Density-Based Spatial Clustering of Applications with Noise) for spatial radar point-cloud noise and clutter clustering.</span>
             </div>
           </div>
 
           <div class="pub-tag-list">
-            <span class="pub-tag"><i class="fas fa-brain"></i> Neural Signal Processing</span>
-            <span class="pub-tag"><i class="fas fa-square-root-alt"></i> Convex Optimization</span>
-            <span class="pub-tag"><i class="fas fa-broadcast-tower"></i> Sensor Array Synthesis</span>
-            <span class="pub-tag"><i class="fas fa-notes-medical"></i> Brain Stimulation</span>
+            <span class="pub-tag"><i class="fas fa-broadcast-tower"></i> MIMO Radar Arrays</span>
+            <span class="pub-tag"><i class="fas fa-compress-arrows-alt"></i> 1-D &amp; 2-D Array Design</span>
+            <span class="pub-tag"><i class="fas fa-chart-line"></i> Gradient Descent</span>
+            <span class="pub-tag"><i class="fas fa-filter"></i> Kalman Filter</span>
+            <span class="pub-tag"><i class="fas fa-project-diagram"></i> DBSCAN Clustering</span>
+            <span class="pub-tag"><i class="fas fa-car"></i> Violation Detection</span>
           </div>
 
           <div class="pub-actions-bar">
-            <a href="{{ base_path }}/Projects/#bsp-eeg" class="pub-btn pub-btn-primary">
-              <i class="fas fa-project-diagram"></i> View Research Project
+            <a href="{{ base_path }}/Projects.html#Traffic_Sensor" class="pub-btn pub-btn-primary">
+              <i class="fas fa-project-diagram"></i> View Radar Project
             </a>
             <a href="{{ base_path }}/cv/#research-experience" class="pub-btn pub-btn-secondary">
               <i class="fas fa-file-alt"></i> CV Research Details
@@ -197,7 +199,7 @@ redirect_from:
         <div class="pub-entry-card thesis-card">
           <div class="pub-entry-badge-row">
             <span class="pub-type-badge bsc"><i class="fas fa-award"></i> B.Sc. Undergraduate Project</span>
-            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> 2021</span>
+            <span class="pub-year-badge"><i class="fas fa-calendar-alt"></i> Sep 22, 2017 &ndash; Sep 22, 2021</span>
             <span class="pub-venue-badge"><i class="fas fa-university"></i> Univ. of Tehran</span>
           </div>
 
@@ -210,7 +212,7 @@ redirect_from:
           </p>
 
           <p class="pub-entry-venue">
-            <i class="fas fa-building"></i> Department of Electrical &amp; Computer Engineering, University of Tehran. Graduated with <strong>Brilliant Talent Quota</strong> (Exam Exemption).
+            <i class="fas fa-building"></i> Department of Electrical &amp; Computer Engineering, University of Tehran (Sep 22, 2017 &ndash; Sep 22, 2021). Graduated with <strong>Brilliant Talent Quota</strong> (Exam Exemption).
           </p>
 
           <div class="pub-thesis-highlights">
