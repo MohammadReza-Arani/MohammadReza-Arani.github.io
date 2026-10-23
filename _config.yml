@@ -62,7 +62,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "/images/Profile.png"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -88,7 +88,7 @@ author:
   researchgate     : "https://www.researchgate.net/profile/Mohammadreza-Arani" 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=hgi3rPAAAAAJ"
-  email            :
+  email            : "mohammadreza.arani.bidhendi@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  LinkedIn         : "https://www.linkedin.com/in/mohammadreza-arani-b67122172"  
+  LinkedIn         : "https://www.linkedin.com/in/mohammadreza-arani-bidhendi/"  
   github           : "mohammadreza-arani"
   google_plus      :
   keybase          :
@@ -123,6 +123,8 @@ include:
   - _pages
   - files
 exclude:
+  - _posts
+  - _talks
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

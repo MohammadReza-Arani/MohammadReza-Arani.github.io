@@ -3,6 +3,7 @@
   /* Sequential Section IDs */
   var homeSectionIds = [
     'biography',
+    'recent-news',
     'research-interests',
     'tools-softwares',
     'hobbies',

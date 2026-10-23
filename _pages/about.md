@@ -133,7 +133,71 @@ redirect_from:
         </div>
       </section>
 
-      <!-- Section 2: Research Interests -->
+      
+      <!-- Section 2: Recent News & Academic Milestones -->
+      <section class="home-section-card" id="recent-news">
+        <div class="home-section-header">
+          <div class="home-section-title-wrap">
+            <span class="home-section-icon"><i class="fas fa-bullhorn"></i></span>
+            <h2 class="home-section-title">Recent News &amp; Academic Milestones</h2>
+          </div>
+          <span class="home-section-subtitle"><i class="fas fa-calendar-check"></i> Trajectory Updates, Standardized Examinations &amp; Research Highlights</span>
+        </div>
+
+        <div class="home-news-timeline">
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Oct 2023</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>GRE&reg; General Test Completion:</strong> Scored <strong>323 / 340</strong> on the official ETS GRE examination with top-percentile Quantitative Reasoning.</span>
+              <a href="{{ base_path }}/cv/#test-scores" class="news-link">View Score Breakdown <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Aug 2023</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>TOEFL iBT&reg; Score:</strong> Achieved an overall score of <strong>101 / 120</strong> on the official ETS TOEFL examination (Advanced Reading &amp; Listening).</span>
+              <a href="{{ base_path }}/cv/#test-scores" class="news-link">View Subscores <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> 2023</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Graduate Teaching Assistantship:</strong> Appointed as Graduate TA for <em>Convex Optimization</em> under Dr. A. Keshavarz at University of Tehran.</span>
+              <a href="{{ base_path }}/cv/#teaching-experience" class="news-link">View Teaching Portfolio <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Oct 2022</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Journal Paper Published:</strong> Co-authored research article in <em>Scientia Iranica</em> on Smart Microgrid Educational Infrastructure.</span>
+              <a href="{{ base_path }}/publications/#journal-articles" class="news-link">View Paper &amp; BibTeX <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> Jan 2022</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Master's Thesis Commenced:</strong> Formulating multidimensional sensor array optimization under Dr. S. Akhavan for medical brain stimulation.</span>
+              <a href="{{ base_path }}/Projects/#bsp-eeg" class="news-link">Explore Research Details <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="home-news-item">
+            <span class="news-date-badge"><i class="fas fa-calendar-alt"></i> 2021</span>
+            <div class="news-content-box">
+              <span class="news-title"><strong>Brilliant Talent Quota Honors:</strong> Graduated B.Sc. with honors and admitted to University of Tehran M.Sc. without entrance exam based on top class ranking.</span>
+              <a href="{{ base_path }}/cv/#education" class="news-link">View Degree Credentials <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Research Interests -->
       <section class="home-section-card" id="research-interests">
         <div class="home-section-header">
           <div class="home-section-title-wrap">
@@ -149,6 +213,7 @@ redirect_from:
             <div class="interest-text-content">
               <h3 class="interest-title">Optimization &amp; Numerical Methods</h3>
               <p class="interest-desc">Convex optimization, Gradient Descent, Newton-Raphson curvature modeling, high-dimensional matrix formulation, and algorithmic convergence.</p>
+              <a href="{{ base_path }}/Projects/#convex-opt" class="interest-deep-link"><i class="fas fa-project-diagram"></i> Explore Convex Optimization Project &rarr;</a>
             </div>
           </div>
 
@@ -157,6 +222,7 @@ redirect_from:
             <div class="interest-text-content">
               <h3 class="interest-title">RF Circuits &amp; Systems Design &amp; Implementation</h3>
               <p class="interest-desc">77 GHz millimeter-wave radar front-ends, Substrate Integrated Waveguides (SIW), slotted leaky-wave antennas, and high-frequency RF transmission.</p>
+              <a href="{{ base_path }}/Projects/#siw-radar" class="interest-deep-link"><i class="fas fa-satellite-dish"></i> Explore 77 GHz SIW Radar Project &rarr;</a>
             </div>
           </div>
 
@@ -181,6 +247,7 @@ redirect_from:
             <div class="interest-text-content">
               <h3 class="interest-title">Neural Networks &amp; Machine Learning Applications</h3>
               <p class="interest-desc">Biomedical and brain signal processing (EEG / BCI classification), time series forecasting, deep neural network architectures, and quantum ML optimization.</p>
+              <a href="{{ base_path }}/Projects/#bsp-eeg" class="interest-deep-link"><i class="fas fa-brain"></i> Explore Neural Signal Processing Project &rarr;</a>
             </div>
           </div>
         </div>
@@ -480,6 +547,12 @@ redirect_from:
               <a href="#biography" class="home-toc-link active" data-target="biography" onclick="scrollToHomeSection('biography'); return false;">
                 <span class="home-toc-icon"><i class="fas fa-user-circle"></i></span>
                 <span class="home-toc-text">Biography</span>
+              </a>
+            </li>
+            <li class="home-toc-item">
+              <a href="#recent-news" class="home-toc-link" data-target="recent-news" onclick="scrollToHomeSection('recent-news'); return false;">
+                <span class="home-toc-icon"><i class="fas fa-bullhorn"></i></span>
+                <span class="home-toc-text">Recent News</span>
               </a>
             </li>
             <li class="home-toc-item">
@@ -1718,4 +1791,104 @@ redirect_from:
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   Recent News & Milestones Timeline
+   ========================================================================== */
+.home-news-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  transition: all 0.2s ease;
+}
+
+.home-news-item:hover {
+  border-color: #0ea5e9;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.08);
+}
+
+.news-date-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #0369a1;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.news-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.news-title {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #1e293b;
+}
+
+.news-title strong {
+  color: #0f172a;
+}
+
+.news-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0284c7 !important;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  transition: color 0.15s ease;
+}
+
+.news-link:hover {
+  color: #0369a1 !important;
+  text-decoration: underline !important;
+}
+
+.interest-deep-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0284c7 !important;
+  text-decoration: none !important;
+  margin-top: 8px;
+  transition: all 0.15s ease;
+}
+
+.interest-deep-link:hover {
+  color: #0369a1 !important;
+  transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .home-news-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 </style>
