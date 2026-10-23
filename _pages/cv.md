@@ -804,6 +804,7 @@ redirect_from:
       <div class="cv-sticky-toc-box">
         <div class="cv-toc-header">
           <h4 class="cv-toc-title"><i class="fas fa-bookmark"></i> On This Page</h4>
+          <span class="cv-toc-badge">8 Sections</span>
         </div>
         <nav class="cv-toc-nav">
           <ul class="cv-toc-menu">
@@ -2187,9 +2188,32 @@ window.addEventListener('scroll', function() {
 }
 
 .cv-toc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
   border-bottom: 1px solid #f1f5f9;
   padding-bottom: 0.6rem;
   margin-bottom: 0.75rem;
+}
+
+.cv-toc-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.5rem;
+  line-height: 1.2;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .cv-toc-title {

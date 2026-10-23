@@ -530,7 +530,7 @@ redirect_from:
         <header class="proj-detail-header">
           <div class="proj-badge-line">
             <span class="proj-cat-pill"><i class="fa fa-shield-alt"></i> Enterprise Security &amp; Systems Architecture</span>
-            <span class="proj-featured-tag" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);"><i class="fa fa-sync fa-spin"></i> Active Research (2025–Present)</span>
+            <span class="proj-active-pill"><i class="fa fa-sync"></i> Active Research (2025–Present)</span>
             <span class="proj-tech-meta"><i class="fa fa-sitemap"></i> ISO/IEC 27001 &bull; NIST CSF &bull; SABSA &bull; TOGAF</span>
           </div>
           <h3 class="proj-detail-title">
@@ -1220,6 +1220,24 @@ redirect_from:
   border-radius: 6px;
 }
 
+.projects-content-scope .proj-active-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.projects-content-scope .proj-active-pill i {
+  color: #059669;
+}
+
 .projects-content-scope .proj-tech-meta {
   display: inline-flex;
   align-items: center;
@@ -1464,12 +1482,22 @@ redirect_from:
 }
 
 .projects-content-scope .proj-toc-badge {
-  background: #e2e8f0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: #f8fafc;
   color: #475569;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.15rem 0.5rem;
-  border-radius: 9999px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.5rem;
+  line-height: 1.2;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .projects-content-scope .proj-toc-nav {
